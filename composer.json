@@ -18,6 +18,7 @@
     },
     "version": "2.4.7-p2",
     "require": {
+        "deployer/deployer": "^7.4",
         "magento/composer-dependency-version-audit-plugin": "~0.1",
         "magento/composer-root-update-plugin": "^2.0.4",
         "magento/product-community-edition": "2.4.7-p2",
@@ -78,10 +79,6 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "repositories": {
-        "dev-extensions": {
-            "type": "path",
-            "url": "extensions/*"
-        },
         "0": {
             "type": "composer",
             "url": "https://repo.magento.com/"
