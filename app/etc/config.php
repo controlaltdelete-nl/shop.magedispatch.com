@@ -449,6 +449,6 @@ return [
             'area' => 'frontend',
             'type' => '0',
             'code' => 'Magento/luma'
-        ],
-    ],
+        ]
+    ]
 ];
