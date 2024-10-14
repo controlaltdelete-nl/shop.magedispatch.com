@@ -25,7 +25,7 @@ const { defineConfig, devices } = require('@playwright/test');
  */
 // require('dotenv').config({ path: path.resolve(__dirname, '.env') });
 
-let baseUrl = 'https://bullstore.test';
+let baseUrl = 'https://texel.test';
 if (process.env.TEST_BASE_URL) {
     baseUrl = process.env.TEST_BASE_URL;
 }

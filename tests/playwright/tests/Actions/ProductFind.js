@@ -28,7 +28,7 @@ export default class ProductFind {
     async openProduct() {
         await this.page.goto('/');
 
-        const link = this.page.locator('.level2.category-item a').first();
+        const link = this.page.locator('.level0.category-item a').first();
         const url = await link.getAttribute('href');
 
         console.log('Got URL', url);
@@ -46,11 +46,13 @@ export default class ProductFind {
 
         await this.page.waitForTimeout(1000);
 
-        await expect(this.page.locator('.footer .copyright')).toBeVisible();
+        await this.page.locator('#options_1_2').click();
 
         await this.page.locator('#product-addtocart-button').click();
 
-        await expect(this.page.getByText(`U heeft ${this.productTitle.trim()} aan uw winkelwagen toegevoegd.`)).toBeVisible({ timeout: 30 * 1000 });
+        await expect(this.page.getByText(`U heeft ${this.productTitle.trim()} toegevoegd aan uw winkelwagen.`)).toBeVisible({ timeout: 30 * 1000 });
+
+        await this.page.locator('.action.showcart').click();
 
         await this.page.reload();
     }

@@ -23,17 +23,19 @@ test('Can enter shipping address on Checkout', async ({ page }) => {
     await new Checkout(page).visit();
 
     const shipping = page.locator('#checkout-step-shipping');
-    await shipping.getByLabel('E-mailadres').fill('user@example.com');
+    await shipping.getByLabel('E-mail adres').fill('user@example.com');
     await shipping.getByLabel('Voornaam').fill('John');
     await shipping.getByLabel('Achternaam').fill('Doe');
+    await shipping.getByLabel('Adres: Line 1').fill('Paulus Emtinckweg 18');
     await page.getByRole('textbox', { name: 'Postcode*' }).fill('1111bv');
-    await shipping.getByLabel('Huisnummer en toevoeging').fill('18');
+    await shipping.getByLabel('Plaatsnaam').fill('Diemen');
+    await shipping.getByLabel('Telefoonnummer').fill('111111111111');
 
     await page.locator('.table-checkout-shipping-method tbody tr').first().click();
 
-    await expect(await page.getByText('Paulus Emtinckweg 18')).toBeVisible()
-
     await page.locator('.primary').getByText('Volgende').click();
 
-    await expect(await page.getByText('Factuur- en verzendadres zijn hetzelfde')).toBeVisible()
+    await page.locator('[name="payment[method]"]').first().click();
+
+    await expect(page.getByText('Place Order').first()).toBeVisible();
 });

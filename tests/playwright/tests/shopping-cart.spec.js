@@ -51,10 +51,12 @@ test('Can change the quantity in the cart', async ({ page }) => {
 
     await page.locator('input.qty').fill('2');
 
-    await page.getByRole('button', { name: 'Winkelwagen bijwerken' }).click();
+    await page.getByRole('button', { name: 'Update Winkelwagen' }).click();
 
     await expect(await page.locator('.loader')).not.toBeVisible();
 
     const updatedPrice = await page.locator('.col.subtotal .price').textContent();
+    console.log('priceWithoutTax', priceWithoutTax);
+    console.log('updatedPrice', updatedPrice);
     await expect(updatedPrice).not.toEqual(priceWithoutTax);
 });
