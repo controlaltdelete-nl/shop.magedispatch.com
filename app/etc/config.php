@@ -354,7 +354,6 @@ return [
         'Magento_Wishlist' => 1,
         'Magento_WishlistAnalytics' => 1,
         'Magento_WishlistGraphQl' => 1,
-        'AvS_ScopeHint' => 1,
         'Mageplaza_Core' => 0,
         'Mollie_Payment' => 1,
         'PayPal_Braintree' => 1,
