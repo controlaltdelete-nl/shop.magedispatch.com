@@ -1,4 +1,4 @@
-name: texel
+name: 3dprintentexel
 type: magento2
 docroot: pub
 php_version: "8.2"

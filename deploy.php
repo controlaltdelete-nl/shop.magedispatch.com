@@ -23,7 +23,7 @@ require 'recipe/magento2.php';
 
 // Configuration
 
-set('repository', 'git@github.com:controlaltdelete-nl/texelshop.git');
+set('repository', 'git@github.com:controlaltdelete-nl/3dprintentexel.nl.git');
 set('keep_releases', 3);
 set('release_name', date('YmdHis')); // Use timestamp for release name
 
@@ -45,12 +45,6 @@ set('shared_files', [
     // Copied from the recipe
     '{{magento_dir}}/app/etc/env.php',
     '{{magento_dir}}/var/.maintenance.ip',
-
-    // Our own symlinks
-    '{{magento_dir}}/pub/.user.ini',
-    '{{magento_dir}}/pub/GoogleShopping_datafeedBEFR.xml',
-    '{{magento_dir}}/pub/GoogleShopping_datafeedEN.xml',
-    '{{magento_dir}}/pub/GoogleShopping_datafeedKlusmerken.xml',
 ]);
 
 set('shared_dirs', [
@@ -67,10 +61,6 @@ set('shared_dirs', [
     '{{magento_dir}}/var/report',
     '{{magento_dir}}/var/session',
     '{{magento_dir}}/var/tmp',
-
-    // Our own symlinks
-    '{{magento_dir}}/var/monta',
-    '{{magento_dir}}/var/productexport_bkp/',
 ]);
 
 //

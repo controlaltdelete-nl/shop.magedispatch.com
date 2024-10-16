@@ -115,7 +115,7 @@ jobs:
 
       - name: Download & import database dump
         run: |
-          aws s3 cp s3://controlaltdelete-github-action/texelshop/stripped-dump.sql.gz . --no-progress
+          aws s3 cp s3://controlaltdelete-github-action/3dprintentexel.nl/stripped-dump.sql.gz . --no-progress
           mv app/etc/env{.ddev,}.php
           ddev exec magerun2 db:import -c gz stripped-dump.sql.gz
 
