@@ -80,7 +80,7 @@ localhost()
     ->set('local', true)
 ;
 
-host('3dprintentexel.nl')
+host('49.12.101.75')
     ->set('remote_user', 'forge')
     ->set('deploy_path', '/home/forge/www.3dprintentexel.nl')
     ->set('php_version', '8.3')
