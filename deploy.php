@@ -23,7 +23,7 @@ require 'recipe/magento2.php';
 
 // Configuration
 
-set('repository', 'git@github.com:controlaltdelete-nl/bullstore.nl.git');
+set('repository', 'git@github.com:controlaltdelete-nl/texelshop.git');
 set('keep_releases', 3);
 set('release_name', date('YmdHis')); // Use timestamp for release name
 
@@ -80,23 +80,13 @@ localhost()
     ->set('local', true)
 ;
 
-host('bullstore.nl')
-    ->set('remote_user', 'app')
-    ->set('deploy_path', '/data/web/src-production')
-    ->set('php_version', '8.2')
+host('3dprintentexel.nl')
+    ->set('remote_user', 'forge')
+    ->set('deploy_path', '/home/forge/www.3dprintentexel.nl')
+    ->set('php_version', '8.3')
     ->setLabels([
         'stage' => 'production',
         'branch' => 'main',
-    ])
-;
-
-host('staging.bullstore.nl')
-    ->set('remote_user', 'app')
-    ->set('deploy_path', '/data/web/src-staging')
-    ->set('php_version', '8.2')
-    ->setLabels([
-        'stage' => 'staging',
-        'branch' => 'develop',
     ])
 ;
 
