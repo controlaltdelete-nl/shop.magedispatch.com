@@ -151,10 +151,10 @@ return [
         'default' => [
             'web' => [
                 'unsecure' => [
-                    'base_url' => 'https://texel.test/'
+                    'base_url' => 'https://3dprintentexel.test/'
                 ],
                 'secure' => [
-                    'base_url' => 'https://texel.test/'
+                    'base_url' => 'https://3dprintentexel.test/'
                 ]
             ]
         ]
