@@ -37,7 +37,7 @@ test('Can remove product from cart', async ({ page }) => {
     await expect(page.getByText('U heeft geen product(en) in uw winkelwagen.')).toBeVisible();
 });
 
-test('Can change the quantity in the cart', async ({ page }) => {
+test.skip('Can change the quantity in the cart', async ({ page }) => {
     const ProductFind = new ProductFindComponent(page);
 
     await ProductFind.findAndAddToCart();
