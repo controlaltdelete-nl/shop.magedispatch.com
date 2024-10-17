@@ -108,3 +108,9 @@ task('download:database:dump', function () {
     download('~/stripped-dump.sql.gz', 'stripped-dump.sql.gz');
     run('rm ~/stripped-dump.sql.gz');
 });
+
+task('php-fpm:restart', function () {
+    run('sudo service php8.3-fpm reload');
+});
+
+after('deploy:symlink', 'php-fpm:restart');
