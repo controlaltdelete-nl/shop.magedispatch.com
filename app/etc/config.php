@@ -1,5 +1,5 @@
 <?php
-$config = [
+return [
     'modules' => [
         'Magento_Store' => 1,
         'Magento_Config' => 1,
@@ -60,7 +60,7 @@ $config = [
         'Magento_CmsUrlRewrite' => 1,
         'Magento_CmsUrlRewriteGraphQl' => 1,
         'Magento_CatalogGraphQl' => 1,
-        'Magento_TwoFactorAuth' => 1,
+        'Magento_TwoFactorAuth' => 0,
         'Magento_Payment' => 1,
         'Magento_Sales' => 1,
         'Magento_QuoteGraphQl' => 1,
@@ -354,7 +354,6 @@ $config = [
         'Magento_Wishlist' => 1,
         'Magento_WishlistAnalytics' => 1,
         'Magento_WishlistGraphQl' => 1,
-        'AvS_ScopeHint' => 1,
         'Mageplaza_Core' => 0,
         'Mollie_Payment' => 1,
         'PayPal_Braintree' => 1,
@@ -470,9 +469,3 @@ $config = [
         ]
     ]
 ];
-
-if (getenv('IS_DDEV_PROJECT')) {
-    $config['modules']['Magento_TwoFactorAuth'] = 0;
-}
-
-return $config;
