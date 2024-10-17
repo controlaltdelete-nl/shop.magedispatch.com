@@ -325,6 +325,7 @@
         "magento/module-graph-ql-resolver-cache": "*",
         "magento/module-grouped-product-graph-ql": "*",
         "magento/module-grouped-product-sample-data": "*",
+        "magento/module-graph-ql-new-relic": "*",
         "magento/module-inventory": "*",
         "magento/module-inventory-admin-ui": "*",
         "magento/module-inventory-advanced-checkout": "*",

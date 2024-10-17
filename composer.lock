@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ed242f0a444fe8b1caef37bbe0e2da37",
+    "content-hash": "70f812aa19fbfb3359c0af7704ce8e23",
     "packages": [
         {
             "name": "2tvenom/cborencode",
@@ -8670,35 +8670,6 @@
                 ],
                 "psr-4": {
                     "Magento\\GoogleOptimizer\\": ""
-                }
-            },
-            "license": [
-                "OSL-3.0",
-                "AFL-3.0"
-            ],
-            "description": "N/A"
-        },
-        {
-            "name": "magento/module-graph-ql-new-relic",
-            "version": "100.4.0",
-            "dist": {
-                "type": "zip",
-                "url": "https://repo.magento.com/archives/magento/module-graph-ql-new-relic/magento-module-graph-ql-new-relic-100.4.0.0.zip",
-                "shasum": "4b0171d23f284f6b94e5d85739cc744ecc672f55"
-            },
-            "require": {
-                "magento/framework": "103.0.*",
-                "magento/module-graph-ql": "100.4.*",
-                "magento/module-new-relic-reporting": "100.4.*",
-                "php": "~8.1.0||~8.2.0||~8.3.0"
-            },
-            "type": "magento2-module",
-            "autoload": {
-                "files": [
-                    "registration.php"
-                ],
-                "psr-4": {
-                    "Magento\\GraphQlNewRelic\\": ""
                 }
             },
             "license": [
