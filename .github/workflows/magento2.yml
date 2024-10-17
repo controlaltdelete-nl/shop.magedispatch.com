@@ -122,7 +122,7 @@ jobs:
       - name: Prepare Magento
         run: |
           cp app/etc/config{,.original}.php
-          ddev exec bin/magento setup:upgrade --keep-generated
+          ddev exec bin/magento setup:upgrade --keep-generated --no-interaction
           ddev exec bin/magento indexer:reindex
 
       - name: Install Playwright dependencies
