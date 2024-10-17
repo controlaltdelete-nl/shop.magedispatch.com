@@ -1,5 +1,5 @@
 <?php
-return [
+$config = [
     'modules' => [
         'Magento_Store' => 1,
         'Magento_Config' => 1,
@@ -354,6 +354,7 @@ return [
         'Magento_Wishlist' => 1,
         'Magento_WishlistAnalytics' => 1,
         'Magento_WishlistGraphQl' => 1,
+        'AvS_ScopeHint' => 1,
         'Mageplaza_Core' => 0,
         'Mollie_Payment' => 1,
         'PayPal_Braintree' => 1,
@@ -448,6 +449,30 @@ return [
             'area' => 'frontend',
             'type' => '0',
             'code' => 'Magento/luma'
+        ],
+        'frontend/ControlAltDelete/Lighting' => [
+            'parent_id' => 'Magento/luma',
+            'theme_path' => 'ControlAltDelete/Lighting',
+            'theme_title' => 'ControlAltDelete Lighting',
+            'is_featured' => '0',
+            'area' => 'frontend',
+            'type' => '0',
+            'code' => 'ControlAltDelete/Lighting'
+        ],
+        'frontend/ControlAltDelete/MageStore' => [
+            'parent_id' => 'Magento/MageStore',
+            'theme_path' => 'ControlAltDelete/MageStore',
+            'theme_title' => 'ControlAltDelete MageStore',
+            'is_featured' => '0',
+            'area' => 'frontend',
+            'type' => '0',
+            'code' => 'ControlAltDelete/MageStore'
         ]
     ]
 ];
+
+if (getenv('IS_DDEV_PROJECT')) {
+    $config['modules']['Magento_TwoFactorAuth'] = 0;
+}
+
+return $config;
