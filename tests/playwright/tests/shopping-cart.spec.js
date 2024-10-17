@@ -28,7 +28,7 @@ test('Can remove product from cart', async ({ page }) => {
 
     await page.goto('/checkout/cart');
 
-    await expect(page.locator('.product-item-name').getByText(productTitle)).toBeVisible({ timeout: 30000 });
+    await expect(page.locator('#shopping-cart-table').getByText(productTitle)).toBeVisible();
 
     await page.locator('.action-delete').click();
 
