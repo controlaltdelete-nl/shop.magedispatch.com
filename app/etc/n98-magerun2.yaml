@@ -1,0 +1,24 @@
+commands:
+  N98\Magento\Command\Database\DumpCommand:
+    table-groups:
+      - id: "stripped_project"
+        description: Project specific stripped dump which is GDPR proof
+        tables:
+          - "@aggregated"
+          - "@idx"
+          - "@oauth"
+          - "@replica"
+          - "@stripped"
+          - "@search"
+          - "@sessions"
+          - "@temp"
+          - "@trade"
+          - "acumulus_entry"
+          - "catalog_category_product_index"
+          - "catalog_category_product_index_store1"
+          - "catalog_category_product_index_store2"
+          - "catalog_category_product_index_store3"
+          - "catalog_category_product_index_store4"
+          - "catalog_url_rewrite_product_category_backup"
+          - "cron_schedule"
+          - "importexport_importdata"
