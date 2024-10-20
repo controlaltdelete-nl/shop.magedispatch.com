@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "70f812aa19fbfb3359c0af7704ce8e23",
+    "content-hash": "6016db2d1b0df6501c581193d35e5a39",
     "packages": [
         {
             "name": "2tvenom/cborencode",
@@ -182,16 +182,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.324.4",
+            "version": "3.324.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "4467374b1efda020b58adddd010f05949d9fa383"
+                "reference": "7412a44da62fd607efbaac4084e69d6621f29de1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/4467374b1efda020b58adddd010f05949d9fa383",
-                "reference": "4467374b1efda020b58adddd010f05949d9fa383",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/7412a44da62fd607efbaac4084e69d6621f29de1",
+                "reference": "7412a44da62fd607efbaac4084e69d6621f29de1",
                 "shasum": ""
             },
             "require": {
@@ -274,9 +274,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.324.4"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.324.6"
             },
-            "time": "2024-10-16T18:04:55+00:00"
+            "time": "2024-10-18T18:06:33+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -2977,38 +2977,38 @@
         },
         {
             "name": "laminas/laminas-filter",
-            "version": "2.37.0",
+            "version": "2.38.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-filter.git",
-                "reference": "27dda1e60547bc000b876e24808f47932df2f4ac"
+                "reference": "3037168c2db8af3088aca8826bdf7e249fd24ce3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-filter/zipball/27dda1e60547bc000b876e24808f47932df2f4ac",
-                "reference": "27dda1e60547bc000b876e24808f47932df2f4ac",
+                "url": "https://api.github.com/repos/laminas/laminas-filter/zipball/3037168c2db8af3088aca8826bdf7e249fd24ce3",
+                "reference": "3037168c2db8af3088aca8826bdf7e249fd24ce3",
                 "shasum": ""
             },
             "require": {
                 "ext-mbstring": "*",
                 "laminas/laminas-servicemanager": "^3.21.0",
-                "laminas/laminas-stdlib": "^3.13.0",
-                "php": "~8.1.0 || ~8.2.0 || ~8.3.0"
+                "laminas/laminas-stdlib": "^3.19.0",
+                "php": "~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0"
             },
             "conflict": {
                 "laminas/laminas-validator": "<2.10.1",
                 "zendframework/zend-filter": "*"
             },
             "require-dev": {
-                "laminas/laminas-coding-standard": "~2.5.0",
-                "laminas/laminas-crypt": "^3.11",
-                "laminas/laminas-i18n": "^2.26.0",
-                "laminas/laminas-uri": "^2.11",
+                "laminas/laminas-coding-standard": "~3.0",
+                "laminas/laminas-crypt": "^3.12",
+                "laminas/laminas-i18n": "^2.28.1",
+                "laminas/laminas-uri": "^2.12",
                 "pear/archive_tar": "^1.5.0",
-                "phpunit/phpunit": "^10.5.20",
+                "phpunit/phpunit": "^10.5.36",
                 "psalm/plugin-phpunit": "^0.19.0",
                 "psr/http-factory": "^1.1.0",
-                "vimeo/psalm": "^5.24.0"
+                "vimeo/psalm": "^5.26.1"
             },
             "suggest": {
                 "laminas/laminas-crypt": "Laminas\\Crypt component, for encryption filters",
@@ -3052,20 +3052,20 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2024-08-12T09:23:23+00:00"
+            "time": "2024-10-17T20:43:05+00:00"
         },
         {
             "name": "laminas/laminas-http",
-            "version": "2.19.0",
+            "version": "2.20.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-http.git",
-                "reference": "26dd6d1177e25d970058863c2afed12bb9dbff4d"
+                "reference": "a66bfb65c698aad6ee9f10df42cb5902f2c3dec8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-http/zipball/26dd6d1177e25d970058863c2afed12bb9dbff4d",
-                "reference": "26dd6d1177e25d970058863c2afed12bb9dbff4d",
+                "url": "https://api.github.com/repos/laminas/laminas-http/zipball/a66bfb65c698aad6ee9f10df42cb5902f2c3dec8",
+                "reference": "a66bfb65c698aad6ee9f10df42cb5902f2c3dec8",
                 "shasum": ""
             },
             "require": {
@@ -3073,7 +3073,7 @@
                 "laminas/laminas-stdlib": "^3.6",
                 "laminas/laminas-uri": "^2.11",
                 "laminas/laminas-validator": "^2.15",
-                "php": "~8.1.0 || ~8.2.0 || ~8.3.0"
+                "php": "~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0"
             },
             "conflict": {
                 "zendframework/zend-http": "*"
@@ -3081,7 +3081,7 @@
             "require-dev": {
                 "ext-curl": "*",
                 "laminas/laminas-coding-standard": "~2.4.0",
-                "phpunit/phpunit": "^9.5.25"
+                "phpunit/phpunit": "^9.6.21"
             },
             "suggest": {
                 "paragonie/certainty": "For automated management of cacert.pem"
@@ -3117,7 +3117,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2023-11-02T16:27:41+00:00"
+            "time": "2024-10-18T07:35:59+00:00"
         },
         {
             "name": "laminas/laminas-i18n",
@@ -8670,6 +8670,40 @@
                 ],
                 "psr-4": {
                     "Magento\\GoogleOptimizer\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
+        },
+        {
+            "name": "magento/module-graph-ql",
+            "version": "100.4.7",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.magento.com/archives/magento/module-graph-ql/magento-module-graph-ql-100.4.7.0.zip",
+                "shasum": "2f9332743bd2665fb8352af5db7a6e372531b10f"
+            },
+            "require": {
+                "magento/framework": "103.0.*",
+                "magento/module-authorization": "100.4.*",
+                "magento/module-eav": "102.1.*",
+                "magento/module-webapi": "100.4.*",
+                "php": "~8.1.0||~8.2.0||~8.3.0",
+                "webonyx/graphql-php": "^15.0"
+            },
+            "suggest": {
+                "magento/module-graph-ql-cache": "100.4.*"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\GraphQl\\": ""
                 }
             },
             "license": [
@@ -20620,25 +20654,25 @@
         },
         {
             "name": "behat/gherkin",
-            "version": "v4.9.0",
+            "version": "v4.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Behat/Gherkin.git",
-                "reference": "0bc8d1e30e96183e4f36db9dc79caead300beff4"
+                "reference": "cbb83c4c435dd8d05a161f2a5ae322e61b2f4db6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Behat/Gherkin/zipball/0bc8d1e30e96183e4f36db9dc79caead300beff4",
-                "reference": "0bc8d1e30e96183e4f36db9dc79caead300beff4",
+                "url": "https://api.github.com/repos/Behat/Gherkin/zipball/cbb83c4c435dd8d05a161f2a5ae322e61b2f4db6",
+                "reference": "cbb83c4c435dd8d05a161f2a5ae322e61b2f4db6",
                 "shasum": ""
             },
             "require": {
                 "php": "~7.2|~8.0"
             },
             "require-dev": {
-                "cucumber/cucumber": "dev-gherkin-22.0.0",
+                "cucumber/cucumber": "dev-gherkin-24.1.0",
                 "phpunit/phpunit": "~8|~9",
-                "symfony/yaml": "~3|~4|~5"
+                "symfony/yaml": "~3|~4|~5|~6|~7"
             },
             "suggest": {
                 "symfony/yaml": "If you want to parse features, represented in YAML files"
@@ -20677,9 +20711,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Behat/Gherkin/issues",
-                "source": "https://github.com/Behat/Gherkin/tree/v4.9.0"
+                "source": "https://github.com/Behat/Gherkin/tree/v4.10.0"
             },
-            "time": "2021-10-12T13:05:09+00:00"
+            "time": "2024-10-19T14:46:06+00:00"
         },
         {
             "name": "bitexpert/phpstan-magento",
@@ -22950,16 +22984,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "1.12.6",
+            "version": "1.12.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "dc4d2f145a88ea7141ae698effd64d9df46527ae"
+                "reference": "dc2b9976bd8b0f84ec9b0e50cc35378551de7af0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/dc4d2f145a88ea7141ae698effd64d9df46527ae",
-                "reference": "dc4d2f145a88ea7141ae698effd64d9df46527ae",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/dc2b9976bd8b0f84ec9b0e50cc35378551de7af0",
+                "reference": "dc2b9976bd8b0f84ec9b0e50cc35378551de7af0",
                 "shasum": ""
             },
             "require": {
@@ -23004,7 +23038,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-10-06T15:03:59+00:00"
+            "time": "2024-10-18T11:12:07+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -24026,16 +24060,16 @@
         },
         {
             "name": "rector/rector",
-            "version": "1.2.7",
+            "version": "1.2.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rectorphp/rector.git",
-                "reference": "5b33bdd871895276e2c18e5410a4a57df9233ee0"
+                "reference": "05755bf43617449c08ee8e50fb840c85ad3b1240"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rectorphp/rector/zipball/5b33bdd871895276e2c18e5410a4a57df9233ee0",
-                "reference": "5b33bdd871895276e2c18e5410a4a57df9233ee0",
+                "url": "https://api.github.com/repos/rectorphp/rector/zipball/05755bf43617449c08ee8e50fb840c85ad3b1240",
+                "reference": "05755bf43617449c08ee8e50fb840c85ad3b1240",
                 "shasum": ""
             },
             "require": {
@@ -24073,7 +24107,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rectorphp/rector/issues",
-                "source": "https://github.com/rectorphp/rector/tree/1.2.7"
+                "source": "https://github.com/rectorphp/rector/tree/1.2.8"
             },
             "funding": [
                 {
@@ -24081,7 +24115,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-10-12T11:12:46+00:00"
+            "time": "2024-10-18T11:54:27+00:00"
         },
         {
             "name": "sebastian/cli-parser",

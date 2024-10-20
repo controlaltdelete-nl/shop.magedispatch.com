@@ -320,7 +320,6 @@
         "magento/module-gift-message-graph-ql": "*",
         "magento/module-gift-registry-graph-ql": "*",
         "magento/module-gift-wrapping-graph-ql": "*",
-        "magento/module-graph-ql": "*",
         "magento/module-graph-ql-cache": "*",
         "magento/module-graph-ql-resolver-cache": "*",
         "magento/module-grouped-product-graph-ql": "*",
