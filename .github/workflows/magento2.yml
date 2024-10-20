@@ -216,3 +216,8 @@ jobs:
         with:
           private-key: ${{ secrets.SSH_PRIVATE_KEY }}
           dep: artifact:deploy branch=${{ github.head_ref || github.ref_name }}
+
+      - name: Inform N8N
+        uses: controlaltdelete-nl/n8n-trigger@main
+        with:
+          webhook-url: "https://n8n.kikkertstraat6a.nl/webhook/7faf7946-d07d-46ae-b7cf-f794c9314a9d"
