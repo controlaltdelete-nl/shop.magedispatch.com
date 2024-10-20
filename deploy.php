@@ -100,7 +100,7 @@ task('database:dump', function () {
     run('rm -f ~/stripped-dump.sql || true');
     run('rm -f ~/stripped-dump.sql.gz || true');
 
-    run('cd {{current_path}} && n98-magerun2 db:dump ~/stripped-dump.sql --strip="@stripped_project"');
+    run('cd {{current_path}} && magerun2 db:dump ~/stripped-dump.sql --strip="@stripped_project"');
     run('gzip ~/stripped-dump.sql');
 });
 
