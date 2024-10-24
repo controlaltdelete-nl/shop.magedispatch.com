@@ -32,15 +32,15 @@
     "morgan": "~1.10.0",
     "node-minify": "~3.6.0",
     "path": "~0.12.7",
-    "serve-static": "~1.15.0",
+    "serve-static": "~1.16.0",
     "squirejs": "~0.2.1",
     "strip-comments": "~2.0.1",
     "time-grunt": "~2.0.0",
-    "underscore": "1.13.6"
+    "underscore": "1.13.7"
   },
  "overrides": {
    "styledocco": {
-     "uglify-js": "~3.4.9",
+     "uglify-js": "~3.19.0",
      "marked": "~14.1.0",
      "clean-css": "~5.3.2"
    },
@@ -54,7 +54,7 @@
      "trim-newlines":"~5.0.0"
    },
    "node-minify": {
-     "terser": "~5.18.0"
+     "terser": "~5.36.0"
    },
    "grunt-contrib-imagemin": {
      "css-select":"~5.1.0",
