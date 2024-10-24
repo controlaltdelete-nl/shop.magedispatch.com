@@ -40,7 +40,7 @@
   },
  "overrides": {
    "styledocco": {
-     "uglify-js": "~3.4.9",
+     "uglify-js": "~3.19.0",
      "marked": "~5.1.0",
      "clean-css": "~5.3.2"
    },
