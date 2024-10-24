@@ -76,7 +76,7 @@
      "nth-check": "~2.1.1"
    },
    "latest-version": {
-     "package-json": "~7.0.0"
+     "package-json": "~10.0.0"
    },
    "fast-glob": {
      "glob-parent": "~6.0.2"
