@@ -51,7 +51,7 @@
      "minimist":"~1.2.6"
    },
    "meow": {
-     "trim-newlines":"~3.0.1"
+     "trim-newlines":"~5.0.0"
    },
    "node-minify": {
      "terser": "~5.18.0"
