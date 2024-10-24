@@ -32,7 +32,7 @@
     "morgan": "~1.10.0",
     "node-minify": "~3.6.0",
     "path": "~0.12.7",
-    "serve-static": "~1.15.0",
+    "serve-static": "~1.16.0",
     "squirejs": "~0.2.1",
     "strip-comments": "~2.0.1",
     "time-grunt": "~2.0.0",
