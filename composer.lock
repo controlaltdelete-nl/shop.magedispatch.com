@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6706d7ca7e2b617ab3d73b387cd4e5b9",
+    "content-hash": "439df46c5607fb513802dd84274aaea1",
     "packages": [
         {
             "name": "2tvenom/cborencode",
@@ -18786,10 +18786,6 @@
                 }
             ],
             "description": "A polyfill for getallheaders.",
-            "support": {
-                "issues": "https://github.com/ralouphie/getallheaders/issues",
-                "source": "https://github.com/ralouphie/getallheaders/tree/develop"
-            },
             "time": "2019-03-08T08:55:37+00:00"
         },
         {

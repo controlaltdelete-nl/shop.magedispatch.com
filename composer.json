@@ -88,10 +88,6 @@
         "private-packagist": {
             "type": "composer",
             "url": "https://repo.packagist.com/controlaltdelete-nl/3dprintingtexel-nl/"
-        },
-        "0": {
-            "type": "composer",
-            "url": "https://repo.magento.com/"
         }
     },
     "extra": {
