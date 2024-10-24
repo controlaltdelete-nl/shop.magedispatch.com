@@ -26,6 +26,14 @@
   ],
   "packageRules": [
     {
+      "matchPackageNames": ["/magento/"],
+      "groupName": "magento"
+    },
+    {
+      "matchManagers": ["npm"],
+      "groupName": "npm"
+    },
+    {
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "automerge": true
     },
