@@ -35,8 +35,6 @@ add('writable_dirs', []);
 
 set('writable_mode', 'chmod');
 
-set('enable_zerodowntime', false);
-
 set('static_content_locales', 'en_US nl_NL');
 set('static_deploy_options', '--force --no-parent --no-js-bundle');
 set('static_content_jobs', '12');
