@@ -238,7 +238,6 @@ return [
         'Magento_CurrencySymbol' => 1,
         'Magento_Wishlist' => 1,
         'Magento_WishlistAnalytics' => 1,
-        'AvS_ScopeHint' => 1,
         'Mageplaza_Core' => 0,
         'Mollie_Payment' => 1,
         'TIG_PostNL' => 1
