@@ -43,4 +43,4 @@ jobs:
           aws-region: eu-central-1
 
       - name: Upload to S3
-        run: aws s3 cp ./stripped-dump.sql.gz s3://controlaltdelete-github-action/3dprintentexel.nl/
+        run: aws s3 cp ./stripped-dump.sql.gz s3://controlaltdelete-github-action/shop.magedispatch.com/

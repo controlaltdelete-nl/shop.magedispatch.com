@@ -115,7 +115,7 @@ jobs:
 
       - name: Download & import database dump
         run: |
-          aws s3 cp s3://controlaltdelete-github-action/3dprintentexel.nl/stripped-dump.sql.gz . --no-progress
+          aws s3 cp s3://controlaltdelete-github-action/shop.magedispatch.com/stripped-dump.sql.gz . --no-progress
           mv app/etc/env{.ddev,}.php
           ddev exec magerun2 db:import -c gz stripped-dump.sql.gz
 
@@ -134,7 +134,7 @@ jobs:
       - name: Run Playwright tests
         run: |
           cd tests/playwright
-          TEST_BASE_URL=https://3dprintentexel.nl npx playwright test
+          TEST_BASE_URL=https://shop.magedispatch.test npx playwright test
 
       - uses: actions/upload-artifact@v4
         if: always()

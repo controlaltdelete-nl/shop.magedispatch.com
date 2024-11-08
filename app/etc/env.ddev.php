@@ -151,10 +151,10 @@ return [
         'default' => [
             'web' => [
                 'unsecure' => [
-                    'base_url' => 'https://3dprintentexel.test/'
+                    'base_url' => 'https://shop.magedispatch.test/'
                 ],
                 'secure' => [
-                    'base_url' => 'https://3dprintentexel.test/'
+                    'base_url' => 'https://shop.magedispatch.test/'
                 ]
             ],
             'catalog' => [

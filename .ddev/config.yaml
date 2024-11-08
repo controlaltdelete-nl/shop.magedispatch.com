@@ -1,4 +1,4 @@
-name: 3dprintentexel
+name: shop.magedispatch
 type: magento2
 docroot: pub
 php_version: "8.2"

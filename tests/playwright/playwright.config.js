@@ -25,7 +25,7 @@ const { defineConfig, devices } = require('@playwright/test');
  */
 // require('dotenv').config({ path: path.resolve(__dirname, '.env') });
 
-let baseUrl = 'https://3dprintentexel.test';
+let baseUrl = 'https://shop.magedispatch.test';
 if (process.env.TEST_BASE_URL) {
     baseUrl = process.env.TEST_BASE_URL;
 }
