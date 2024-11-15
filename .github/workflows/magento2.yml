@@ -4,7 +4,7 @@ on: push
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     steps:
       - uses: actions/checkout@v4
@@ -51,7 +51,7 @@ jobs:
     needs:
       - build
 
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     steps:
       - uses: actions/checkout@v4
@@ -89,7 +89,7 @@ jobs:
     needs:
       - build
 
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     steps:
       - name: Download artifact
@@ -186,7 +186,7 @@ jobs:
       - test-phpstan
 
     concurrency: deploy-${{ github.head_ref || github.ref_name }}
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     steps:
       - uses: actions/checkout@v4
