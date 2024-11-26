@@ -11,6 +11,9 @@
       "password": "ea446886d10237ab752dcd29207d5e012efb150db86e3b2a71fb6d5bf7c6"
     }
   ],
+  "constraints": {
+    "php": "~8.3"
+  },
   "ignorePaths": [
     ".ddev/"
   ],
