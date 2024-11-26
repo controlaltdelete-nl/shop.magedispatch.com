@@ -12,7 +12,7 @@
     }
   ],
   "constraints": {
-    "php": "~8.3"
+    "php": "~8.3.0"
   },
   "ignorePaths": [
     ".ddev/"
