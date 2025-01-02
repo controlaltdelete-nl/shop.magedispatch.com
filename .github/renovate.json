@@ -29,7 +29,7 @@
   ],
   "packageRules": [
     {
-      "matchPackageNames": ["/magento/"],
+      "matchPackageNames": ["magento/**"],
       "groupName": "magento"
     },
     {
