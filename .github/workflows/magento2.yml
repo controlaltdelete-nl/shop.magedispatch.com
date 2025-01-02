@@ -22,9 +22,7 @@ jobs:
           key: vendor-${{ hashFiles('**/composer.lock') }}
 
       - name: Setup PHP
-        uses: shivammathur/setup-php@v2
-        with:
-          php-version: '8.3'
+        run: switch-php php8.3
 
       - name: Install Composer dependencies
         run: |
@@ -71,9 +69,7 @@ jobs:
           tar -xzf artifacts/artifact.tar.gz
 
       - name: Setup PHP
-        uses: shivammathur/setup-php@v2
-        with:
-          php-version: '8.3'
+        run: switch-php php8.3
 
       - name: Install Composer dependencies
         run: |
@@ -201,9 +197,7 @@ jobs:
           key: vendor-${{ hashFiles('**/composer.lock') }}
 
       - name: Setup PHP
-        uses: shivammathur/setup-php@v2
-        with:
-          php-version: '8.3'
+        run: switch-php php8.3
 
       - name: Download artifact
         uses: actions/download-artifact@v4
