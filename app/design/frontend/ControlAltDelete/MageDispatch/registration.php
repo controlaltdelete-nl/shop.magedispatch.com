@@ -6,4 +6,4 @@
 
 use \Magento\Framework\Component\ComponentRegistrar;
 
-ComponentRegistrar::register(ComponentRegistrar::THEME, 'frontend/ControlAltDelete/MageStore', __DIR__);
+ComponentRegistrar::register(ComponentRegistrar::THEME, 'frontend/ControlAltDelete/MageDispatch', __DIR__);

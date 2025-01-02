@@ -1,4 +1,4 @@
 <theme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Config/etc/theme.xsd">
-    <title>ControlAltDelete Lighting</title>
-    <parent>Magento/luma</parent>
+    <title>MageDispatch</title>
+    <parent>Hyva/default</parent>
 </theme>
