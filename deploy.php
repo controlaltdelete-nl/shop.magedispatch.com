@@ -23,7 +23,7 @@ require 'recipe/magento2.php';
 
 // Configuration
 
-set('repository', 'git@github.com:controlaltdelete-nl/3dprintentexel.nl.git');
+set('repository', 'git@github.com:controlaltdelete-nl/shop.magedispatch.com.git');
 set('keep_releases', 3);
 set('release_name', date('YmdHis')); // Use timestamp for release name
 
@@ -70,7 +70,7 @@ localhost()
 
 host('49.12.101.75')
     ->set('remote_user', 'forge')
-    ->set('deploy_path', '/home/forge/www.3dprintentexel.nl')
+    ->set('deploy_path', '/home/forge/shop.magedispatch.com')
     ->set('php_version', '8.3')
     ->setLabels([
         'stage' => 'production',
