@@ -72,11 +72,6 @@ jobs:
         with:
           php-version: '8.3'
 
-      - name: Install Composer dependencies
-        run: |
-          rm -rfv vendor/magento/magento2-base || echo "No Magento 2 Base to remove"
-          composer install --prefer-dist
-
       - name: Run PHP Parallel Lint
         run: php vendor/bin/parallel-lint app
 
