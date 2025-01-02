@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d55f08477e989a5022550459933b9d7e",
+    "content-hash": "e71fde69f77a9957b0965c8e6a12e2ee",
     "packages": [
         {
             "name": "2tvenom/cborencode",
@@ -8453,6 +8453,55 @@
             "description": "N/A"
         },
         {
+            "name": "magento/module-catalog-graph-ql",
+            "version": "100.4.7",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.magento.com/archives/magento/module-catalog-graph-ql/magento-module-catalog-graph-ql-100.4.7.0.zip",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "magento/framework": "103.0.*",
+                "magento/module-advanced-search": "100.4.*",
+                "magento/module-catalog": "104.0.*",
+                "magento/module-catalog-inventory": "100.4.*",
+                "magento/module-catalog-search": "102.0.*",
+                "magento/module-config": "101.2.*",
+                "magento/module-directory": "100.4.*",
+                "magento/module-eav": "102.1.*",
+                "magento/module-eav-graph-ql": "100.4.*",
+                "magento/module-graph-ql": "100.4.*",
+                "magento/module-graph-ql-resolver-cache": "100.4.*",
+                "magento/module-search": "101.1.*",
+                "magento/module-store": "101.1.*",
+                "php": "~8.1.0||~8.2.0||~8.3.0"
+            },
+            "suggest": {
+                "magento/module-graph-ql-cache": "100.4.*",
+                "magento/module-store-graph-ql": "100.4.*"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\CatalogGraphQl\\": ""
+                }
+            },
+            "notification-url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/downloads/",
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
+        },
+        {
             "name": "magento/module-catalog-import-export",
             "version": "101.1.7-p3",
             "dist": {
@@ -9445,6 +9494,51 @@
             "description": "N/A"
         },
         {
+            "name": "magento/module-customer-graph-ql",
+            "version": "100.4.7",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.magento.com/archives/magento/module-customer-graph-ql/magento-module-customer-graph-ql-100.4.7.0.zip",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "magento/framework": "103.0.*",
+                "magento/module-authorization": "100.4.*",
+                "magento/module-customer": "103.0.*",
+                "magento/module-directory": "100.4.*",
+                "magento/module-eav": "102.1.*",
+                "magento/module-eav-graph-ql": "100.4.*",
+                "magento/module-graph-ql": "100.4.*",
+                "magento/module-graph-ql-cache": "100.4.*",
+                "magento/module-graph-ql-resolver-cache": "100.4.*",
+                "magento/module-integration": "100.4.*",
+                "magento/module-newsletter": "100.4.*",
+                "magento/module-store": "101.1.*",
+                "magento/module-tax": "100.4.*",
+                "php": "~8.1.0||~8.2.0||~8.3.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\CustomerGraphQl\\": ""
+                }
+            },
+            "notification-url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/downloads/",
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
+        },
+        {
             "name": "magento/module-customer-import-export",
             "version": "100.4.7",
             "dist": {
@@ -9795,6 +9889,43 @@
                 ],
                 "psr-4": {
                     "Magento\\Eav\\": ""
+                }
+            },
+            "notification-url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/downloads/",
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
+        },
+        {
+            "name": "magento/module-eav-graph-ql",
+            "version": "100.4.4",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.magento.com/archives/magento/module-eav-graph-ql/magento-module-eav-graph-ql-100.4.4.0.zip",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "magento/framework": "103.0.*",
+                "magento/module-eav": "102.1.*",
+                "php": "~8.1.0||~8.2.0||~8.3.0"
+            },
+            "suggest": {
+                "magento/module-graph-ql": "100.4.*"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\EavGraphQl\\": ""
                 }
             },
             "notification-url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/downloads/",
@@ -10241,6 +10372,77 @@
                 ],
                 "psr-4": {
                     "Magento\\GraphQl\\": ""
+                }
+            },
+            "notification-url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/downloads/",
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
+        },
+        {
+            "name": "magento/module-graph-ql-cache",
+            "version": "100.4.4",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.magento.com/archives/magento/module-graph-ql-cache/magento-module-graph-ql-cache-100.4.4.0.zip",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "magento/framework": "103.0.*",
+                "magento/module-authorization": "100.4.*",
+                "magento/module-graph-ql": "100.4.*",
+                "magento/module-integration": "100.4.*",
+                "magento/module-page-cache": "100.4.*",
+                "php": "~8.1.0||~8.2.0||~8.3.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\GraphQlCache\\": ""
+                }
+            },
+            "notification-url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/downloads/",
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
+        },
+        {
+            "name": "magento/module-graph-ql-resolver-cache",
+            "version": "100.4.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.magento.com/archives/magento/module-graph-ql-resolver-cache/magento-module-graph-ql-resolver-cache-100.4.0.0.zip",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "magento/framework": "103.0.*",
+                "magento/module-graph-ql": "100.4.*",
+                "php": "~8.1.0||~8.2.0||~8.3.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\GraphQlResolverCache\\": ""
                 }
             },
             "notification-url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/downloads/",
@@ -13365,6 +13567,57 @@
             "description": "Magento module provides data provider for creating buy request for links of downloadable products"
         },
         {
+            "name": "magento/module-quote-graph-ql",
+            "version": "100.4.7",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.magento.com/archives/magento/module-quote-graph-ql/magento-module-quote-graph-ql-100.4.7.0.zip",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "magento/framework": "103.0.*",
+                "magento/module-catalog": "104.0.*",
+                "magento/module-catalog-inventory": "100.4.*",
+                "magento/module-checkout": "100.4.*",
+                "magento/module-customer": "103.0.*",
+                "magento/module-customer-graph-ql": "100.4.*",
+                "magento/module-directory": "100.4.*",
+                "magento/module-eav-graph-ql": "100.4.*",
+                "magento/module-gift-message": "100.4.*",
+                "magento/module-graph-ql": "100.4.*",
+                "magento/module-quote": "101.2.*",
+                "magento/module-sales": "103.0.*",
+                "magento/module-sales-graph-ql": "100.4.*",
+                "magento/module-store": "101.1.*",
+                "php": "~8.1.0||~8.2.0||~8.3.0"
+            },
+            "suggest": {
+                "magento/module-catalog-inventory-graph-ql": "100.4.*",
+                "magento/module-graph-ql-cache": "100.4.*",
+                "magento/module-payment-graph-ql": "100.4.*"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\QuoteGraphQl\\": ""
+                }
+            },
+            "notification-url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/downloads/",
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
+        },
+        {
             "name": "magento/module-re-captcha-admin-ui",
             "version": "1.1.4",
             "dist": {
@@ -14688,6 +14941,47 @@
                 "AFL-3.0"
             ],
             "description": "Sales data exporter"
+        },
+        {
+            "name": "magento/module-sales-graph-ql",
+            "version": "100.4.7",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.magento.com/archives/magento/module-sales-graph-ql/magento-module-sales-graph-ql-100.4.7.0.zip",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "magento/framework": "103.0.*",
+                "magento/module-catalog": "104.0.*",
+                "magento/module-catalog-graph-ql": "100.4.*",
+                "magento/module-graph-ql": "100.4.*",
+                "magento/module-quote": "101.2.*",
+                "magento/module-sales": "103.0.*",
+                "magento/module-shipping": "100.4.*",
+                "magento/module-store": "101.1.*",
+                "magento/module-tax": "100.4.*",
+                "php": "~8.1.0||~8.2.0||~8.3.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\SalesGraphQl\\": ""
+                }
+            },
+            "notification-url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/downloads/",
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
         },
         {
             "name": "magento/module-sales-inventory",
@@ -29260,7 +29554,7 @@
     },
     "prefer-stable": true,
     "prefer-lowest": false,
-    "platform": {},
-    "platform-dev": {},
-    "plugin-api-version": "2.6.0"
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.2.0"
 }
