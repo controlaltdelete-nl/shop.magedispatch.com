@@ -24822,16 +24822,16 @@
         },
         {
             "name": "mage2tv/magento-cache-clean",
-            "version": "1.0.53",
+            "version": "1.0.54",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mage2tv/magento-cache-clean.git",
-                "reference": "20c729577afdb2c2c39f7c5b332386c55349dfdb"
+                "reference": "5ccca09ad5735001fc206d7478f7a7459b9f1796"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mage2tv/magento-cache-clean/zipball/20c729577afdb2c2c39f7c5b332386c55349dfdb",
-                "reference": "20c729577afdb2c2c39f7c5b332386c55349dfdb",
+                "url": "https://api.github.com/repos/mage2tv/magento-cache-clean/zipball/5ccca09ad5735001fc206d7478f7a7459b9f1796",
+                "reference": "5ccca09ad5735001fc206d7478f7a7459b9f1796",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -24867,7 +24867,7 @@
             ],
             "support": {
                 "issues": "https://github.com/mage2tv/magento-cache-clean/issues",
-                "source": "https://github.com/mage2tv/magento-cache-clean/tree/1.0.53"
+                "source": "https://github.com/mage2tv/magento-cache-clean/tree/1.0.54"
             },
             "funding": [
                 {
@@ -24875,7 +24875,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-05-13T08:17:03+00:00"
+            "time": "2024-12-06T12:51:26+00:00"
         },
         {
             "name": "magento/magento-coding-standard",
@@ -28671,7 +28671,7 @@
     },
     "prefer-stable": true,
     "prefer-lowest": false,
-    "platform": [],
-    "platform-dev": [],
-    "plugin-api-version": "2.2.0"
+    "platform": {},
+    "platform-dev": {},
+    "plugin-api-version": "2.6.0"
 }
