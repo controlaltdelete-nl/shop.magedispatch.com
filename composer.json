@@ -87,7 +87,7 @@
         "packagist.org": false,
         "private-packagist": {
             "type": "composer",
-            "url": "https://repo.packagist.com/controlaltdelete-nl/3dprintingtexel-nl/"
+            "url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/"
         }
     },
     "extra": {
