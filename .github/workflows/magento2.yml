@@ -57,20 +57,15 @@ jobs:
     runs-on: self-hosted
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Download artifact
+        uses: actions/download-artifact@v4
         with:
-          ref: ${{ github.event.workflow_run.head_branch }}
-      - run: git branch
-      - run: env
+          name: build-artifact
+          path: artifacts
 
-      - name: Cache vendor
-        uses: actions/cache@v4
-        with:
-          path: |
-            vendor
-            !vendor/magento/magento2-base
-            ~/.composer/cache
-          key: vendor-${{ hashFiles('**/composer.lock') }}
+      - name: Unpack artifact
+        run: |
+          tar -xzf artifacts/artifact.tar.gz
 
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
@@ -111,7 +106,6 @@ jobs:
       - name: Unpack artifact
         run: |
           tar -xzf artifacts/artifact.tar.gz
-          ls -al
 
       - name: Setup DDEV
         uses: ddev/github-action-setup-ddev@v1
