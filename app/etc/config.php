@@ -310,15 +310,6 @@ return [
         ]
     ],
     'themes' => [
-        'frontend/Magento/blank' => [
-            'parent_id' => null,
-            'theme_path' => 'Magento/blank',
-            'theme_title' => 'Magento Blank',
-            'is_featured' => '0',
-            'area' => 'frontend',
-            'type' => '0',
-            'code' => 'Magento/blank'
-        ],
         'adminhtml/Magento/backend' => [
             'parent_id' => null,
             'theme_path' => 'Magento/backend',
@@ -328,32 +319,14 @@ return [
             'type' => '0',
             'code' => 'Magento/backend'
         ],
-        'frontend/Magento/luma' => [
-            'parent_id' => 'Magento/blank',
-            'theme_path' => 'Magento/luma',
-            'theme_title' => 'Magento Luma',
+        'frontend/ControlAltDelete/MageDispatch' => [
+            'parent_id' => 'Hyva/default',
+            'theme_path' => 'ControlAltDelete/MageDispatch',
+            'theme_title' => 'ControlAltDelete MageDispatch',
             'is_featured' => '0',
             'area' => 'frontend',
             'type' => '0',
-            'code' => 'Magento/luma'
-        ],
-        'frontend/ControlAltDelete/Lighting' => [
-            'parent_id' => 'Magento/luma',
-            'theme_path' => 'ControlAltDelete/Lighting',
-            'theme_title' => 'ControlAltDelete Lighting',
-            'is_featured' => '0',
-            'area' => 'frontend',
-            'type' => '0',
-            'code' => 'ControlAltDelete/Lighting'
-        ],
-        'frontend/ControlAltDelete/MageStore' => [
-            'parent_id' => 'Magento/MageStore',
-            'theme_path' => 'ControlAltDelete/MageStore',
-            'theme_title' => 'ControlAltDelete MageStore',
-            'is_featured' => '0',
-            'area' => 'frontend',
-            'type' => '0',
-            'code' => 'ControlAltDelete/MageStore'
+            'code' => 'ControlAltDelete/MageDispatch'
         ]
     ]
 ];
