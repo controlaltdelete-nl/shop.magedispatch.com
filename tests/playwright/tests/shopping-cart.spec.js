@@ -34,7 +34,7 @@ test('Can remove product from cart', async ({ page }) => {
 
     await expect(page.getByText(productTitle)).not.toBeVisible();
 
-    await expect(page.getByText('U heeft geen product(en) in uw winkelwagen.')).toBeVisible();
+    await expect(page.getByText('You have no items in your shopping cart.')).toBeVisible();
 });
 
 test.skip('Can change the quantity in the cart', async ({ page }) => {
@@ -51,7 +51,7 @@ test.skip('Can change the quantity in the cart', async ({ page }) => {
 
     await page.locator('input.qty').fill('2');
 
-    await page.getByRole('button', { name: 'Update Winkelwagen' }).click();
+    await page.getByRole('button', { name: 'Update Shopping Cart' }).click();
 
     await expect(await page.locator('.loader')).not.toBeVisible();
 
