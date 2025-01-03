@@ -1,4 +1,4 @@
-name: Create backup
+name: Create production backup
 
 on:
   workflow_dispatch:
@@ -6,8 +6,12 @@ on:
       - cron: '33 9 * * *'
 
 jobs:
-  create-backup:
+  create-production-backup:
     runs-on: self-hosted
+
+    env:
+      COMPOSER_AUTH: ${{ secrets.COMPOSER_AUTH }}
+
     steps:
       - uses: actions/checkout@v4
 

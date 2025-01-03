@@ -8,6 +8,10 @@ on:
 jobs:
   create-development-dump:
     runs-on: self-hosted
+
+    env:
+      COMPOSER_AUTH: ${{ secrets.COMPOSER_AUTH }}
+
     steps:
       - uses: actions/checkout@v4
 
