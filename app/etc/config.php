@@ -326,6 +326,24 @@ return [
             'type' => '0',
             'code' => 'Magento/backend'
         ],
+        'frontend/Hyva/reset' => [
+            'parent_id' => null,
+            'theme_path' => 'Hyva/reset',
+            'theme_title' => 'Hyvä Default',
+            'is_featured' => '0',
+            'area' => 'frontend',
+            'type' => '0',
+            'code' => 'Hyva/reset'
+        ],
+        'frontend/Hyva/default' => [
+            'parent_id' => 'Hyva/reset',
+            'theme_path' => 'Hyva/default',
+            'theme_title' => 'Hyvä Default',
+            'is_featured' => '0',
+            'area' => 'frontend',
+            'type' => '0',
+            'code' => 'Hyva/default'
+        ],
         'frontend/ControlAltDelete/MageDispatch' => [
             'parent_id' => 'Hyva/default',
             'theme_path' => 'ControlAltDelete/MageDispatch',
