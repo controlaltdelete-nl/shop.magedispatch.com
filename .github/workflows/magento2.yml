@@ -121,6 +121,9 @@ jobs:
           ddev exec bin/magento setup:upgrade --keep-generated --no-interaction
           ddev exec bin/magento indexer:reindex
 
+      - name: Check if we can reach Magento
+        run: curl --fail-with-body -v https://shop.magedispatch.test
+
       - name: Install Playwright dependencies
         run: |
           cd tests/playwright
