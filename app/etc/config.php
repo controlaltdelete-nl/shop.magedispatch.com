@@ -245,7 +245,6 @@ return [
         'Magento_CurrencySymbol' => 1,
         'Magento_Wishlist' => 1,
         'Magento_WishlistAnalytics' => 1,
-        'AvS_ScopeHint' => 1,
         'Hyva_Theme' => 1,
         'Hyva_CompatModuleFallback' => 1,
         'Hyva_Email' => 1,
@@ -312,7 +311,7 @@ return [
                 'group_id' => '1',
                 'name' => 'Default Store View',
                 'sort_order' => '0',
-                'is_active' => '1',
+                'is_active' => '1'
             ]
         ]
     ],
@@ -354,13 +353,12 @@ return [
             'code' => 'ControlAltDelete/MageDispatch'
         ]
     ],
-
     'system' => [
         'default' => [
             'hyva_themes_checkout' => [
                 'general' => [
-                    'checkout' => 'onepage',
-                ],
+                    'checkout' => 'onepage'
+                ]
             ],
             'design' => [
                 'footer' => [
@@ -368,10 +366,9 @@ return [
                     'absolute_footer' => ''
                 ],
                 'theme' => [
-                    'theme_id' => 'frontend/ControlAltDelete/MageDispatch',
+                    'theme_id' => 'frontend/ControlAltDelete/MageDispatch'
                 ]
-            ],
-        ],
-    ],
-
+            ]
+        ]
+    ]
 ];
