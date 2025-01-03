@@ -353,5 +353,15 @@ return [
             'type' => '0',
             'code' => 'ControlAltDelete/MageDispatch'
         ]
-    ]
+    ],
+
+    'system' => [
+        'default' => [
+            'hyva_themes_checkout' => [
+                'general' => [
+                    'checkout' => 'onepage',
+                ],
+            ],
+        ],
+    ],
 ];

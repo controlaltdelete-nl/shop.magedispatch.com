@@ -29,6 +29,6 @@ export default class Checkout {
 
         await this.page.goto('/checkout/');
 
-        await expect(await this.page.getByText('Verzendmethodes')).toBeVisible({ timeout: 30000 });
+        await expect(await this.page.getByText('Shipping Methods')).toBeVisible();
     }
 }

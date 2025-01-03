@@ -22,20 +22,19 @@ import Checkout from "./Actions/Checkout";
 test('Can enter shipping address on Checkout', async ({ page }) => {
     await new Checkout(page).visit();
 
-    const shipping = page.locator('#checkout-step-shipping');
-    await shipping.getByLabel('E-mail adres').fill('user@example.com');
-    await shipping.getByLabel('Voornaam').fill('John');
-    await shipping.getByLabel('Achternaam').fill('Doe');
-    await shipping.getByLabel('Adres: Line 1').fill('Paulus Emtinckweg 18');
-    await page.getByRole('textbox', { name: 'Postcode*' }).fill('1111bv');
-    await shipping.getByLabel('Plaatsnaam').fill('Diemen');
-    await shipping.getByLabel('Telefoonnummer').fill('111111111111');
+    await page.locator('#guest_details').getByLabel('Email address').fill('user@example.com');
 
-    await page.locator('.table-checkout-shipping-method tbody tr').first().click();
+    const shipping = page.locator('#shipping-details');
+    await shipping.getByLabel('First Name').fill('John');
+    await shipping.getByLabel('Last Name').fill('Doe');
+    await shipping.getByLabel('Street Address').fill('Kikkertstraat');
+    await shipping.getByLabel('Zip/Postal Code').fill('1795AD');
+    await shipping.getByLabel('City').fill('De Cocksdorp');
+    await shipping.getByLabel('Phone Number').fill('111111111111');
 
-    await page.locator('.primary').getByText('Volgende').click();
+    await page.locator('[name="shipping-method-option"]').first().click();
 
-    await page.locator('[name="payment[method]"]').first().click();
+    await page.locator('[name="payment-method-option"]').first().click();
 
     await expect(page.getByText('Place Order').first()).toBeVisible();
 });
