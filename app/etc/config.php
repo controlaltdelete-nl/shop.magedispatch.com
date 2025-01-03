@@ -312,7 +312,7 @@ return [
                 'group_id' => '1',
                 'name' => 'Default Store View',
                 'sort_order' => '0',
-                'is_active' => '1'
+                'is_active' => '1',
             ]
         ]
     ],
@@ -362,6 +362,16 @@ return [
                     'checkout' => 'onepage',
                 ],
             ],
+            'design' => [
+                'footer' => [
+                    'report_bugs' => '0',
+                    'absolute_footer' => ''
+                ],
+                'theme' => [
+                    'theme_id' => 'frontend/ControlAltDelete/MageDispatch',
+                ]
+            ],
         ],
     ],
+
 ];
