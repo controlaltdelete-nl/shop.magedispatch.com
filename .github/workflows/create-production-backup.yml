@@ -1,12 +1,12 @@
-name: Create development dump
+name: Create backup
 
 on:
   workflow_dispatch:
   schedule:
-      - cron: '33 9 * * 1'
+      - cron: '33 9 * * *'
 
 jobs:
-  create-development-dump:
+  create-backup:
     runs-on: self-hosted
     steps:
       - uses: actions/checkout@v4
@@ -30,7 +30,7 @@ jobs:
       - name: Dump database
         uses: deployphp/action@v1
         with:
-          dep: database:development:copy stage=production
+          dep: database:production:copy stage=production
           private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
       - name: Set up AWS credentials
@@ -41,4 +41,5 @@ jobs:
           aws-region: eu-central-1
 
       - name: Upload to S3
-        run: aws s3 cp ./stripped-dump.sql.gz s3://controlaltdelete-github-action/shop.magedispatch.com/
+        run: aws s3 cp ./shop.magedispatch.com-backup.sql.gz s3://shop.magedispatch.com/
+

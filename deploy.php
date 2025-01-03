@@ -89,12 +89,12 @@ after('deploy:failed', 'deploy:unlock');
 # Clear Deployer default command.
 task('cachetool:clear:opcache', function () {});
 
-task('copy:database:dump', [
-    'database:dump',
-    'download:database:dump',
+task('database:development:copy', [
+    'database:development:dump',
+    'database:development:download',
 ]);
 
-task('database:dump', function () {
+task('database:development:dump', function () {
     run('rm -f ~/stripped-dump.sql || true');
     run('rm -f ~/stripped-dump.sql.gz || true');
 
@@ -102,9 +102,27 @@ task('database:dump', function () {
     run('gzip ~/stripped-dump.sql');
 });
 
-task('download:database:dump', function () {
+task('database:development:download', function () {
     download('~/stripped-dump.sql.gz', 'stripped-dump.sql.gz');
     run('rm ~/stripped-dump.sql.gz');
+});
+
+task('database:production:copy', [
+    'database:production:backup',
+    'download:database:production:backup',
+]);
+
+task('database:production:backup', function () {
+    run('rm -f ~/shop.magedispatch.com-backup.sql || true');
+    run('rm -f ~/shop.magedispatch.com-backup.sql.gz || true');
+
+    run('cd {{current_path}} && magerun2 db:dump ~/shop.magedispatch.com-backup.sql');
+    run('gzip ~/shop.magedispatch.com-backup.sql');
+});
+
+task('download:database:production:backup', function () {
+    download('~/shop.magedispatch.com-backup.sql.gz', 'shop.magedispatch.com-backup.sql.gz');
+    run('rm ~/shop.magedispatch.com-backup.sql.gz');
 });
 
 task('php-fpm:restart', function () {
