@@ -59,7 +59,7 @@
         "lusitanian/oauth": "^0.8",
         "mage2tv/magento-cache-clean": "^1.0",
         "magento/magento-coding-standard": "*",
-        "magento/magento2-functional-testing-framework": "^4.7",
+        "magento/magento2-functional-testing-framework": "^5.0",
         "pdepend/pdepend": "^2.10",
         "phpmd/phpmd": "^2.12",
         "phpstan/phpstan": "^1.9",
