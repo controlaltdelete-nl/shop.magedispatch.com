@@ -1,0 +1,81 @@
+name: "Create patch helper files"
+
+on:
+  workflow_dispatch:
+    inputs:
+      defaultBranch:
+        description: 'Select the branch that is used as a base'
+        required: true
+        default: 'main'
+      phpVersion:
+        description: 'Select the PHP version to use'
+        required: true
+        default: '8.3'
+
+jobs:
+  create-patch-helper-files:
+    runs-on: self-hosted
+
+    env:
+      COMPOSER_AUTH: ${{ secrets.COMPOSER_AUTH }}
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_branch }}
+          path: 'new-version'
+
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.inputs.defaultBranch }}
+          path: 'old-version'
+
+      - uses: actions/checkout@v4
+        with:
+          repository: 'AmpersandHQ/ampersand-magento2-upgrade-patch-helper'
+          path: 'ampersand-patch-helper'
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ github.event.inputs.phpVersion }}'
+
+      - name: Install Composer dependencies for old version
+        run: |
+          composer install --prefer-dist --working-dir=old-version
+
+      - name: Install Composer dependencies for new version
+        run: |
+          composer install --prefer-dist --working-dir=new-version
+
+      - name: Install Composer dependencies for patch helper
+        run: |
+          composer install --prefer-dist --working-dir=ampersand-patch-helper
+
+      - name: Create vendor.patch
+        continue-on-error: true
+        run: |
+          mv old-version/vendor new-version/vendor_orig
+          cd new-version
+          diff -urN vendor_orig vendor > vendor.patch
+
+      - name: Create patch helper files
+        run: |
+          php ampersand-patch-helper/bin/patch-helper.php analyse new-version | tee vendor_files_to_check.patch
+
+      - name: Create classmap
+        run: |
+          cd new-version
+          composer dump --classmap-authoritative
+          php -r "\$classmap=require_once('vendor/composer/autoload_classmap.php'); echo json_encode(\$classmap);" > classmap.json
+
+      - name: Archive files
+        uses: actions/upload-artifact@v4
+        with:
+          name: patch-helper-files
+          path: |
+              vendor_files_to_check.patch
+              new-verion/vendor
+              new-verion/vendor_orig
+              new-version/vendor.patch
+              new-version/classmap.json

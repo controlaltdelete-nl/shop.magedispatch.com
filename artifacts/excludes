@@ -1,0 +1,7 @@
+.git
+artifacts/*
+dev
+patches
+phpserver
+
+auth.json
