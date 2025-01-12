@@ -1,0 +1,48 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended"
+  ],
+  "hostRules": [
+    {
+      "hostType": "packagist",
+      "hostName": "repo.packagist.com",
+      "username": "GitHub michielgerritsen",
+      "password": "ea446886d10237ab752dcd29207d5e012efb150db86e3b2a71fb6d5bf7c6"
+    }
+  ],
+  "constraints": {
+    "php": "~8.3.0"
+  },
+  "ignorePaths": [
+    ".ddev/"
+  ],
+  "labels": ["dependencies"],
+  "prHourlyLimit": 999,
+  "prConcurrentLimit": 99,
+  "timezone": "Europe/Amsterdam",
+  "schedule": [
+    "on Monday through Thursday after 1:00am before 7:00am"
+  ],
+  "automergeSchedule": [
+    "on Monday through Thursday after 1:00am before 7:00am"
+  ],
+  "packageRules": [
+    {
+      "matchPackageNames": ["magento/**"],
+      "groupName": "magento"
+    },
+    {
+      "matchManagers": ["npm"],
+      "groupName": "npm"
+    },
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true
+    },
+    {
+      "packageNames": ["magento/product-community-edition"],
+      "automerge": false
+    }
+  ]
+}
