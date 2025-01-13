@@ -46,7 +46,7 @@ export default class ProductFind {
 
         await this.page.waitForTimeout(1000);
 
-        await this.page.locator('#options_1_2').click();
+        await this.page.locator('.options-list input').first().check();
 
         await this.page.locator('#product-addtocart-button').click();
 
