@@ -94,6 +94,17 @@ task('database:development:download', function () {
     run('rm ~/stripped-dump.sql.gz');
 });
 
+task('database:development:import', function () {
+    runLocally('ddev exec magerun2 db:import -c gz stripped-dump.sql.gz');
+    runLocally('ddev exec bin/magento setup:upgrade --keep-generated --no-interaction');
+});
+
+task('database:development:import-to-local', [
+    'database:development:dump',
+    'database:development:download',
+    'database:development:import',
+]);
+
 task('database:production:copy', [
     'database:production:backup',
     'download:database:production:backup',
