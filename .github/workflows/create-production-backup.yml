@@ -11,6 +11,7 @@ jobs:
 
     env:
       COMPOSER_AUTH: ${{ secrets.COMPOSER_AUTH }}
+      DEPLOYER_HOSTS: ${{ secrets.DEPLOYER_HOSTS }}
 
     steps:
       - uses: actions/checkout@v4
@@ -30,6 +31,9 @@ jobs:
         run: |
           rm -rfv vendor/magento/magento2-base || echo "No Magento 2 Base to remove"
           composer install --no-interaction --no-progress --no-suggest --prefer-dist
+
+      - name: Create hosts.yaml from secret
+        run: echo "$DEPLOYER_HOSTS" > hosts.yaml
 
       - name: Dump database
         uses: deployphp/action@v1

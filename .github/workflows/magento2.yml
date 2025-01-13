@@ -8,6 +8,7 @@ jobs:
 
     env:
       COMPOSER_AUTH: ${{ secrets.COMPOSER_AUTH }}
+      DEPLOYER_HOSTS: ${{ secrets.DEPLOYER_HOSTS }}
 
     steps:
       - uses: actions/checkout@v4
@@ -29,8 +30,14 @@ jobs:
           rm -rfv vendor/magento/magento2-base || echo "No Magento 2 Base to remove"
           composer install --no-dev --prefer-dist --optimize-autoloader
 
+      - name: Create hosts.yaml from secret
+        run: echo "$DEPLOYER_HOSTS" > hosts.yaml
+
       - name: Build artifact
         run: vendor/bin/dep artifact:build localhost
+
+      - name: Delete hosts.yaml
+        run: rm hosts.yaml
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
@@ -207,6 +214,9 @@ jobs:
         with:
           name: build-artifact
           path: artifacts
+
+      - name: Create hosts.yaml from secret
+        run: echo "$DEPLOYER_HOSTS" > hosts.yaml
 
       - name: Deploy artifact
         uses: deployphp/action@v1
