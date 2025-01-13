@@ -194,6 +194,9 @@ jobs:
     concurrency: deploy-${{ github.head_ref || github.ref_name }}
     runs-on: self-hosted
 
+    env:
+      DEPLOYER_HOSTS: ${{ secrets.DEPLOYER_HOSTS }}
+
     steps:
       - uses: actions/checkout@v4
 
