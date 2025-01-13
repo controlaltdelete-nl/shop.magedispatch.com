@@ -30,14 +30,14 @@ jobs:
           rm -rfv vendor/magento/magento2-base || echo "No Magento 2 Base to remove"
           composer install --no-dev --prefer-dist --optimize-autoloader
 
-      - name: Create hosts.yaml from secret
-        run: echo "$DEPLOYER_HOSTS" > hosts.yaml
+      - name: Create hosts.yml from secret
+        run: echo "$DEPLOYER_HOSTS" > hosts.yml
 
       - name: Build artifact
         run: vendor/bin/dep artifact:build localhost
 
-      - name: Delete hosts.yaml
-        run: rm hosts.yaml
+      - name: Delete hosts.yml
+        run: rm hosts.yml
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
@@ -215,8 +215,8 @@ jobs:
           name: build-artifact
           path: artifacts
 
-      - name: Create hosts.yaml from secret
-        run: echo "$DEPLOYER_HOSTS" > hosts.yaml
+      - name: Create hosts.yml from secret
+        run: echo "$DEPLOYER_HOSTS" > hosts.yml
 
       - name: Deploy artifact
         uses: deployphp/action@v1

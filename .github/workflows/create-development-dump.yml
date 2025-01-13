@@ -32,8 +32,8 @@ jobs:
           rm -rfv vendor/magento/magento2-base || echo "No Magento 2 Base to remove"
           composer install --no-interaction --no-progress --no-suggest --prefer-dist
 
-      - name: Create hosts.yaml from secret
-        run: echo "$DEPLOYER_HOSTS" > hosts.yaml
+      - name: Create hosts.yml from secret
+        run: echo "$DEPLOYER_HOSTS" > hosts.yml
 
       - name: Dump database
         uses: deployphp/action@v1
