@@ -136,3 +136,19 @@ task('hyva:deploy', function () {
 });
 
 before('magento:deploy:assets', 'hyva:deploy');
+
+task('local:media:sync', function () {
+    // Define paths
+    $remoteMediaPath = '{{deploy_path}}/shared/pub/media/';
+    $localMediaPath = __DIR__ . '/pub/media/';
+
+    // Define rsync command
+    $rsyncCommand = sprintf(
+        'rsync -avz --progress {{remote_user}}@{{hostname}}:%s %s',
+        $remoteMediaPath,
+        $localMediaPath
+    );
+
+    // Run the rsync command locally
+    runLocally($rsyncCommand);
+})->desc('Sync media files from the remote server to the local machine');
