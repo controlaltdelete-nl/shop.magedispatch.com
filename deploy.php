@@ -97,6 +97,7 @@ task('database:development:download', function () {
 task('database:development:import', function () {
     runLocally('ddev exec magerun2 db:import -c gz stripped-dump.sql.gz');
     runLocally('ddev exec bin/magento setup:upgrade --keep-generated --no-interaction');
+    runLocally('ddev exec magerun2 admin:user:create --admin-user=michiel --admin-password=asdfasdf1 --admin-email=michiel@example.com --admin-firstname=Michiel --admin-lastname=Gerritsen --no-interaction');
 });
 
 task('database:development:import-to-local', [
