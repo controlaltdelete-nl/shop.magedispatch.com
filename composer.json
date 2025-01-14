@@ -20,6 +20,7 @@
     },
     "version": "2.4.7-p3",
     "require": {
+        "controlaltdelete/magento2-fathom-analytics": "^1.0",
         "deployer/deployer": "^7.4",
         "hyva-themes/magento2-compat-module-fallback": "^1.1",
         "hyva-themes/magento2-default-theme": "^1.3",

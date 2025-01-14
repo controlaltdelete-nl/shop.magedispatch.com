@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e71fde69f77a9957b0965c8e6a12e2ee",
+    "content-hash": "13755806e8d99d64ede7414917f8871f",
     "packages": [
         {
             "name": "2tvenom/cborencode",
@@ -1447,6 +1447,52 @@
                 }
             ],
             "time": "2024-05-06T16:37:16+00:00"
+        },
+        {
+            "name": "controlaltdelete/magento2-fathom-analytics",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/controlaltdelete-nl/magento2-fathom-analytics.git",
+                "reference": "12c4ee7646ebfbc9a170fd37432100b9383dc4dc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/controlaltdelete-nl/magento2-fathom-analytics/zipball/12c4ee7646ebfbc9a170fd37432100b9383dc4dc",
+                "reference": "12c4ee7646ebfbc9a170fd37432100b9383dc4dc",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": ">=8.1"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "src/registration.php"
+                ],
+                "psr-4": {
+                    "ControlAltDelete\\FathomAnalytics\\": "src/"
+                }
+            },
+            "notification-url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/downloads/",
+            "authors": [
+                {
+                    "name": "Michiel Gerritsen",
+                    "email": "info@controlaltdelete.nl"
+                }
+            ],
+            "description": "Fathom Analytics integration for Magento 2",
+            "support": {
+                "issues": "https://github.com/controlaltdelete-nl/magento2-fathom-analytics/issues",
+                "source": "https://github.com/controlaltdelete-nl/magento2-fathom-analytics/tree/v1.0.0"
+            },
+            "time": "2025-01-13T20:41:48+00:00"
         },
         {
             "name": "dasprid/enum",
@@ -29548,7 +29594,7 @@
     },
     "prefer-stable": true,
     "prefer-lowest": false,
-    "platform": {},
-    "platform-dev": {},
-    "plugin-api-version": "2.6.0"
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.2.0"
 }
