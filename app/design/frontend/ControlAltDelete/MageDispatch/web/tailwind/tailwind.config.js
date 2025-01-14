@@ -1,3 +1,21 @@
+/*
+ *     ______            __             __
+ *    / ____/___  ____  / /__________  / /
+ *   / /   / __ \/ __ \/ __/ ___/ __ \/ /
+ *  / /___/ /_/ / / / / /_/ /  / /_/ / /
+ *  \______________/_/\__/_/   \____/_/
+ *     /   |  / / /_
+ *    / /| | / / __/
+ *   / ___ |/ / /_
+ *  /_/ _|||_/\__/ __     __
+ *     / __ \___  / /__  / /____
+ *    / / / / _ \/ / _ \/ __/ _ \
+ *   / /_/ /  __/ /  __/ /_/  __/
+ *  /_____/\___/_/\___/\__/\___/
+ *
+ * Copyright www.controlaltdelete.dev
+ */
+
 const {
   spacing
 } = require('tailwindcss/defaultTheme');
@@ -27,7 +45,7 @@ module.exports = hyvaModules.mergeTailwindConfig({
       colors: {
         primary: {
           lighter: colors.blue['300'],
-          "DEFAULT": colors.blue['800'],
+          "DEFAULT": '#51829B',
           darker: colors.blue['900']
         },
         secondary: {
@@ -37,7 +55,7 @@ module.exports = hyvaModules.mergeTailwindConfig({
         },
         background: {
           lighter: colors.blue['100'],
-          "DEFAULT": colors.blue['200'],
+          "DEFAULT": '#51829B',
           darker: colors.blue['300']
         },
         green: colors.emerald,
@@ -62,9 +80,9 @@ module.exports = hyvaModules.mergeTailwindConfig({
       },
       backgroundColor: {
         primary: {
-          lighter: colors.blue['600'],
-          "DEFAULT": colors.blue['700'],
-          darker: colors.blue['800']
+          lighter: '#8eb2c4',
+          "DEFAULT": '#51829B',
+          darker: '#2e4a58'
         },
         secondary: {
           lighter: colors.blue['100'],
@@ -79,9 +97,9 @@ module.exports = hyvaModules.mergeTailwindConfig({
       },
       borderColor: {
         primary: {
-          lighter: colors.blue['600'],
-          "DEFAULT": colors.blue['700'],
-          darker: colors.blue['800']
+            lighter: '#8eb2c4',
+            "DEFAULT": '#51829B',
+            darker: '#2e4a58'
         },
         secondary: {
           lighter: colors.blue['100'],
