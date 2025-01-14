@@ -1450,16 +1450,16 @@
         },
         {
             "name": "controlaltdelete/magento2-fathom-analytics",
-            "version": "v1.0.0",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/controlaltdelete-nl/magento2-fathom-analytics.git",
-                "reference": "12c4ee7646ebfbc9a170fd37432100b9383dc4dc"
+                "reference": "0c6c7ce714a954a2d2beeba060cf282c4f79bedf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/controlaltdelete-nl/magento2-fathom-analytics/zipball/12c4ee7646ebfbc9a170fd37432100b9383dc4dc",
-                "reference": "12c4ee7646ebfbc9a170fd37432100b9383dc4dc",
+                "url": "https://api.github.com/repos/controlaltdelete-nl/magento2-fathom-analytics/zipball/0c6c7ce714a954a2d2beeba060cf282c4f79bedf",
+                "reference": "0c6c7ce714a954a2d2beeba060cf282c4f79bedf",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1490,9 +1490,9 @@
             "description": "Fathom Analytics integration for Magento 2",
             "support": {
                 "issues": "https://github.com/controlaltdelete-nl/magento2-fathom-analytics/issues",
-                "source": "https://github.com/controlaltdelete-nl/magento2-fathom-analytics/tree/v1.0.0"
+                "source": "https://github.com/controlaltdelete-nl/magento2-fathom-analytics/tree/v1.0.1"
             },
-            "time": "2025-01-13T20:41:48+00:00"
+            "time": "2025-01-14T07:48:22+00:00"
         },
         {
             "name": "dasprid/enum",
