@@ -60,7 +60,11 @@ module.exports = hyvaModules.mergeTailwindConfig({
         },
         green: colors.emerald,
         yellow: colors.amber,
-        purple: colors.violet
+        purple: colors.violet,
+        'brand-main': '#eadfb4',
+        'brand-secondary': '#9BB0C1',
+        'brand-blue': '#51829B',
+        'brand-orange': '#F6995C',
       },
       textColor: {
         orange: colors.orange,
@@ -149,6 +153,6 @@ module.exports = hyvaModules.mergeTailwindConfig({
     '../../../../../../../vendor/hyva-themes/magento2-default-theme/*/layout/*.xml',
     '../../../../../../../vendor/hyva-themes/magento2-default-theme/*/page_layout/override/base/*.xml',
     // app/code phtml files (if need tailwind classes from app/code modules)
-    //'../../../../../../../app/code/**/*.phtml',
+    '../../../../../../../app/code/**/*.phtml',
   ]
 });
