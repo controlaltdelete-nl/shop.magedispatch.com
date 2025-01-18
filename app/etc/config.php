@@ -240,7 +240,6 @@ return [
         'Magento_Wishlist' => 1,
         'Magento_WishlistAnalytics' => 1,
         'ControlAltDelete_FathomAnalytics' => 1,
-        'ControlAltDelete_Widget' => 1,
         'Hyva_Theme' => 1,
         'Hyva_CompatModuleFallback' => 1,
         'Hyva_Email' => 1,
