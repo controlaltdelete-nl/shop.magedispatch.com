@@ -239,7 +239,6 @@ return [
         'Magento_CatalogWidget' => 1,
         'Magento_Wishlist' => 1,
         'Magento_WishlistAnalytics' => 1,
-        'AvS_ScopeHint' => 1,
         'ControlAltDelete_FathomAnalytics' => 1,
         'Hyva_Theme' => 1,
         'Hyva_CompatModuleFallback' => 1,
