@@ -212,16 +212,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.338.2",
+            "version": "3.339.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "7a52364e053d74363f9976dfb4473bace5b7790e"
+                "reference": "41bcd4a555649d276c8fbc0bc1738e59fda2221d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/7a52364e053d74363f9976dfb4473bace5b7790e",
-                "reference": "7a52364e053d74363f9976dfb4473bace5b7790e",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/41bcd4a555649d276c8fbc0bc1738e59fda2221d",
+                "reference": "41bcd4a555649d276c8fbc0bc1738e59fda2221d",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -310,9 +310,9 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.338.2"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.339.0"
             },
-            "time": "2025-01-24T19:09:22+00:00"
+            "time": "2025-01-27T19:25:50+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -23650,16 +23650,16 @@
         },
         {
             "name": "avstudnitz/scopehint2",
-            "version": "1.3.1",
+            "version": "1.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/avstudnitz/AvS_ScopeHint2.git",
-                "reference": "b36831974dc2d1f15a1b0eef6b2673c5e9aaea7b"
+                "reference": "8b02bec7034e4aeb07204d502bcf9b312317dbf6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/avstudnitz/AvS_ScopeHint2/zipball/b36831974dc2d1f15a1b0eef6b2673c5e9aaea7b",
-                "reference": "b36831974dc2d1f15a1b0eef6b2673c5e9aaea7b",
+                "url": "https://api.github.com/repos/avstudnitz/AvS_ScopeHint2/zipball/8b02bec7034e4aeb07204d502bcf9b312317dbf6",
+                "reference": "8b02bec7034e4aeb07204d502bcf9b312317dbf6",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -23688,9 +23688,9 @@
             "description": "Displays a hint when a configuration value is overwritten on a lower scope (website or store view).",
             "support": {
                 "issues": "https://github.com/avstudnitz/AvS_ScopeHint2/issues",
-                "source": "https://github.com/avstudnitz/AvS_ScopeHint2/tree/1.3.1"
+                "source": "https://github.com/avstudnitz/AvS_ScopeHint2/tree/1.3.2"
             },
-            "time": "2025-01-15T14:38:07+00:00"
+            "time": "2025-01-27T12:54:00+00:00"
         },
         {
             "name": "behat/gherkin",
