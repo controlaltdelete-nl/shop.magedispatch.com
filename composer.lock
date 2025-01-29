@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fda6f1a82c24a03019790ab1f1427ccb",
+    "content-hash": "e087c50889eec60e9f2a889a25c17e5c",
     "packages": [
         {
             "name": "2tvenom/cborencode",
@@ -17740,6 +17740,101 @@
             "time": "2024-12-04T14:00:54+00:00"
         },
         {
+            "name": "mollie/magento2-hyva-checkout",
+            "version": "1.5.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mollie/magento2-hyva-checkout.git",
+                "reference": "b558821cfa10ab79e9b7be74b76289dfd2d66ca9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mollie/magento2-hyva-checkout/zipball/b558821cfa10ab79e9b7be74b76289dfd2d66ca9",
+                "reference": "b558821cfa10ab79e9b7be74b76289dfd2d66ca9",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "hyva-themes/magento2-hyva-checkout": "^1.0.5|^1.1",
+                "magento/framework": "*",
+                "mollie/magento2": ">=2.33.0"
+            },
+            "suggest": {
+                "mollie/magento2-hyva-compatibility": "Adds compatibility for Mollie Payments to Hyvä Themes"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "src/Mollie_HyvaCheckout/registration.php"
+                ],
+                "psr-4": {
+                    "Mollie\\HyvaCheckout\\": "src/Mollie_HyvaCheckout"
+                }
+            },
+            "notification-url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/downloads/",
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "Hyvä Themes Checkout module for Mollie Payments",
+            "support": {
+                "issues": "https://github.com/mollie/magento2-hyva-checkout/issues",
+                "source": "https://github.com/mollie/magento2-hyva-checkout/tree/1.5.3"
+            },
+            "time": "2025-01-02T10:36:12+00:00"
+        },
+        {
+            "name": "mollie/magento2-hyva-compatibility",
+            "version": "2.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mollie/magento2-hyva-compatibility.git",
+                "reference": "7d4e6cb55168216acde97f5fec20303fa8d1c730"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mollie/magento2-hyva-compatibility/zipball/7d4e6cb55168216acde97f5fec20303fa8d1c730",
+                "reference": "7d4e6cb55168216acde97f5fec20303fa8d1c730",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "hyva-themes/magento2-compat-module-fallback": "*",
+                "magento/framework": "*",
+                "mollie/magento2": ">=2.31.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "src/Mollie_HyvaCompatibility/registration.php"
+                ],
+                "psr-4": {
+                    "Mollie\\HyvaCompatibility\\": "src/Mollie_HyvaCompatibility"
+                }
+            },
+            "notification-url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/downloads/",
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "Hyvä Themes Compatibility module for Mollie Payments",
+            "support": {
+                "issues": "https://github.com/mollie/magento2-hyva-compatibility/issues",
+                "source": "https://github.com/mollie/magento2-hyva-compatibility/tree/2.3.0"
+            },
+            "time": "2025-01-02T10:33:10+00:00"
+        },
+        {
             "name": "mollie/mollie-api-php",
             "version": "v2.76.0",
             "source": {
@@ -29143,7 +29238,7 @@
     },
     "prefer-stable": true,
     "prefer-lowest": false,
-    "platform": {},
-    "platform-dev": {},
-    "plugin-api-version": "2.6.0"
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.2.0"
 }

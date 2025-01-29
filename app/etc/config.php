@@ -239,6 +239,7 @@ return [
         'Magento_CatalogWidget' => 1,
         'Magento_Wishlist' => 1,
         'Magento_WishlistAnalytics' => 1,
+        'AvS_ScopeHint' => 1,
         'ControlAltDelete_FathomAnalytics' => 1,
         'ControlAltDelete_Widget' => 1,
         'Hyva_Theme' => 1,
@@ -251,6 +252,8 @@ return [
         'Mageplaza_Core' => 0,
         'Hyva_Checkout' => 1,
         'Mollie_Payment' => 1,
+        'Mollie_HyvaCompatibility' => 1,
+        'Mollie_HyvaCheckout' => 1,
         'TIG_PostNL' => 1
     ],
     'scopes' => [

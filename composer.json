@@ -30,6 +30,8 @@
         "magento/product-community-edition": "2.4.7-p3",
         "mageplaza/magento-2-dutch-language-pack": "dev-master",
         "mollie/magento2": "^2.41",
+        "mollie/magento2-hyva-checkout": "^1.5",
+        "mollie/magento2-hyva-compatibility": "^2.3",
         "tig/postnl-magento2": "^1.16"
     },
     "autoload": {
