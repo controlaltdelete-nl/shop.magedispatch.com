@@ -20,6 +20,7 @@
     },
     "version": "2.4.7-p3",
     "require": {
+        "avstudnitz/scopehint2": "^1.3",
         "controlaltdelete/magento2-fathom-analytics": "^1.0",
         "deployer/deployer": "^7.4",
         "hyva-themes/magento2-compat-module-fallback": "^1.1",
@@ -56,7 +57,6 @@
     },
     "require-dev": {
         "allure-framework/allure-phpunit": "^2",
-        "avstudnitz/scopehint2": "^1.2",
         "dealerdirect/phpcodesniffer-composer-installer": "^0.7 || ^1.0",
         "dg/bypass-finals": "^1.4",
         "friendsofphp/php-cs-fixer": "^3.22",
