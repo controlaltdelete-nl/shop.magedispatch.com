@@ -30,3 +30,17 @@
     @apply prose;
     @apply max-w-full;
 }
+
+#hyva-checkout-main {
+    #guest-details,
+    #shipping-details,
+    #billing-details,
+    section#shipping,
+    #payment {
+        @apply bg-gray-100;
+        @apply py-2;
+        @apply px-4;
+        @apply rounded-lg;
+        @apply space-y-6;
+    }
+}
