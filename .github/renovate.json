@@ -6,7 +6,7 @@
   "hostRules": [
     {
       "hostType": "packagist",
-      "hostName": "repo.packagist.com",
+      "matchHost": "repo.packagist.com",
       "username": "GitHub michielgerritsen",
       "password": "ea446886d10237ab752dcd29207d5e012efb150db86e3b2a71fb6d5bf7c6"
     }
@@ -17,7 +17,9 @@
   "ignorePaths": [
     ".ddev/"
   ],
-  "labels": ["dependencies"],
+  "labels": [
+    "dependencies"
+  ],
   "prHourlyLimit": 999,
   "prConcurrentLimit": 99,
   "timezone": "Europe/Amsterdam",
@@ -29,19 +31,30 @@
   ],
   "packageRules": [
     {
-      "matchPackageNames": ["magento/**"],
+      "matchPackageNames": [
+        "magento/**"
+      ],
       "groupName": "magento"
     },
     {
-      "matchManagers": ["npm"],
+      "matchManagers": [
+        "npm"
+      ],
       "groupName": "npm"
     },
     {
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "pin",
+        "digest"
+      ],
       "automerge": true
     },
     {
-      "packageNames": ["magento/product-community-edition"],
+      "matchPackageNames": [
+        "magento/product-community-edition"
+      ],
       "automerge": false
     }
   ]
