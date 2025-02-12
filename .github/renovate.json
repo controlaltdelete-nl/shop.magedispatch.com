@@ -31,9 +31,12 @@
   ],
   "packageRules": [
     {
-      "matchPackageNames": [
-        "magento/**"
-      ],
+      "matchPackageNames": ["magento/product-community-edition"],
+      "groupName": "magento-community-edition",
+      "automerge": false
+    },
+    {
+      "matchPackageNames": ["magento/**"],
       "groupName": "magento"
     },
     {
@@ -50,12 +53,6 @@
         "digest"
       ],
       "automerge": true
-    },
-    {
-      "matchPackageNames": [
-        "magento/product-community-edition"
-      ],
-      "automerge": false
     }
   ]
 }
