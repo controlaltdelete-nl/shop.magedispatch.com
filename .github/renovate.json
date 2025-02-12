@@ -37,6 +37,7 @@
     },
     {
       "matchPackageNames": ["magento/**"],
+      "excludePackageNames": ["magento/product-community-edition"],
       "groupName": "magento"
     },
     {
