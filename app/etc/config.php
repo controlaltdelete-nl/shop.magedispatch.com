@@ -183,6 +183,7 @@ return [
         'Magento_ReCaptchaWebapiApi' => 1,
         'Magento_ReCaptchaWebapiRest' => 1,
         'Magento_ReCaptchaWebapiUi' => 1,
+        'Magento_ReCaptchaWishlist' => 1,
         'Magento_ReleaseNotification' => 1,
         'Magento_Sitemap' => 1,
         'Magento_Reports' => 1,
