@@ -4,7 +4,7 @@ on: push
 
 jobs:
   build:
-    runs-on: self-hosted
+    runs-on: self-hosted-fast
 
     env:
       COMPOSER_AUTH: ${{ secrets.COMPOSER_AUTH }}
@@ -59,7 +59,7 @@ jobs:
     needs:
       - build
 
-    runs-on: self-hosted
+    runs-on: self-hosted-fast
 
     env:
       COMPOSER_AUTH: ${{ secrets.COMPOSER_AUTH }}
@@ -93,7 +93,7 @@ jobs:
     needs:
       - build
 
-    runs-on: self-hosted
+    runs-on: self-hosted-full
 
     steps:
       - name: Download artifact
@@ -192,7 +192,7 @@ jobs:
       - test-phpstan
 
     concurrency: deploy-${{ github.head_ref || github.ref_name }}
-    runs-on: self-hosted
+    runs-on: self-hosted-fast
 
     env:
       DEPLOYER_HOSTS: ${{ secrets.DEPLOYER_HOSTS }}
