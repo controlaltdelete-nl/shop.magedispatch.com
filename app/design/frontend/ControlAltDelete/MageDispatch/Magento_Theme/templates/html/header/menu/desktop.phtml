@@ -40,12 +40,16 @@ $menu = $block->getMenuItems() ?: [
         'name' => 'Lights'
     ],
     [
-        'url' => '/frequently-asked-questions',
-        'name' => 'FAQ'
+        'url' => '/sponsoring.html',
+        'name' => 'Sponsoring'
     ],
     [
         'url' => '/wled',
         'name' => 'WLED'
+    ],
+    [
+        'url' => '/frequently-asked-questions',
+        'name' => 'FAQ'
     ],
 ];
 $block->setData('cache_tags', $viewModelNavigation->getIdentities());
