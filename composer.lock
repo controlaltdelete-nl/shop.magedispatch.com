@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c017a6da36e449fa0e7c701b6405016d",
+    "content-hash": "39ddd5814011f52cf1301dc83289fc61",
     "packages": [
         {
             "name": "2tvenom/cborencode",
@@ -24002,16 +24002,16 @@
         },
         {
             "name": "bitexpert/phpstan-magento",
-            "version": "v0.40.0",
+            "version": "v0.41.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bitExpert/phpstan-magento.git",
-                "reference": "bea603fbb64bbe37123833b481a7f3468d4d179e"
+                "reference": "942283892cd6339578f55778cbd48a8858cd9172"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bitExpert/phpstan-magento/zipball/bea603fbb64bbe37123833b481a7f3468d4d179e",
-                "reference": "bea603fbb64bbe37123833b481a7f3468d4d179e",
+                "url": "https://api.github.com/repos/bitExpert/phpstan-magento/zipball/942283892cd6339578f55778cbd48a8858cd9172",
+                "reference": "942283892cd6339578f55778cbd48a8858cd9172",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -24072,9 +24072,9 @@
             "description": "PHPStan Magento Extension",
             "support": {
                 "issues": "https://github.com/bitExpert/phpstan-magento/issues",
-                "source": "https://github.com/bitExpert/phpstan-magento/tree/v0.40.0"
+                "source": "https://github.com/bitExpert/phpstan-magento/tree/v0.41.0"
             },
-            "time": "2025-02-22T13:48:59+00:00"
+            "time": "2025-03-06T08:02:29+00:00"
         },
         {
             "name": "clue/ndjson-react",
@@ -26280,16 +26280,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "2.1.6",
+            "version": "2.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "6eaec7c6c9e90dcfe46ad1e1ffa5171e2dab641c"
+                "reference": "12567f91a74036d56ba0af6d56c8e73ac0e8d850"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/6eaec7c6c9e90dcfe46ad1e1ffa5171e2dab641c",
-                "reference": "6eaec7c6c9e90dcfe46ad1e1ffa5171e2dab641c",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/12567f91a74036d56ba0af6d56c8e73ac0e8d850",
+                "reference": "12567f91a74036d56ba0af6d56c8e73ac0e8d850",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -26340,7 +26340,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-02-19T15:46:42+00:00"
+            "time": "2025-03-05T13:43:55+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
