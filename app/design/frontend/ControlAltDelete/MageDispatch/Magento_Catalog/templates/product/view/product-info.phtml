@@ -1,9 +1,20 @@
 <?php
-/**
- * Hyvä Themes - https://hyva.io
- * Copyright © Hyvä Themes 2020-present. All rights reserved.
- * This product is licensed per Magento install
- * See https://hyva.io/license
+/*
+ *     ______            __             __
+ *    / ____/___  ____  / /__________  / /
+ *   / /   / __ \/ __ \/ __/ ___/ __ \/ /
+ *  / /___/ /_/ / / / / /_/ /  / /_/ / /
+ *  \______________/_/\__/_/   \____/_/
+ *     /   |  / / /_
+ *    / /| | / / __/
+ *   / ___ |/ / /_
+ *  /_/ _|||_/\__/ __     __
+ *     / __ \___  / /__  / /____
+ *    / / / / _ \/ / _ \/ __/ _ \
+ *   / /_/ /  __/ /  __/ /_/  __/
+ *  /_____/\___/_/\___/\__/\___/
+ *
+ * Copyright www.controlaltdelete.dev
  */
 
 declare(strict_types=1);
@@ -43,22 +54,6 @@ $productType = $product->getTypeId();
         <?= $block->getChildHtml("product.info.stockstatus") ?>
         <?= $block->getChildHtml("alert.urls") ?>
     </div>
-
-    <dl id="product-details">
-        <?php foreach ($block->getAttributes() as $attributeConfig):
-            $attribute = $attributesViewModel->getAttributeFromLayoutConfig($attributeConfig); ?>
-            <?php if ($value = $attribute['value'] ?? null): ?>
-                <div class="flex border-t border-gray-300 py-2 last:mb-6 last:border-b attribute-<?=/* @noEscape */ $attribute['code'] ?: "" ?>">
-                    <dt class="w-1/2 text-left text-gray-700 product-detail-label">
-                        <?= $escaper->escapeHtml($attribute['label']) ?>
-                    </dt>
-                    <dd class="w-1/2 ml-2 text-left text-gray-900 product-detail-value">
-                        <?= $escaper->escapeHtml($value) ?>
-                    </dd>
-                </div>
-            <?php endif ?>
-        <?php endforeach; ?>
-    </dl>
 
     <?= $block->getChildHtml('product.info.form') ?>
 
