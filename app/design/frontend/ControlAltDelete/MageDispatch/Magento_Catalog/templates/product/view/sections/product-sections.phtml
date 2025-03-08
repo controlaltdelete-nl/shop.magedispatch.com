@@ -29,7 +29,7 @@ $titleRenderer = $block->getChildBlock('product.section.title.renderer');
 $defaultTitleTemplate = $titleRenderer->getTemplate();
 
 ?>
-<div class="grid lg:grid-cols-2 gap-8">
+<div class="grid">
 <?php
 foreach ($block->getGroupSortedChildNames('detailed_info', '') as $sectionName) {
     $sectionBlock  = $block->getLayout()->getBlock($sectionName);
