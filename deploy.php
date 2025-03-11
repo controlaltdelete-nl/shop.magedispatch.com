@@ -37,7 +37,17 @@ set('writable_mode', 'chmod');
 
 set('static_content_locales', 'en_US nl_NL');
 set('static_deploy_options', '--force --no-parent --no-js-bundle');
-set('static_content_jobs', '12');
+
+function getCpuCount(int $default): int {
+    if (is_file('/proc/cpuinfo')) {
+        $cpuinfo = file_get_contents('/proc/cpuinfo');
+        $count = substr_count(strtolower($cpuinfo), 'processor');
+        return $count > 0 ? $count : $default;
+    }
+    return $default;
+}
+
+set('static_content_jobs', getCpuCount(4));
 
 set('shared_files', [
     // Copied from the recipe
