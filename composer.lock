@@ -256,16 +256,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.342.3",
+            "version": "3.342.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "c4dcf34bedbd9727bdd99a38d6c4f386a3ca2bbc"
+                "reference": "65cc842b9998d415b05d635b6146d0728934ff4a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/c4dcf34bedbd9727bdd99a38d6c4f386a3ca2bbc",
-                "reference": "c4dcf34bedbd9727bdd99a38d6c4f386a3ca2bbc",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/65cc842b9998d415b05d635b6146d0728934ff4a",
+                "reference": "65cc842b9998d415b05d635b6146d0728934ff4a",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -353,9 +353,9 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.342.3"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.342.4"
             },
-            "time": "2025-03-10T18:12:55+00:00"
+            "time": "2025-03-11T18:27:07+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -17694,16 +17694,16 @@
         },
         {
             "name": "mollie/magento2",
-            "version": "2.43.0",
+            "version": "2.44.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mollie/magento2.git",
-                "reference": "4aad9bfe2fccb5f3744b11f2c9b5099c44022c98"
+                "reference": "eaf1d2dbc126d8bffc8288800f657acca19a7ae2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mollie/magento2/zipball/4aad9bfe2fccb5f3744b11f2c9b5099c44022c98",
-                "reference": "4aad9bfe2fccb5f3744b11f2c9b5099c44022c98",
+                "url": "https://api.github.com/repos/mollie/magento2/zipball/eaf1d2dbc126d8bffc8288800f657acca19a7ae2",
+                "reference": "eaf1d2dbc126d8bffc8288800f657acca19a7ae2",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -17811,15 +17811,16 @@
                 "sofort",
                 "sofortbanking",
                 "subscriptions",
+                "swish",
                 "trustly",
                 "twint",
                 "voucher"
             ],
             "support": {
                 "issues": "https://github.com/mollie/magento2/issues",
-                "source": "https://github.com/mollie/magento2/tree/v2.43.0"
+                "source": "https://github.com/mollie/magento2/tree/v2.44.0"
             },
-            "time": "2025-01-30T14:50:35+00:00"
+            "time": "2025-03-11T10:57:17+00:00"
         },
         {
             "name": "mollie/magento2-hyva-checkout",
@@ -17918,16 +17919,16 @@
         },
         {
             "name": "mollie/mollie-api-php",
-            "version": "v2.76.1",
+            "version": "v2.79.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mollie/mollie-api-php.git",
-                "reference": "2a90a9224e6dcc25569e572edfe57ba75455e435"
+                "reference": "ad078c1b07da16c6571b16401a286143a5da188c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mollie/mollie-api-php/zipball/2a90a9224e6dcc25569e572edfe57ba75455e435",
-                "reference": "2a90a9224e6dcc25569e572edfe57ba75455e435",
+                "url": "https://api.github.com/repos/mollie/mollie-api-php/zipball/ad078c1b07da16c6571b16401a286143a5da188c",
+                "reference": "ad078c1b07da16c6571b16401a286143a5da188c",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -18010,9 +18011,9 @@
             ],
             "support": {
                 "issues": "https://github.com/mollie/mollie-api-php/issues",
-                "source": "https://github.com/mollie/mollie-api-php/tree/v2.76.1"
+                "source": "https://github.com/mollie/mollie-api-php/tree/v2.79.0"
             },
-            "time": "2025-01-24T14:59:44+00:00"
+            "time": "2025-03-11T09:51:00+00:00"
         },
         {
             "name": "monolog/monolog",
