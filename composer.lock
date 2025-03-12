@@ -2518,16 +2518,16 @@
         },
         {
             "name": "hyva-themes/magento2-default-theme",
-            "version": "1.3.9",
+            "version": "1.3.11",
             "source": {
                 "type": "git",
                 "url": "git@gitlab.hyva.io:hyva-themes/magento2-default-theme.git",
-                "reference": "728a24f4fb01e70988f266e1d6e6b6fc15dbfca2"
+                "reference": "09926d01fb500ef572abbd1b52a403732547b0ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.hyva.io/api/v4/projects/hyva-themes%2Fmagento2-default-theme/repository/archive.zip?sha=728a24f4fb01e70988f266e1d6e6b6fc15dbfca2",
-                "reference": "728a24f4fb01e70988f266e1d6e6b6fc15dbfca2",
+                "url": "https://gitlab.hyva.io/api/v4/projects/hyva-themes%2Fmagento2-default-theme/repository/archive.zip?sha=09926d01fb500ef572abbd1b52a403732547b0ae",
+                "reference": "09926d01fb500ef572abbd1b52a403732547b0ae",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -2542,7 +2542,7 @@
                 "hyva-themes/magento2-graphql-view-model": ">=1.0.1",
                 "hyva-themes/magento2-order-cancellation-webapi": "^1.0.0",
                 "hyva-themes/magento2-reset-theme": ">=1.1.7",
-                "hyva-themes/magento2-theme-module": ">=1.3.9",
+                "hyva-themes/magento2-theme-module": ">=1.3.11",
                 "magento/framework": ">=102.0.0",
                 "magento/module-catalog-rule-graph-ql": "*",
                 "magento/module-customer-graph-ql": "*",
@@ -2582,10 +2582,10 @@
             ],
             "description": "Default Hyvä Theme",
             "support": {
-                "source": "https://gitlab.hyva.io/hyva-themes/magento2-default-theme/-/tree/1.3.9",
+                "source": "https://gitlab.hyva.io/hyva-themes/magento2-default-theme/-/tree/1.3.11",
                 "issues": "https://gitlab.hyva.io/hyva-themes/magento2-default-theme/-/issues"
             },
-            "time": "2024-05-13T07:55:14+00:00"
+            "time": "2025-03-06T11:15:57+00:00"
         },
         {
             "name": "hyva-themes/magento2-email-module",
@@ -2781,6 +2781,57 @@
             "time": "2025-02-24T11:55:43+00:00"
         },
         {
+            "name": "hyva-themes/magento2-mollie-theme-bundle",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "git@gitlab.hyva.io:hyva-themes/hyva-compat/magento2-mollie-theme-bundle.git",
+                "reference": "6727117231879fe472de56be225e5dbaea083dd9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.hyva.io/api/v4/projects/hyva-themes%2Fhyva-compat%2Fmagento2-mollie-theme-bundle/repository/archive.zip?sha=6727117231879fe472de56be225e5dbaea083dd9",
+                "reference": "6727117231879fe472de56be225e5dbaea083dd9",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "mollie/magento2-hyva-compatibility": "^2.1.1"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "src/registration.php"
+                ],
+                "psr-4": {
+                    "Hyva\\MollieThemeBundle\\": [
+                        "src/"
+                    ]
+                }
+            },
+            "notification-url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/downloads/",
+            "license": [
+                "see LICENSE.md"
+            ],
+            "authors": [
+                {
+                    "name": "Hyvä Themes B.V.",
+                    "email": "info@hyva.io"
+                }
+            ],
+            "description": "Hyva Themes Mollie companion module",
+            "support": {
+                "source": "https://gitlab.hyva.io/hyva-themes/hyva-compat/magento2-mollie-theme-bundle/-/tree/1.0.2",
+                "issues": "https://gitlab.hyva.io/hyva-themes/hyva-compat/magento2-mollie-theme-bundle/-/issues"
+            },
+            "time": "2024-12-19T07:49:08+00:00"
+        },
+        {
             "name": "hyva-themes/magento2-order-cancellation-webapi",
             "version": "1.0.0",
             "source": {
@@ -2839,16 +2890,16 @@
         },
         {
             "name": "hyva-themes/magento2-reset-theme",
-            "version": "1.1.8",
+            "version": "1.1.9",
             "source": {
                 "type": "git",
                 "url": "git@gitlab.hyva.io:hyva-themes/magento2-reset-theme.git",
-                "reference": "268d67fedff575c71def0bd0a8f889f34c30797c"
+                "reference": "3a6abff4a294b4bc09e07abab822f99db7641c57"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.hyva.io/api/v4/projects/hyva-themes%2Fmagento2-reset-theme/repository/archive.zip?sha=268d67fedff575c71def0bd0a8f889f34c30797c",
-                "reference": "268d67fedff575c71def0bd0a8f889f34c30797c",
+                "url": "https://gitlab.hyva.io/api/v4/projects/hyva-themes%2Fmagento2-reset-theme/repository/archive.zip?sha=3a6abff4a294b4bc09e07abab822f99db7641c57",
+                "reference": "3a6abff4a294b4bc09e07abab822f99db7641c57",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -2879,23 +2930,23 @@
             ],
             "description": "A theme that unsets all Magento 2 layout blocks. A real _blank_ theme.",
             "support": {
-                "source": "https://gitlab.hyva.io/hyva-themes/magento2-reset-theme/-/tree/1.1.8",
+                "source": "https://gitlab.hyva.io/hyva-themes/magento2-reset-theme/-/tree/1.1.9",
                 "issues": "https://gitlab.hyva.io/hyva-themes/magento2-reset-theme/-/issues"
             },
-            "time": "2024-12-17T09:21:51+00:00"
+            "time": "2025-02-12T14:56:56+00:00"
         },
         {
             "name": "hyva-themes/magento2-theme-module",
-            "version": "1.3.9",
+            "version": "1.3.11",
             "source": {
                 "type": "git",
                 "url": "git@gitlab.hyva.io:hyva-themes/magento2-theme-module.git",
-                "reference": "4cce952fc164d8b34aa845fe39b243bf276b0ddd"
+                "reference": "ee963a97b93448310e87ce057fe3fb24f38c136f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.hyva.io/api/v4/projects/hyva-themes%2Fmagento2-theme-module/repository/archive.zip?sha=4cce952fc164d8b34aa845fe39b243bf276b0ddd",
-                "reference": "4cce952fc164d8b34aa845fe39b243bf276b0ddd",
+                "url": "https://gitlab.hyva.io/api/v4/projects/hyva-themes%2Fmagento2-theme-module/repository/archive.zip?sha=ee963a97b93448310e87ce057fe3fb24f38c136f",
+                "reference": "ee963a97b93448310e87ce057fe3fb24f38c136f",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -2906,6 +2957,7 @@
             },
             "require": {
                 "ext-simplexml": "*",
+                "hyva-themes/magento2-mollie-theme-bundle": "^1.0.1",
                 "magento/framework": "*",
                 "magento/module-catalog": ">=103.0.0",
                 "magento/module-checkout": ">=100.3.0",
@@ -2944,10 +2996,10 @@
             ],
             "description": "Hyva Themes companion module",
             "support": {
-                "source": "https://gitlab.hyva.io/hyva-themes/magento2-theme-module/-/tree/1.3.9",
+                "source": "https://gitlab.hyva.io/hyva-themes/magento2-theme-module/-/tree/1.3.11",
                 "issues": "https://gitlab.hyva.io/hyva-themes/magento2-theme-module/-/issues"
             },
-            "time": "2024-05-09T15:32:54+00:00"
+            "time": "2025-03-06T11:13:16+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
