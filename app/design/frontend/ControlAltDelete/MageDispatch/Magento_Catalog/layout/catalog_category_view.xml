@@ -1,4 +1,3 @@
-<?xml version="1.0"?>
 <!--
   ~     ______            __             __
   ~    / ____/___  ____  / /__________  / /
@@ -19,11 +18,9 @@
 
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
-        <referenceBlock name="product.info.sku" remove="true" />
-
-        <referenceBlock name="description">
+        <referenceBlock name="category.products.list">
             <arguments>
-                <argument name="css_classes" xsi:type="string">prose w-full max-w-full</argument>
+                <argument name="hide_rating_summary" xsi:type="boolean">true</argument>
             </arguments>
         </referenceBlock>
     </body>
