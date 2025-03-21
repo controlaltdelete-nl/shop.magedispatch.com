@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!--
+  ~     ______            __             __
+  ~    / ____/___  ____  / /__________  / /
+  ~   / /   / __ \/ __ \/ __/ ___/ __ \/ /
+  ~  / /___/ /_/ / / / / /_/ /  / /_/ / /
+  ~  \______________/_/\__/_/   \____/_/
+  ~     /   |  / / /_
+  ~    / /| | / / __/
+  ~   / ___ |/ / /_
+  ~  /_/ _|||_/\__/ __     __
+  ~     / __ \___  / /__  / /____
+  ~    / / / / _ \/ / _ \/ __/ _ \
+  ~   / /_/ /  __/ /  __/ /_/  __/
+  ~  /_____/\___/_/\___/\__/\___/
+  ~
+  ~ Copyright www.controlaltdelete.dev
+  -->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="noticebar" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Notice Bar</label>
+            <tab>catalog</tab>
+            <resource>ControlAltDelete_NoticeBar::config</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General Configuration</label>
+                <field id="enabled" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Notice Bar</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="notice_text" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Notice Text</label>
+                    <depends>
+                        <field id="enabled">1</field>
+                    </depends>
+                </field>
+                <field id="text_align" translate="label" type="select" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Text Alignment</label>
+                    <source_model>ControlAltDelete\NoticeBar\Model\Config\Source\TextAlign</source_model>
+                    <depends>
+                        <field id="enabled">1</field>
+                    </depends>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
