@@ -26,6 +26,7 @@
             <arguments>
                 <argument name="price_from" xsi:type="string">0</argument>
                 <argument name="price_to" xsi:type="string">10000</argument>
+                <argument name="hide_rating_summary" xsi:type="boolean">true</argument>
             </arguments>
         </referenceBlock>
     </body>

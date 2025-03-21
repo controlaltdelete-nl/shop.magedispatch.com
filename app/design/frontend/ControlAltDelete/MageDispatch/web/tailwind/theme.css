@@ -26,6 +26,10 @@
 @import "theme/components/style/forms.css";
 @import "theme/components/style/layout.css";
 
+.page-wrapper {
+    background: url("../images/background.svg") repeat;
+}
+
 .cms-page-view .column.main {
     @apply prose;
     @apply max-w-full;

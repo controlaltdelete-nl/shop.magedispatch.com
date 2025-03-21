@@ -52,14 +52,14 @@ $storeConfig = $viewModels->require(StoreConfig::class);
                         <?= $escaper->escapeHtml(__('My Account')) ?>
                     </a>
                 </li>
-                <?php if (!$customer->customerLoggedIn()): ?>
+                <?php /* if (!$customer->customerLoggedIn()): ?>
                     <li class="mt-4">
                         <a href="<?= $escaper->escapeUrl($block->getUrl('sales/guest/form')) ?>"
                            class="text-base leading-6">
                             <?= $escaper->escapeHtml(__('Orders and Returns')) ?>
                         </a>
                     </li>
-                <?php endif; ?>
+                <?php endif; */ ?>
                 <?php if ($storeConfig->getStoreConfig('catalog/seo/search_terms')): ?>
                     <li class="mt-4">
                         <a href="<?= $escaper->escapeUrl($block->getUrl('search/term/popular')) ?>"
