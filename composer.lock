@@ -23113,16 +23113,16 @@
         },
         {
             "name": "tig/postnl-magento2",
-            "version": "1.19.0",
+            "version": "1.20.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/postnl/postnl-magento2.git",
-                "reference": "2aa3a8e5a88264bc7e2c74e960c8e4dad54b2886"
+                "reference": "a63a9575b9d27f2ef89c7a06c69f67b05efdc225"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/postnl/postnl-magento2/zipball/2aa3a8e5a88264bc7e2c74e960c8e4dad54b2886",
-                "reference": "2aa3a8e5a88264bc7e2c74e960c8e4dad54b2886",
+                "url": "https://api.github.com/repos/postnl/postnl-magento2/zipball/a63a9575b9d27f2ef89c7a06c69f67b05efdc225",
+                "reference": "a63a9575b9d27f2ef89c7a06c69f67b05efdc225",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -23167,9 +23167,9 @@
             ],
             "support": {
                 "issues": "https://github.com/postnl/postnl-magento2/issues",
-                "source": "https://github.com/postnl/postnl-magento2/tree/v1.19.0"
+                "source": "https://github.com/postnl/postnl-magento2/tree/v1.20.0"
             },
-            "time": "2025-03-10T09:19:59+00:00"
+            "time": "2025-03-31T08:21:02+00:00"
         },
         {
             "name": "tubalmartin/cssmin",
