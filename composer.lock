@@ -17824,16 +17824,16 @@
         },
         {
             "name": "mollie/magento2-hyva-checkout",
-            "version": "1.6.0",
+            "version": "1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mollie/magento2-hyva-checkout.git",
-                "reference": "62f545fbd6c9839fd3431c6a3aa8ad901340554f"
+                "reference": "214e774833fcc3ef3a0719f51c96a5e5e6de9a86"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mollie/magento2-hyva-checkout/zipball/62f545fbd6c9839fd3431c6a3aa8ad901340554f",
-                "reference": "62f545fbd6c9839fd3431c6a3aa8ad901340554f",
+                "url": "https://api.github.com/repos/mollie/magento2-hyva-checkout/zipball/214e774833fcc3ef3a0719f51c96a5e5e6de9a86",
+                "reference": "214e774833fcc3ef3a0719f51c96a5e5e6de9a86",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -17867,9 +17867,9 @@
             "description": "Hyvä Themes Checkout module for Mollie Payments",
             "support": {
                 "issues": "https://github.com/mollie/magento2-hyva-checkout/issues",
-                "source": "https://github.com/mollie/magento2-hyva-checkout/tree/1.6.0"
+                "source": "https://github.com/mollie/magento2-hyva-checkout/tree/1.7.0"
             },
-            "time": "2025-03-06T12:48:39+00:00"
+            "time": "2025-04-02T08:01:36+00:00"
         },
         {
             "name": "mollie/magento2-hyva-compatibility",
