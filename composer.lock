@@ -17873,16 +17873,16 @@
         },
         {
             "name": "mollie/magento2-hyva-compatibility",
-            "version": "2.3.0",
+            "version": "2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mollie/magento2-hyva-compatibility.git",
-                "reference": "7d4e6cb55168216acde97f5fec20303fa8d1c730"
+                "reference": "12970146fcb1dedd01e3543ce43115229cd77152"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mollie/magento2-hyva-compatibility/zipball/7d4e6cb55168216acde97f5fec20303fa8d1c730",
-                "reference": "7d4e6cb55168216acde97f5fec20303fa8d1c730",
+                "url": "https://api.github.com/repos/mollie/magento2-hyva-compatibility/zipball/12970146fcb1dedd01e3543ce43115229cd77152",
+                "reference": "12970146fcb1dedd01e3543ce43115229cd77152",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -17913,9 +17913,9 @@
             "description": "Hyvä Themes Compatibility module for Mollie Payments",
             "support": {
                 "issues": "https://github.com/mollie/magento2-hyva-compatibility/issues",
-                "source": "https://github.com/mollie/magento2-hyva-compatibility/tree/2.3.0"
+                "source": "https://github.com/mollie/magento2-hyva-compatibility/tree/2.4.0"
             },
-            "time": "2025-01-02T10:33:10+00:00"
+            "time": "2025-04-02T07:17:06+00:00"
         },
         {
             "name": "mollie/mollie-api-php",
