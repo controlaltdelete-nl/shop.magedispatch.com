@@ -17694,16 +17694,16 @@
         },
         {
             "name": "mollie/magento2",
-            "version": "2.44.0",
+            "version": "2.45.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mollie/magento2.git",
-                "reference": "eaf1d2dbc126d8bffc8288800f657acca19a7ae2"
+                "reference": "1c1184d6d43dbcb65783194e51ba193720a68166"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mollie/magento2/zipball/eaf1d2dbc126d8bffc8288800f657acca19a7ae2",
-                "reference": "eaf1d2dbc126d8bffc8288800f657acca19a7ae2",
+                "url": "https://api.github.com/repos/mollie/magento2/zipball/1c1184d6d43dbcb65783194e51ba193720a68166",
+                "reference": "1c1184d6d43dbcb65783194e51ba193720a68166",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -17793,6 +17793,7 @@
                 "mollie",
                 "multibanco",
                 "mybank",
+                "pay by bank",
                 "paylater",
                 "payment",
                 "payments",
@@ -17818,9 +17819,9 @@
             ],
             "support": {
                 "issues": "https://github.com/mollie/magento2/issues",
-                "source": "https://github.com/mollie/magento2/tree/v2.44.0"
+                "source": "https://github.com/mollie/magento2/tree/v2.45.0"
             },
-            "time": "2025-03-11T10:57:17+00:00"
+            "time": "2025-04-11T07:32:21+00:00"
         },
         {
             "name": "mollie/magento2-hyva-checkout",
