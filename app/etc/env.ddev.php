@@ -159,11 +159,8 @@ return [
             ],
             'catalog' => [
                 'search' => [
-                    'elasticsearch6_server_hostname' => 'elasticsearch',
-                    'elasticsearch7_server_hostname' => 'elasticsearch',
-                    'elasticsearch8_server_hostname' => 'elasticsearch',
-                    'elasticsearch7_server_port' => '9200',
-                    'elasticsearch8_server_port' => '9200'
+                    'engine' => 'opensearch',
+                    'opensearch_server_hostname' => 'opensearch',
                 ]
             ]
         ]
