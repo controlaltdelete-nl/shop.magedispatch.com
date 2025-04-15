@@ -242,7 +242,7 @@ return [
         'Magento_PageBuilderImageAttribute' => 1,
         'Magento_Wishlist' => 1,
         'Magento_WishlistAnalytics' => 1,
-        'AvS_ScopeHint' => 1,
+        'AvS_ScopeHint' => 0,
         'ControlAltDelete_FathomAnalytics' => 1,
         'ControlAltDelete_NoticeBar' => 1,
         'ControlAltDelete_Widget' => 1,
