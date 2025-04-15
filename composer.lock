@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "09b8f0ff8ff4dab074e91bbb7629bebc",
+    "content-hash": "b76ec04e4a63d62ebdb1e78365dbc329",
     "packages": [
         {
             "name": "2tvenom/cborencode",
@@ -2761,16 +2761,16 @@
         },
         {
             "name": "hyva-themes/magento2-default-theme",
-            "version": "1.3.9",
+            "version": "1.3.12",
             "source": {
                 "type": "git",
                 "url": "git@gitlab.hyva.io:hyva-themes/magento2-default-theme.git",
-                "reference": "728a24f4fb01e70988f266e1d6e6b6fc15dbfca2"
+                "reference": "c9d78dd762259b580592ce019895c3f1b0cbf65c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.hyva.io/api/v4/projects/hyva-themes%2Fmagento2-default-theme/repository/archive.zip?sha=728a24f4fb01e70988f266e1d6e6b6fc15dbfca2",
-                "reference": "728a24f4fb01e70988f266e1d6e6b6fc15dbfca2",
+                "url": "https://gitlab.hyva.io/api/v4/projects/hyva-themes%2Fmagento2-default-theme/repository/archive.zip?sha=c9d78dd762259b580592ce019895c3f1b0cbf65c",
+                "reference": "c9d78dd762259b580592ce019895c3f1b0cbf65c",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -2785,7 +2785,7 @@
                 "hyva-themes/magento2-graphql-view-model": ">=1.0.1",
                 "hyva-themes/magento2-order-cancellation-webapi": "^1.0.0",
                 "hyva-themes/magento2-reset-theme": ">=1.1.7",
-                "hyva-themes/magento2-theme-module": ">=1.3.9",
+                "hyva-themes/magento2-theme-module": ">=1.3.12",
                 "magento/framework": ">=102.0.0",
                 "magento/module-catalog-rule-graph-ql": "*",
                 "magento/module-customer-graph-ql": "*",
@@ -2825,10 +2825,10 @@
             ],
             "description": "Default Hyvä Theme",
             "support": {
-                "source": "https://gitlab.hyva.io/hyva-themes/magento2-default-theme/-/tree/1.3.9",
+                "source": "https://gitlab.hyva.io/hyva-themes/magento2-default-theme/-/tree/1.3.12",
                 "issues": "https://gitlab.hyva.io/hyva-themes/magento2-default-theme/-/issues"
             },
-            "time": "2024-05-13T07:55:14+00:00"
+            "time": "2025-03-17T17:26:12+00:00"
         },
         {
             "name": "hyva-themes/magento2-email-module",
@@ -3024,6 +3024,57 @@
             "time": "2025-02-24T11:55:43+00:00"
         },
         {
+            "name": "hyva-themes/magento2-mollie-theme-bundle",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "git@gitlab.hyva.io:hyva-themes/hyva-compat/magento2-mollie-theme-bundle.git",
+                "reference": "6727117231879fe472de56be225e5dbaea083dd9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.hyva.io/api/v4/projects/hyva-themes%2Fhyva-compat%2Fmagento2-mollie-theme-bundle/repository/archive.zip?sha=6727117231879fe472de56be225e5dbaea083dd9",
+                "reference": "6727117231879fe472de56be225e5dbaea083dd9",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "mollie/magento2-hyva-compatibility": "^2.1.1"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "src/registration.php"
+                ],
+                "psr-4": {
+                    "Hyva\\MollieThemeBundle\\": [
+                        "src/"
+                    ]
+                }
+            },
+            "notification-url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/downloads/",
+            "license": [
+                "see LICENSE.md"
+            ],
+            "authors": [
+                {
+                    "name": "Hyvä Themes B.V.",
+                    "email": "info@hyva.io"
+                }
+            ],
+            "description": "Hyva Themes Mollie companion module",
+            "support": {
+                "source": "https://gitlab.hyva.io/hyva-themes/hyva-compat/magento2-mollie-theme-bundle/-/tree/1.0.2",
+                "issues": "https://gitlab.hyva.io/hyva-themes/hyva-compat/magento2-mollie-theme-bundle/-/issues"
+            },
+            "time": "2024-12-19T07:49:08+00:00"
+        },
+        {
             "name": "hyva-themes/magento2-order-cancellation-webapi",
             "version": "1.0.0",
             "source": {
@@ -3129,16 +3180,16 @@
         },
         {
             "name": "hyva-themes/magento2-theme-module",
-            "version": "1.3.9",
+            "version": "1.3.12",
             "source": {
                 "type": "git",
                 "url": "git@gitlab.hyva.io:hyva-themes/magento2-theme-module.git",
-                "reference": "4cce952fc164d8b34aa845fe39b243bf276b0ddd"
+                "reference": "9f7da8656db712270c72c26f692ea073d97f7c91"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.hyva.io/api/v4/projects/hyva-themes%2Fmagento2-theme-module/repository/archive.zip?sha=4cce952fc164d8b34aa845fe39b243bf276b0ddd",
-                "reference": "4cce952fc164d8b34aa845fe39b243bf276b0ddd",
+                "url": "https://gitlab.hyva.io/api/v4/projects/hyva-themes%2Fmagento2-theme-module/repository/archive.zip?sha=9f7da8656db712270c72c26f692ea073d97f7c91",
+                "reference": "9f7da8656db712270c72c26f692ea073d97f7c91",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -3149,6 +3200,7 @@
             },
             "require": {
                 "ext-simplexml": "*",
+                "hyva-themes/magento2-mollie-theme-bundle": "^1.0.1",
                 "magento/framework": "*",
                 "magento/module-catalog": ">=103.0.0",
                 "magento/module-checkout": ">=100.3.0",
@@ -3187,10 +3239,10 @@
             ],
             "description": "Hyva Themes companion module",
             "support": {
-                "source": "https://gitlab.hyva.io/hyva-themes/magento2-theme-module/-/tree/1.3.9",
+                "source": "https://gitlab.hyva.io/hyva-themes/magento2-theme-module/-/tree/1.3.12",
                 "issues": "https://gitlab.hyva.io/hyva-themes/magento2-theme-module/-/issues"
             },
-            "time": "2024-05-09T15:32:54+00:00"
+            "time": "2025-03-17T17:27:59+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -8346,6 +8398,42 @@
             "description": "N/A"
         },
         {
+            "name": "magento/module-catalog-customer-graph-ql",
+            "version": "100.4.7",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.magento.com/archives/magento/module-catalog-customer-graph-ql/magento-module-catalog-customer-graph-ql-100.4.7.0.zip",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "magento/framework": "103.0.*",
+                "magento/module-catalog": "104.0.*",
+                "magento/module-catalog-graph-ql": "100.4.*",
+                "magento/module-customer": "103.0.*",
+                "php": "~8.2.0||~8.3.0||~8.4.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\CatalogCustomerGraphQl\\": ""
+                }
+            },
+            "notification-url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/downloads/",
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
+        },
+        {
             "name": "magento/module-catalog-graph-ql",
             "version": "100.4.8",
             "dist": {
@@ -10015,6 +10103,48 @@
             "description": "N/A"
         },
         {
+            "name": "magento/module-gift-message-graph-ql",
+            "version": "100.4.6",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.magento.com/archives/magento/module-gift-message-graph-ql/magento-module-gift-message-graph-ql-100.4.6.0.zip",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "magento/framework": "103.0.*",
+                "magento/module-catalog": "104.0.*",
+                "magento/module-downloadable": "100.4.*",
+                "magento/module-gift-message": "100.4.*",
+                "magento/module-quote": "101.2.*",
+                "magento/module-sales": "103.0.*",
+                "magento/module-store": "101.1.*",
+                "php": "~8.2.0||~8.3.0||~8.4.0"
+            },
+            "suggest": {
+                "magento/module-graph-ql": "100.4.*"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\GiftMessageGraphQl\\": ""
+                }
+            },
+            "notification-url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/downloads/",
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
+        },
+        {
             "name": "magento/module-google-adwords",
             "version": "100.4.5",
             "dist": {
@@ -10616,49 +10746,6 @@
                 ],
                 "psr-4": {
                     "Magento\\IntegrationGraphQl\\": ""
-                }
-            },
-            "notification-url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/downloads/",
-            "license": [
-                "OSL-3.0",
-                "AFL-3.0"
-            ],
-            "description": "N/A"
-        },
-        {
-            "name": "magento/module-inventory-catalog-rule",
-            "version": "100.2.0",
-            "dist": {
-                "type": "zip",
-                "url": "https://repo.magento.com/archives/magento/module-inventory-catalog-rule/magento-module-inventory-catalog-rule-100.2.0.0.zip",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/dists/%package%/%version%/r%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
-            },
-            "require": {
-                "magento/framework": "*",
-                "magento/module-catalog": "*",
-                "magento/module-catalog-rule": "*",
-                "magento/module-inventory": "1.2.*",
-                "magento/module-inventory-catalog-api": "1.3.*",
-                "magento/module-inventory-indexer": "2.2.*",
-                "magento/module-inventory-sales-api": "1.2.*",
-                "magento/module-store": "*",
-                "php": "~8.2.0||~8.3.0||~8.4.0"
-            },
-            "suggest": {
-                "magento/module-rule": "*"
-            },
-            "type": "magento2-module",
-            "autoload": {
-                "files": [
-                    "registration.php"
-                ],
-                "psr-4": {
-                    "Magento\\InventoryCatalogRule\\": ""
                 }
             },
             "notification-url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/downloads/",
@@ -12570,6 +12657,63 @@
             "description": "Magento module that implements order cancellation UI."
         },
         {
+            "name": "magento/module-page-builder",
+            "version": "2.2.6",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.magento.com/archives/magento/module-page-builder/magento-module-page-builder-2.2.6.0.zip",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "magento/framework": "*",
+                "magento/module-backend": "*",
+                "magento/module-catalog": "*",
+                "magento/module-catalog-inventory": "*",
+                "magento/module-catalog-widget": "*",
+                "magento/module-cms": "*",
+                "magento/module-config": "*",
+                "magento/module-directory": "*",
+                "magento/module-eav": "*",
+                "magento/module-email": "*",
+                "magento/module-media-storage": "*",
+                "magento/module-require-js": "*",
+                "magento/module-rule": "*",
+                "magento/module-store": "*",
+                "magento/module-theme": "*",
+                "magento/module-ui": "*",
+                "magento/module-variable": "*",
+                "magento/module-widget": "*",
+                "magento/module-wishlist": "*",
+                "php": "~8.2.0||~8.3.0||~8.4.0",
+                "phpgt/dom": "^4.1"
+            },
+            "conflict": {
+                "gene/bluefoot": "*"
+            },
+            "suggest": {
+                "magento/module-review": "*"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\PageBuilder\\": ""
+                }
+            },
+            "notification-url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "description": "Page Builder module"
+        },
+        {
             "name": "magento/module-page-builder-image-attribute",
             "version": "1.7.5",
             "dist": {
@@ -13997,86 +14141,6 @@
                 ],
                 "psr-4": {
                     "Magento\\ReCaptchaValidationApi\\": ""
-                }
-            },
-            "notification-url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/downloads/",
-            "license": [
-                "OSL-3.0"
-            ],
-            "description": "Google reCAPTCHA integration for Magento2"
-        },
-        {
-            "name": "magento/module-re-captcha-version-2-checkbox",
-            "version": "2.0.5",
-            "dist": {
-                "type": "zip",
-                "url": "https://repo.magento.com/archives/magento/module-re-captcha-version-2-checkbox/magento-module-re-captcha-version-2-checkbox-2.0.5.0.zip",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/dists/%package%/%version%/r%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
-            },
-            "require": {
-                "magento/framework": "*",
-                "magento/module-re-captcha-ui": "1.1.*",
-                "magento/module-re-captcha-validation-api": "1.1.*",
-                "magento/module-re-captcha-webapi-graph-ql": "1.0.*",
-                "magento/module-store": "*",
-                "php": "~8.2.0||~8.3.0||~8.4.0"
-            },
-            "suggest": {
-                "magento/module-config": "*",
-                "magento/module-re-captcha-admin-ui": "1.1.*"
-            },
-            "type": "magento2-module",
-            "autoload": {
-                "files": [
-                    "registration.php"
-                ],
-                "psr-4": {
-                    "Magento\\ReCaptchaVersion2Checkbox\\": ""
-                }
-            },
-            "notification-url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/downloads/",
-            "license": [
-                "OSL-3.0"
-            ],
-            "description": "Google reCAPTCHA integration for Magento2"
-        },
-        {
-            "name": "magento/module-re-captcha-version-2-invisible",
-            "version": "2.0.5",
-            "dist": {
-                "type": "zip",
-                "url": "https://repo.magento.com/archives/magento/module-re-captcha-version-2-invisible/magento-module-re-captcha-version-2-invisible-2.0.5.0.zip",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/dists/%package%/%version%/r%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
-            },
-            "require": {
-                "magento/framework": "*",
-                "magento/module-re-captcha-ui": "1.1.*",
-                "magento/module-re-captcha-validation-api": "1.1.*",
-                "magento/module-re-captcha-webapi-graph-ql": "1.0.*",
-                "magento/module-store": "*",
-                "php": "~8.2.0||~8.3.0||~8.4.0"
-            },
-            "suggest": {
-                "magento/module-config": "*",
-                "magento/module-re-captcha-admin-ui": "1.1.*"
-            },
-            "type": "magento2-module",
-            "autoload": {
-                "files": [
-                    "registration.php"
-                ],
-                "psr-4": {
-                    "Magento\\ReCaptchaVersion2Invisible\\": ""
                 }
             },
             "notification-url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/downloads/",
@@ -19160,6 +19224,230 @@
                 "source": "https://github.com/phpfui/recaptcha"
             },
             "time": "2025-01-09T22:31:40+00:00"
+        },
+        {
+            "name": "phpgt/cssxpath",
+            "version": "v1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PhpGt/CssXPath.git",
+                "reference": "45f3ac151fc21d459e2515c3aff97cd4bf877bf8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PhpGt/CssXPath/zipball/45f3ac151fc21d459e2515c3aff97cd4bf877bf8",
+                "reference": "45f3ac151fc21d459e2515c3aff97cd4bf877bf8",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": ">=8.0"
+            },
+            "require-dev": {
+                "ext-dom": "*",
+                "ext-libxml": "*",
+                "phpstan/phpstan": "^v1.8",
+                "phpunit/phpunit": "^v9.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Gt\\CssXPath\\": "./src"
+                }
+            },
+            "notification-url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Greg Bowler",
+                    "email": "greg.bowler@g105b.com",
+                    "homepage": "https://www.g105b.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Convert CSS selectors to XPath queries.",
+            "support": {
+                "issues": "https://github.com/PhpGt/CssXPath/issues",
+                "source": "https://github.com/PhpGt/CssXPath/tree/v1.3.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sponsors/PhpGt",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-07-10T13:36:01+00:00"
+        },
+        {
+            "name": "phpgt/dom",
+            "version": "v4.1.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PhpGt/Dom.git",
+                "reference": "2de9031c477e1eabe9e26c3412610a45c9b6b14d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PhpGt/Dom/zipball/2de9031c477e1eabe9e26c3412610a45c9b6b14d",
+                "reference": "2de9031c477e1eabe9e26c3412610a45c9b6b14d",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-libxml": "*",
+                "ext-mbstring": "*",
+                "php": ">=8.1",
+                "phpgt/cssxpath": "^1.1",
+                "phpgt/propfunc": "^1.0",
+                "psr/http-message": "^1.0 || ^2.0"
+            },
+            "require-dev": {
+                "phpmd/phpmd": "^2.13",
+                "phpstan/phpstan": "^1.9",
+                "phpunit/phpunit": "^10.4",
+                "squizlabs/php_codesniffer": "^3.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Gt\\Dom\\": "./src"
+                }
+            },
+            "notification-url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Greg Bowler",
+                    "email": "greg.bowler@g105b.com",
+                    "homepage": "https://www.g105b.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Alvaro Guimaraes",
+                    "homepage": "https://github.com/aguimaraes",
+                    "role": "Developer"
+                },
+                {
+                    "name": "James Fellows",
+                    "homepage": "https://github.com/j4m3s",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Emile Ward",
+                    "homepage": "https://github.com/emileward",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Jelmer Wijnja",
+                    "homepage": "https://github.com/Jelmergu",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Ognjen Petrovic",
+                    "homepage": "https://github.com/ognjen-petrovic",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Jacob Bearden",
+                    "homepage": "https://github.com/jacobbearden",
+                    "role": "Documentation contributor"
+                },
+                {
+                    "name": "Jaroslav Týc",
+                    "homepage": "https://www.jaroslavtyc.com/",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Andrii Beziazychnyi",
+                    "homepage": "https://www.atwix.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Modern DOM API.",
+            "support": {
+                "issues": "https://github.com/PhpGt/Dom/issues",
+                "source": "https://github.com/PhpGt/Dom/tree/v4.1.7"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sponsors/PhpGt",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-01-02T23:56:16+00:00"
+        },
+        {
+            "name": "phpgt/propfunc",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PhpGt/PropFunc.git",
+                "reference": "091213649e89ff22d1ef640b46fbee5215c65520"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PhpGt/PropFunc/zipball/091213649e89ff22d1ef640b46fbee5215c65520",
+                "reference": "091213649e89ff22d1ef640b46fbee5215c65520",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": ">=8.0"
+            },
+            "require-dev": {
+                "phpstan/phpstan": ">=0.12",
+                "phpunit/phpunit": ">=9.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Gt\\PropFunc\\": "./src"
+                }
+            },
+            "notification-url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Greg Bowler",
+                    "email": "greg.bowler@g105b.com",
+                    "homepage": "https://www.g105b.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Property accessor and mutator functions.",
+            "support": {
+                "issues": "https://github.com/PhpGt/PropFunc/issues",
+                "source": "https://github.com/PhpGt/PropFunc/tree/v1.0.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sponsors/PhpGt",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-03-23T12:46:44+00:00"
         },
         {
             "name": "phpseclib/mcrypt_compat",

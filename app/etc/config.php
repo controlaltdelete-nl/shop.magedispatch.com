@@ -1,8 +1,26 @@
 <?php
+/*
+ *     ______            __             __
+ *    / ____/___  ____  / /__________  / /
+ *   / /   / __ \/ __ \/ __/ ___/ __ \/ /
+ *  / /___/ /_/ / / / / /_/ /  / /_/ / /
+ *  \______________/_/\__/_/   \____/_/
+ *     /   |  / / /_
+ *    / /| | / / __/
+ *   / ___ |/ / /_
+ *  /_/ _|||_/\__/ __     __
+ *     / __ \___  / /__  / /____
+ *    / / / / _ \/ / _ \/ __/ _ \
+ *   / /_/ /  __/ /  __/ /_/  __/
+ *  /_____/\___/_/\___/\__/\___/
+ *
+ * Copyright www.controlaltdelete.dev
+ */
+
 return [
     'modules' => [
+        'Magento_Csp' => 1,
         'Magento_Store' => 1,
-        'Magento_Config' => 1,
         'Magento_AdminAnalytics' => 1,
         'Magento_Directory' => 1,
         'Magento_AdminNotification' => 1,
@@ -91,7 +109,7 @@ return [
         'Magento_InstantPurchase' => 1,
         'Magento_CatalogAnalytics' => 1,
         'Magento_IntegrationGraphQl' => 1,
-        'Magento_InventoryCatalogRule' => 1,
+        'Magento_InventoryCatalogRule' => 0,
         'Magento_JwtFrameworkAdapter' => 1,
         'Magento_JwtUserToken' => 1,
         'Magento_LayeredNavigation' => 1,
@@ -143,7 +161,8 @@ return [
         'Magento_Elasticsearch' => 1,
         'Magento_OrderCancellation' => 1,
         'Magento_OrderCancellationUi' => 1,
-        'Magento_PageBuilderImageAttribute' => 1,
+        'Magento_MediaStorage' => 1,
+        'Magento_CatalogWidget' => 1,
         'Magento_GraphQlCache' => 1,
         'Magento_CardinalCommerce' => 1,
         'Magento_ServiceProxy' => 1,
@@ -192,7 +211,7 @@ return [
         'Magento_RequireJs' => 1,
         'Magento_Review' => 1,
         'Magento_ReviewAnalytics' => 1,
-        'Magento_MediaStorage' => 1,
+        'Magento_RemoteStorage' => 1,
         'Magento_Rss' => 1,
         'Magento_Elasticsearch8' => 1,
         'Magento_ServicesIdGraphQlServer' => 1,
@@ -214,7 +233,7 @@ return [
         'Magento_StoreDataExporter' => 1,
         'Magento_Webapi' => 1,
         'Magento_Shipping' => 1,
-        'Magento_RemoteStorage' => 1,
+        'Magento_AwsS3' => 1,
         'Magento_AsyncConfig' => 1,
         'Magento_SalesDataExporter' => 1,
         'Magento_Swagger' => 1,
@@ -224,7 +243,7 @@ return [
         'Magento_SwatchesLayeredNavigation' => 1,
         'Magento_Tax' => 1,
         'Magento_TaxImportExport' => 1,
-        'Magento_AwsS3' => 1,
+        'Magento_PageBuilder' => 0,
         'Magento_Translation' => 1,
         'Magento_AdminAdobeImsTwoFactorAuth' => 1,
         'Magento_GoogleOptimizer' => 1,
@@ -239,7 +258,7 @@ return [
         'Magento_WebapiAsync' => 1,
         'Magento_WebapiSecurity' => 1,
         'Magento_Weee' => 1,
-        'Magento_CatalogWidget' => 1,
+        'Magento_PageBuilderImageAttribute' => 1,
         'Magento_Wishlist' => 1,
         'Magento_WishlistAnalytics' => 1,
         'AvS_ScopeHint' => 1,
@@ -251,6 +270,7 @@ return [
         'Hyva_Email' => 1,
         'Hyva_GraphqlTokens' => 1,
         'Hyva_GraphqlViewModel' => 1,
+        'Hyva_MollieThemeBundle' => 1,
         'Hyva_OrderCancellationWebapi' => 1,
         'Magewirephp_Magewire' => 1,
         'Mageplaza_Core' => 0,
@@ -258,7 +278,8 @@ return [
         'Mollie_Payment' => 1,
         'Mollie_HyvaCompatibility' => 1,
         'Mollie_HyvaCheckout' => 1,
-        'TIG_PostNL' => 1
+        'TIG_PostNL' => 1,
+        'Magento_CatalogCustomerGraphQl' => 0,
     ],
     'scopes' => [
         'websites' => [

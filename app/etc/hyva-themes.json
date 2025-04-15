@@ -7,13 +7,13 @@
             "src": "vendor\/mollie\/magento2-hyva-compatibility\/src\/Mollie_HyvaCompatibility"
         },
         {
+            "src": "vendor\/mollie\/magento2-hyva-checkout\/src\/Mollie_HyvaCheckout"
+        },
+        {
             "src": "vendor\/magewirephp\/magewire\/src"
         },
         {
             "src": "vendor\/hyva-themes\/magento2-hyva-checkout\/src"
-        },
-        {
-            "src": "vendor\/mollie\/magento2-hyva-checkout\/src\/Mollie_HyvaCheckout"
         }
     ]
 }
