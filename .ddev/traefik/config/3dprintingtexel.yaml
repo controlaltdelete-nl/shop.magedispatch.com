@@ -1,0 +1,104 @@
+#ddev-generated
+# If you remove the ddev-generated line above you
+# are responsible for maintaining this file. DDEV will not then
+# update it, for example if you add `additional_hostnames`, etc.
+
+http:
+  routers:
+    3dprintingtexel-elasticsearch-9200-http:
+      entrypoints:
+        - http-9200
+      rule: HostRegexp(`^3dprintingtexel\.test$`)
+      
+      service: "3dprintingtexel-elasticsearch-9200"
+      ruleSyntax: v3
+      tls: false
+      # middlewares:
+      #   - "3dprintingtexel-redirectHttps"
+    3dprintingtexel-web-80-http:
+      entrypoints:
+        - http-80
+      rule: HostRegexp(`^3dprintingtexel\.test$`)
+      
+      service: "3dprintingtexel-web-80"
+      ruleSyntax: v3
+      tls: false
+      # middlewares:
+      #   - "3dprintingtexel-redirectHttps"
+    3dprintingtexel-web-8025-http:
+      entrypoints:
+        - http-8025
+      rule: HostRegexp(`^3dprintingtexel\.test$`)
+      
+      service: "3dprintingtexel-web-8025"
+      ruleSyntax: v3
+      tls: false
+      # middlewares:
+      #   - "3dprintingtexel-redirectHttps"
+    
+    
+    3dprintingtexel-elasticsearch-9200-https:
+      entrypoints:
+        - http-9201
+      rule: HostRegexp(`^3dprintingtexel\.test$`)
+      
+      service: "3dprintingtexel-elasticsearch-9200"
+      ruleSyntax: v3
+      
+      tls: true
+      
+    
+    
+    3dprintingtexel-web-80-https:
+      entrypoints:
+        - http-443
+      rule: HostRegexp(`^3dprintingtexel\.test$`)
+      
+      service: "3dprintingtexel-web-80"
+      ruleSyntax: v3
+      
+      tls: true
+      
+    3dprintingtexel-web-8025-https:
+      entrypoints:
+        - http-8026
+      rule: HostRegexp(`^3dprintingtexel\.test$`)
+      
+      service: "3dprintingtexel-web-8025"
+      ruleSyntax: v3
+      
+      tls: true
+      
+    
+
+  middlewares:
+    3dprintingtexel-redirectHttps:
+      redirectScheme:
+        scheme: https
+        permanent: true
+
+  services:
+    3dprintingtexel-elasticsearch-9200:
+      loadbalancer:
+        servers:
+          - url: http://ddev-3dprintingtexel-elasticsearch:9200
+        
+    
+    3dprintingtexel-web-80:
+      loadbalancer:
+        servers:
+          - url: http://ddev-3dprintingtexel-web:80
+        
+    3dprintingtexel-web-8025:
+      loadbalancer:
+        servers:
+          - url: http://ddev-3dprintingtexel-web:8025
+        
+    
+    
+    
+
+tls:
+  certificates:
+    - certFile: /mnt/ddev-global-cache/traefik/certs/3dprintingtexel.crt
+      keyFile: /mnt/ddev-global-cache/traefik/certs/3dprintingtexel.key
