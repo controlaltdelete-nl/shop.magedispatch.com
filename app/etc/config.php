@@ -1,22 +1,4 @@
 <?php
-/*
- *     ______            __             __
- *    / ____/___  ____  / /__________  / /
- *   / /   / __ \/ __ \/ __/ ___/ __ \/ /
- *  / /___/ /_/ / / / / /_/ /  / /_/ / /
- *  \______________/_/\__/_/   \____/_/
- *     /   |  / / /_
- *    / /| | / / __/
- *   / ___ |/ / /_
- *  /_/ _|||_/\__/ __     __
- *     / __ \___  / /__  / /____
- *    / / / / _ \/ / _ \/ __/ _ \
- *   / /_/ /  __/ /  __/ /_/  __/
- *  /_____/\___/_/\___/\__/\___/
- *
- * Copyright www.controlaltdelete.dev
- */
-
 return [
     'modules' => [
         'Magento_Csp' => 1,
@@ -54,6 +36,7 @@ return [
         'Magento_Cms' => 1,
         'Magento_Integration' => 1,
         'Magento_GraphQl' => 1,
+        'Magento_EavGraphQl' => 1,
         'Magento_CatalogImportExport' => 1,
         'Magento_Catalog' => 1,
         'Magento_Rule' => 1,
@@ -86,18 +69,19 @@ return [
         'Magento_Downloadable' => 1,
         'Magento_ImportExport' => 1,
         'Magento_Checkout' => 1,
-        'Magento_EavGraphQl' => 1,
+        'Magento_CatalogGraphQl' => 1,
         'Magento_CatalogSearch' => 1,
         'Magento_AdvancedSearch' => 1,
         'Magento_Email' => 1,
         'Magento_EncryptionKey' => 1,
         'Magento_Fedex' => 1,
         'Magento_GiftMessage' => 1,
+        'Magento_GiftMessageGraphQl' => 1,
         'Magento_GoogleAdwords' => 1,
         'Magento_GoogleAnalytics' => 1,
         'Magento_GoogleGtag' => 1,
         'Magento_Ui' => 1,
-        'Magento_CatalogGraphQl' => 1,
+        'Magento_CatalogCustomerGraphQl' => 0,
         'Magento_PageCache' => 1,
         'Magento_Newsletter' => 1,
         'Magento_AdminGraphQlServer' => 1,
@@ -109,7 +93,6 @@ return [
         'Magento_InstantPurchase' => 1,
         'Magento_CatalogAnalytics' => 1,
         'Magento_IntegrationGraphQl' => 1,
-        'Magento_InventoryCatalogRule' => 0,
         'Magento_JwtFrameworkAdapter' => 1,
         'Magento_JwtUserToken' => 1,
         'Magento_LayeredNavigation' => 1,
@@ -199,8 +182,6 @@ return [
         'Magento_ReCaptchaUser' => 1,
         'Magento_ReCaptchaValidation' => 1,
         'Magento_ReCaptchaValidationApi' => 1,
-        'Magento_ReCaptchaVersion2Checkbox' => 1,
-        'Magento_ReCaptchaVersion2Invisible' => 1,
         'Magento_ReCaptchaWebapiApi' => 1,
         'Magento_ReCaptchaWebapiRest' => 1,
         'Magento_ReCaptchaWebapiUi' => 1,
@@ -278,8 +259,7 @@ return [
         'Mollie_Payment' => 1,
         'Mollie_HyvaCompatibility' => 1,
         'Mollie_HyvaCheckout' => 1,
-        'TIG_PostNL' => 1,
-        'Magento_CatalogCustomerGraphQl' => 0,
+        'TIG_PostNL' => 1
     ],
     'scopes' => [
         'websites' => [
