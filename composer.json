@@ -24,7 +24,7 @@
         "controlaltdelete/magento2-fathom-analytics": "^1.0",
         "deployer/deployer": "^7.4",
         "hyva-themes/magento2-compat-module-fallback": "^1.1",
-        "hyva-themes/magento2-default-theme": "1.3.12",
+        "hyva-themes/magento2-default-theme": "1.3.13",
         "hyva-themes/magento2-hyva-checkout": "^1.3",
         "magento/composer-dependency-version-audit-plugin": "~0.1",
         "magento/composer-root-update-plugin": "^2.0.4",
