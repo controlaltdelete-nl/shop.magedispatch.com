@@ -64,7 +64,7 @@
      "semver-regex": "~4.0.0"
    },
    "cacheable-request": {
-     "http-cache-semantics": "~4.1.1"
+     "http-cache-semantics": "~4.2.0"
    },
    "babel-core": {
      "json5": "~2.2.3"
