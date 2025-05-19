@@ -70,7 +70,7 @@
         "reach-digital/magento2-test-framework": "^1.7",
         "sebastian/phpcpd": "^6.0",
         "symfony/finder": "^6.4",
-        "bitexpert/phpstan-magento": "^0.41.0",
+        "bitexpert/phpstan-magento": "^0.42.0",
         "php-parallel-lint/php-parallel-lint": "^1.4",
         "yireo/magento2-replace-tools": "^1.0"
     },

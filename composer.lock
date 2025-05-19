@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "51cf49ca787f61660dbd3f6fc2374010",
+    "content-hash": "e4f6d419fc0100c59ea8154c113a9793",
     "packages": [
         {
             "name": "2tvenom/cborencode",
@@ -24657,16 +24657,16 @@
         },
         {
             "name": "bitexpert/phpstan-magento",
-            "version": "v0.41.0",
+            "version": "v0.42.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bitExpert/phpstan-magento.git",
-                "reference": "942283892cd6339578f55778cbd48a8858cd9172"
+                "reference": "30fe91cd383a81b222101e682f5192a6103f40a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bitExpert/phpstan-magento/zipball/942283892cd6339578f55778cbd48a8858cd9172",
-                "reference": "942283892cd6339578f55778cbd48a8858cd9172",
+                "url": "https://api.github.com/repos/bitExpert/phpstan-magento/zipball/30fe91cd383a81b222101e682f5192a6103f40a7",
+                "reference": "30fe91cd383a81b222101e682f5192a6103f40a7",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -24727,9 +24727,9 @@
             "description": "PHPStan Magento Extension",
             "support": {
                 "issues": "https://github.com/bitExpert/phpstan-magento/issues",
-                "source": "https://github.com/bitExpert/phpstan-magento/tree/v0.41.0"
+                "source": "https://github.com/bitExpert/phpstan-magento/tree/v0.42.0"
             },
-            "time": "2025-03-06T08:02:29+00:00"
+            "time": "2025-05-17T06:15:12+00:00"
         },
         {
             "name": "clue/ndjson-react",
