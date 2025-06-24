@@ -32,8 +32,7 @@
         "mageplaza/magento-2-dutch-language-pack": "dev-master",
         "mollie/magento2": "^2.41",
         "mollie/magento2-hyva-checkout": "^1.5",
-        "mollie/magento2-hyva-compatibility": "^2.3",
-        "tig/postnl-magento2": "^1.16"
+        "mollie/magento2-hyva-compatibility": "^2.3"
     },
     "autoload": {
         "exclude-from-classmap": [
@@ -406,8 +405,6 @@
         "magento/module-product-links-sample-data": "*",
         "magento/module-re-captcha-version-2-checkbox": "*",
         "magento/module-re-captcha-version-2-invisible": "*",
-        "magento/module-re-captcha-version-3-invisible": "*",
-        "magento/module-re-captcha-webapi-graph-ql": "*",
         "magento/module-related-product-graph-ql": "*",
         "magento/module-review-graph-ql": "*",
         "magento/module-review-sample-data": "*",
