@@ -260,8 +260,7 @@ return [
         'Hyva_Checkout' => 1,
         'Mollie_Payment' => 1,
         'Mollie_HyvaCompatibility' => 1,
-        'Mollie_HyvaCheckout' => 1,
-        'TIG_PostNL' => 1
+        'Mollie_HyvaCheckout' => 1
     ],
     'scopes' => [
         'websites' => [
