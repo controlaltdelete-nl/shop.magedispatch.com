@@ -25279,17 +25279,17 @@
             "time": "2018-02-14T22:37:14+00:00"
         },
         {
-            "name": "mage2tv/magento-cache-clean",
-            "version": "1.0.54",
+            "name": "mage-os/magento-cache-clean",
+            "version": "1.1.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/mage2tv/magento-cache-clean.git",
-                "reference": "5ccca09ad5735001fc206d7478f7a7459b9f1796"
+                "url": "https://github.com/mage-os/magento-cache-clean.git",
+                "reference": "efe36fc20dd8f367b4973a4538201c31fcc0182e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mage2tv/magento-cache-clean/zipball/5ccca09ad5735001fc206d7478f7a7459b9f1796",
-                "reference": "5ccca09ad5735001fc206d7478f7a7459b9f1796",
+                "url": "https://api.github.com/repos/mage-os/magento-cache-clean/zipball/efe36fc20dd8f367b4973a4538201c31fcc0182e",
+                "reference": "efe36fc20dd8f367b4973a4538201c31fcc0182e",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -25297,9 +25297,6 @@
                         "preferred": true
                     }
                 ]
-            },
-            "suggest": {
-                "magento/project-community-edition": "*"
             },
             "bin": [
                 "bin/cache-clean.js"
@@ -25317,15 +25314,15 @@
                 }
             ],
             "description": "A faster drop in replacement for bin/magento cache:clean with file watcher",
-            "homepage": "https://github.com/mage2tv/magento-cache-clean",
+            "homepage": "https://github.com/mage-os/magento-cache-clean",
             "keywords": [
                 "development",
                 "magento",
                 "utility"
             ],
             "support": {
-                "issues": "https://github.com/mage2tv/magento-cache-clean/issues",
-                "source": "https://github.com/mage2tv/magento-cache-clean/tree/1.0.54"
+                "issues": "https://github.com/mage-os/magento-cache-clean/issues",
+                "source": "https://github.com/mage-os/magento-cache-clean/tree/1.1.2"
             },
             "funding": [
                 {
@@ -25333,7 +25330,55 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-12-06T12:51:26+00:00"
+            "time": "2025-07-11T13:40:53+00:00"
+        },
+        {
+            "name": "mage2tv/magento-cache-clean",
+            "version": "1.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mage2tv/magento-cache-clean.git",
+                "reference": "125e270341ef4803fe3d4a2ef556bfba386bf410"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mage2tv/magento-cache-clean/zipball/125e270341ef4803fe3d4a2ef556bfba386bf410",
+                "reference": "125e270341ef4803fe3d4a2ef556bfba386bf410",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "mage-os/magento-cache-clean": "~1.1.2"
+            },
+            "type": "library",
+            "notification-url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Vinai Kopp",
+                    "email": "vinai@netzarbeiter.com",
+                    "role": "lead"
+                }
+            ],
+            "description": "This package has been migrated to mage-os/magento-cache-clean. Please switch over at your convenience.",
+            "homepage": "https://github.com/mage-os/magento-cache-clean",
+            "keywords": [
+                "development",
+                "magento",
+                "utility"
+            ],
+            "support": {
+                "issues": "https://github.com/mage-os/magento-cache-clean/issues",
+                "source": "https://github.com/mage2tv/magento-cache-clean/tree/1.1.2"
+            },
+            "time": "2025-07-11T13:46:26+00:00"
         },
         {
             "name": "magento/magento-coding-standard",
