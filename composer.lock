@@ -2979,16 +2979,16 @@
         },
         {
             "name": "hyva-themes/magento2-hyva-checkout",
-            "version": "1.3.3",
+            "version": "1.3.4",
             "source": {
                 "type": "git",
                 "url": "git@gitlab.hyva.io:hyva-checkout/checkout.git",
-                "reference": "3c1c18742efeafd061de1f4c535ffe10841ac474"
+                "reference": "c44d6ffb270bbb54ccdb714d7a721763a935e0df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.hyva.io/api/v4/projects/hyva-checkout%2Fcheckout/repository/archive.zip?sha=3c1c18742efeafd061de1f4c535ffe10841ac474",
-                "reference": "3c1c18742efeafd061de1f4c535ffe10841ac474",
+                "url": "https://gitlab.hyva.io/api/v4/projects/hyva-checkout%2Fcheckout/repository/archive.zip?sha=c44d6ffb270bbb54ccdb714d7a721763a935e0df",
+                "reference": "c44d6ffb270bbb54ccdb714d7a721763a935e0df",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -3018,10 +3018,10 @@
             "description": "Hyvä Themes checkout module",
             "support": {
                 "docs": "https://docs.hyva.io/",
-                "source": "https://gitlab.hyva.io/hyva-checkout/checkout/-/tree/1.3.3",
+                "source": "https://gitlab.hyva.io/hyva-checkout/checkout/-/tree/1.3.4",
                 "issues": "https://gitlab.hyva.io/hyva-checkout/checkout/-/issues"
             },
-            "time": "2025-06-19T13:16:03+01:00"
+            "time": "2025-07-16T13:21:03+01:00"
         },
         {
             "name": "hyva-themes/magento2-mollie-theme-bundle",
