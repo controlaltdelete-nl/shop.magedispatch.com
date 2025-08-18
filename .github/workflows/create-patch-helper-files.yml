@@ -20,17 +20,17 @@ jobs:
       COMPOSER_AUTH: ${{ secrets.COMPOSER_AUTH }}
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           ref: ${{ github.event.workflow_run.head_branch }}
           path: 'new-version'
 
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           ref: ${{ github.event.inputs.defaultBranch }}
           path: 'old-version'
 
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           repository: 'AmpersandHQ/ampersand-magento2-upgrade-patch-helper'
           path: 'ampersand-patch-helper'

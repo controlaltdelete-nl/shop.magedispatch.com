@@ -11,7 +11,7 @@ jobs:
       DEPLOYER_HOSTS: ${{ secrets.DEPLOYER_HOSTS }}
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Cache vendor
         uses: actions/cache@v4
@@ -168,7 +168,7 @@ jobs:
             echo "changed=error" >> $GITHUB_OUTPUT
           fi
 
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         if: steps.check_changes.outputs.changed == 'true'
         with:
           path: 'checkout'
@@ -198,7 +198,7 @@ jobs:
       DEPLOYER_HOSTS: ${{ secrets.DEPLOYER_HOSTS }}
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Cache vendor
         uses: actions/cache@v4
