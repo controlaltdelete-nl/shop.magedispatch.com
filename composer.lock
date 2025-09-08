@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "22427fa167fe09ccd50fc87ea930986a",
+    "content-hash": "eb6a11133d9a98625ee53430165a6764",
     "packages": [
         {
             "name": "2tvenom/cborencode",
@@ -2761,16 +2761,16 @@
         },
         {
             "name": "hyva-themes/magento2-default-theme",
-            "version": "1.3.16",
+            "version": "1.3.17",
             "source": {
                 "type": "git",
                 "url": "git@gitlab.hyva.io:hyva-themes/magento2-default-theme.git",
-                "reference": "d2c4f3211ab183b534e4aad06bb8682bae188fd2"
+                "reference": "8b5c58acd0d043975057a7ed3692f655b397f30e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.hyva.io/api/v4/projects/hyva-themes%2Fmagento2-default-theme/repository/archive.zip?sha=d2c4f3211ab183b534e4aad06bb8682bae188fd2",
-                "reference": "d2c4f3211ab183b534e4aad06bb8682bae188fd2",
+                "url": "https://gitlab.hyva.io/api/v4/projects/hyva-themes%2Fmagento2-default-theme/repository/archive.zip?sha=8b5c58acd0d043975057a7ed3692f655b397f30e",
+                "reference": "8b5c58acd0d043975057a7ed3692f655b397f30e",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -2785,7 +2785,7 @@
                 "hyva-themes/magento2-graphql-view-model": ">=1.0.1",
                 "hyva-themes/magento2-order-cancellation-webapi": "^1.0.0",
                 "hyva-themes/magento2-reset-theme": ">=1.1.7",
-                "hyva-themes/magento2-theme-module": ">=1.3.16",
+                "hyva-themes/magento2-theme-module": ">=1.3.17",
                 "magento/framework": ">=102.0.0",
                 "magento/module-catalog-rule-graph-ql": "*",
                 "magento/module-customer-graph-ql": "*",
@@ -2825,10 +2825,10 @@
             ],
             "description": "Default Hyvä Theme",
             "support": {
-                "source": "https://gitlab.hyva.io/hyva-themes/magento2-default-theme/-/tree/1.3.16",
+                "source": "https://gitlab.hyva.io/hyva-themes/magento2-default-theme/-/tree/1.3.17",
                 "issues": "https://gitlab.hyva.io/hyva-themes/magento2-default-theme/-/issues"
             },
-            "time": "2025-08-19T13:21:35+00:00"
+            "time": "2025-09-02T12:41:12+00:00"
         },
         {
             "name": "hyva-themes/magento2-email-module",
@@ -3180,16 +3180,16 @@
         },
         {
             "name": "hyva-themes/magento2-theme-module",
-            "version": "1.3.16",
+            "version": "1.3.17",
             "source": {
                 "type": "git",
                 "url": "git@gitlab.hyva.io:hyva-themes/magento2-theme-module.git",
-                "reference": "f1c452651a1cbe86430e29fbf47afb056089701e"
+                "reference": "81d6fc7c1cc1d34d74bb74218c87475971513246"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.hyva.io/api/v4/projects/hyva-themes%2Fmagento2-theme-module/repository/archive.zip?sha=f1c452651a1cbe86430e29fbf47afb056089701e",
-                "reference": "f1c452651a1cbe86430e29fbf47afb056089701e",
+                "url": "https://gitlab.hyva.io/api/v4/projects/hyva-themes%2Fmagento2-theme-module/repository/archive.zip?sha=81d6fc7c1cc1d34d74bb74218c87475971513246",
+                "reference": "81d6fc7c1cc1d34d74bb74218c87475971513246",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -3239,10 +3239,10 @@
             ],
             "description": "Hyva Themes companion module",
             "support": {
-                "source": "https://gitlab.hyva.io/hyva-themes/magento2-theme-module/-/tree/1.3.16",
+                "source": "https://gitlab.hyva.io/hyva-themes/magento2-theme-module/-/tree/1.3.17",
                 "issues": "https://gitlab.hyva.io/hyva-themes/magento2-theme-module/-/issues"
             },
-            "time": "2025-08-19T13:18:14+00:00"
+            "time": "2025-09-02T12:36:28+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
