@@ -13,7 +13,8 @@
             "magento/*": true,
             "php-http/discovery": true,
             "phpstan/extension-installer": true,
-            "yireo/magento2-replace-tools": true
+            "yireo/magento2-replace-tools": true,
+            "cweagans/composer-patches": true
         },
         "preferred-install": "dist",
         "sort-packages": true
@@ -22,6 +23,7 @@
     "require": {
         "avstudnitz/scopehint2": "^1.3",
         "controlaltdelete/magento2-fathom-analytics": "^1.0",
+        "cweagans/composer-patches": "^1.7",
         "deployer/deployer": "^7.4",
         "hyva-themes/magento2-compat-module-fallback": "^1.1",
         "hyva-themes/magento2-default-theme": "1.3.17",
@@ -104,6 +106,11 @@
                 "yireo/magento2-replace-graphql",
                 "yireo/magento2-replace-sample-data"
             ]
+        },
+        "patches": {
+            "magento/framework": {
+                "CVE-2025-54236": "patches/VULN-32437_2.4.X.patch"
+            }
         }
     },
     "replace": {
