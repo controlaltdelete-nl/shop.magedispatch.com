@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3276524635f6762e0bd8228bd35b334e",
+    "content-hash": "565e3c6f7554de5743c076960ebcbf2c",
     "packages": [
         {
             "name": "2tvenom/cborencode",
@@ -17048,103 +17048,6 @@
             "time": "2025-06-20T07:55:02+00:00"
         },
         {
-            "name": "mageplaza/magento-2-dutch-language-pack",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/mageplaza/magento-2-dutch-language-pack.git",
-                "reference": "5a2a55dbb5daa861c8d6db56f013ea60237ad3a7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/mageplaza/magento-2-dutch-language-pack/zipball/5a2a55dbb5daa861c8d6db56f013ea60237ad3a7",
-                "reference": "5a2a55dbb5daa861c8d6db56f013ea60237ad3a7",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/dists/%package%/%version%/r%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
-            },
-            "require": {
-                "mageplaza/module-core": "^1.3.13"
-            },
-            "default-branch": true,
-            "type": "magento2-language",
-            "autoload": {
-                "files": [
-                    "registration.php"
-                ]
-            },
-            "notification-url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Mageplaza team",
-                    "email": "hi@mageplaza.com",
-                    "homepage": "https://www.mageplaza.com",
-                    "role": "Leader"
-                }
-            ],
-            "description": "Dutch language package for Magento 2",
-            "homepage": "https://www.mageplaza.com",
-            "support": {
-                "issues": "https://github.com/mageplaza/magento-2-dutch-language-pack/issues",
-                "source": "https://github.com/mageplaza/magento-2-dutch-language-pack/tree/master"
-            },
-            "time": "2022-02-22T09:03:59+00:00"
-        },
-        {
-            "name": "mageplaza/module-core",
-            "version": "1.5.13",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/mageplaza/module-core.git",
-                "reference": "d64fc164f433694f5b506ebcfd8ea60b161cfb7d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/mageplaza/module-core/zipball/d64fc164f433694f5b506ebcfd8ea60b161cfb7d",
-                "reference": "d64fc164f433694f5b506ebcfd8ea60b161cfb7d",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/dists/%package%/%version%/r%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
-            },
-            "type": "magento2-module",
-            "autoload": {
-                "files": [
-                    "registration.php"
-                ],
-                "psr-4": {
-                    "Mageplaza\\Core\\": ""
-                }
-            },
-            "notification-url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/downloads/",
-            "license": [
-                "proprietary"
-            ],
-            "authors": [
-                {
-                    "name": "Mageplaza",
-                    "email": "support@mageplaza.com",
-                    "homepage": "https://www.mageplaza.com",
-                    "role": "Technical Support"
-                }
-            ],
-            "description": "Mageplaza Core for Magento 2",
-            "support": {
-                "source": "https://github.com/mageplaza/module-core/tree/v1.5.13"
-            },
-            "time": "2025-04-10T08:22:24+00:00"
-        },
-        {
             "name": "marc-mabe/php-enum",
             "version": "v4.7.2",
             "source": {
@@ -27815,9 +27718,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "mageplaza/magento-2-dutch-language-pack": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],

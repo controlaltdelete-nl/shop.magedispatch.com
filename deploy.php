@@ -140,14 +140,6 @@ task('php-fpm:restart', function () {
 
 after('deploy:symlink', 'php-fpm:restart');
 
-// Deploy Hyva
-task('hyva:deploy', function () {
-    run('npm --prefix app/design/frontend/ControlAltDelete/MageDispatch/web/tailwind/ ci');
-    run('npm --prefix app/design/frontend/ControlAltDelete/MageDispatch/web/tailwind/ run build-prod');
-});
-
-before('magento:deploy:assets', 'hyva:deploy');
-
 task('local:media:sync', function () {
     // Define paths
     $remoteMediaPath = '{{deploy_path}}/shared/pub/media/';
