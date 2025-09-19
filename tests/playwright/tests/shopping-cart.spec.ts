@@ -47,7 +47,7 @@ test.skip('Can change the quantity in the cart', async ({ page }) => {
     await expect(await page.locator('input.qty').count()).toBe(1);
     await expect(await page.locator('input.qty')).toHaveValue('1');
 
-    let priceWithoutTax = await page.locator('.col.subtotal .price').textContent();
+    const priceWithoutTax = await page.locator('.col.subtotal .price').textContent();
 
     await page.locator('input.qty').fill('2');
 
@@ -58,5 +58,6 @@ test.skip('Can change the quantity in the cart', async ({ page }) => {
     const updatedPrice = await page.locator('.col.subtotal .price').textContent();
     console.log('priceWithoutTax', priceWithoutTax);
     console.log('updatedPrice', updatedPrice);
-    await expect(updatedPrice).not.toEqual(priceWithoutTax);
+
+    expect(updatedPrice).not.toEqual(priceWithoutTax);
 });

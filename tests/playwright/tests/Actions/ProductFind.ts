@@ -16,33 +16,38 @@
  * Copyright www.controlaltdelete.dev
  */
 
-import { expect } from '@playwright/test';
+import { expect, Page } from '@playwright/test';
 
 export default class ProductFind {
-    productTitle = '';
+    private productTitle: string = '';
+    private page: Page;
 
-    constructor(page) {
+    constructor(page: Page) {
         this.page = page;
     }
 
-    async openProduct() {
+    async openProduct(): Promise<void> {
         await this.page.goto('/');
 
-        const link = this.page.locator('.level-0 a').first();
+        const link = this.page.locator('.level0 a').first();
         const url = await link.getAttribute('href');
 
         console.log('Got URL', url);
-        await this.page.goto(url);
+
+        if (url) {
+            await this.page.goto(url);
+        }
 
         await expect(await this.page.locator('.product').count()).toBeGreaterThan(1);
 
         await this.page.locator('.products .product a').first().click();
     }
 
-    async findAndAddToCart() {
+    async findAndAddToCart(): Promise<void> {
         await this.openProduct();
 
-        this.productTitle = await this.page.locator('h1').textContent();
+        const titleElement = await this.page.locator('h1').textContent();
+        this.productTitle = titleElement || '';
 
         await this.page.waitForTimeout(1000);
 
@@ -50,12 +55,12 @@ export default class ProductFind {
 
         await this.page.locator('#product-addtocart-button').click();
 
-        await this.page.locator('[x-text="cart.summary_count"]').waitFor({ state: 'visible' });
+        await this.page.locator('.counter.qty .counter-number').waitFor({ state: 'visible' });
 
         await this.page.reload();
     }
 
-    getProductTitle() {
+    getProductTitle(): string {
         return this.productTitle.trim();
     }
 }

@@ -16,19 +16,11 @@
  * Copyright www.controlaltdelete.dev
  */
 
-import {expect} from "@playwright/test";
-import ProductFind from "./ProductFind";
+import { test } from '@playwright/test';
+import ProductFindComponent from './Actions/ProductFind';
 
-export default class Checkout {
-    constructor(page) {
-        this.page = page;
-    }
+test('Can add product to cart', async ({ page }) => {
+    const ProductFind = new ProductFindComponent(page);
 
-    async visit() {
-        await new ProductFind(this.page).findAndAddToCart();
-
-        await this.page.goto('/checkout/');
-
-        await expect(await this.page.getByText('Shipping Methods')).toBeVisible();
-    }
-}
+    await ProductFind.findAndAddToCart();
+});
