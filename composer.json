@@ -25,16 +25,11 @@
         "controlaltdelete/magento2-fathom-analytics": "^1.0",
         "cweagans/composer-patches": "^1.7",
         "deployer/deployer": "^7.4",
-        "hyva-themes/magento2-compat-module-fallback": "^1.1",
-        "hyva-themes/magento2-default-theme": "1.3.17",
-        "hyva-themes/magento2-hyva-checkout": "^1.3",
         "magento/composer-dependency-version-audit-plugin": "~0.1",
         "magento/composer-root-update-plugin": "^2.0.4",
         "magento/product-community-edition": "2.4.8-p2",
         "mageplaza/magento-2-dutch-language-pack": "dev-master",
-        "mollie/magento2": "^2.41",
-        "mollie/magento2-hyva-checkout": "^1.5",
-        "mollie/magento2-hyva-compatibility": "^2.3"
+        "mollie/magento2": "^2.41"
     },
     "autoload": {
         "exclude-from-classmap": [

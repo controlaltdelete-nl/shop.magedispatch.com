@@ -4,5 +4,36 @@
         <referenceBlock name="reviews.tab" remove="true" />
         <referenceBlock name="product.review.form" remove="true" />
         <referenceBlock name="product.info.review" remove="true" />
+
+        <referenceContainer name="header.panel.wrapper" remove="true" />
+
+        <referenceContainer name="page.wrapper">
+            <container name="main-content-wrapper" htmlTag="div" htmlClass="main-content-wrapper" />
+        </referenceContainer>
+
+        <move element="breadcrumbs" destination="main-content-wrapper" before="-" />
+        <move element="main.content" destination="main-content-wrapper" />
+
+        <referenceContainer name="footer">
+            <referenceBlock name="footer_links">
+                <referenceBlock name="privacy-policy-link" remove="true" />
+                <referenceBlock name="sales-guest-form-link" remove="true" />
+
+                <block class="Magento\Framework\View\Element\Html\Link\Current" name="about-us">
+                    <arguments>
+                        <argument name="label" xsi:type="string" translate="true">About us</argument>
+                        <argument name="path" xsi:type="string">about-us</argument>
+                    </arguments>
+                </block>
+            </referenceBlock>
+
+            <container name="company-info-container" htmlTag="div" htmlClass="company-info">
+                <block class="Magento\Cms\Block\Block" name="company-info">
+                    <arguments>
+                        <argument name="block_id" xsi:type="string">company-info</argument>
+                    </arguments>
+                </block>
+            </container>
+        </referenceContainer>
     </body>
 </page>

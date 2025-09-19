@@ -248,19 +248,8 @@ return [
         'ControlAltDelete_FathomAnalytics' => 1,
         'ControlAltDelete_NoticeBar' => 1,
         'ControlAltDelete_Widget' => 1,
-        'Hyva_Theme' => 1,
-        'Hyva_CompatModuleFallback' => 1,
-        'Hyva_Email' => 1,
-        'Hyva_GraphqlTokens' => 1,
-        'Hyva_GraphqlViewModel' => 1,
-        'Hyva_MollieThemeBundle' => 1,
-        'Hyva_OrderCancellationWebapi' => 1,
-        'Magewirephp_Magewire' => 1,
-        'Mageplaza_Core' => 0,
-        'Hyva_Checkout' => 1,
+        'Mageplaza_Core' => 1,
         'Mollie_Payment' => 1,
-        'Mollie_HyvaCompatibility' => 1,
-        'Mollie_HyvaCheckout' => 1
     ],
     'scopes' => [
         'websites' => [
@@ -355,26 +344,26 @@ return [
             'type' => '0',
             'code' => 'Magento/backend'
         ],
-        'frontend/Hyva/reset' => [
+        'frontend/Magento/blank' => [
             'parent_id' => null,
-            'theme_path' => 'Hyva/reset',
-            'theme_title' => 'Hyvä Default',
+            'theme_path' => 'Magento/blank',
+            'theme_title' => 'Magento Blank',
             'is_featured' => '0',
             'area' => 'frontend',
             'type' => '0',
-            'code' => 'Hyva/reset'
+            'code' => 'Magento/blank'
         ],
-        'frontend/Hyva/default' => [
-            'parent_id' => 'Hyva/reset',
-            'theme_path' => 'Hyva/default',
-            'theme_title' => 'Hyvä Default',
+        'frontend/Magento/luma' => [
+            'parent_id' => 'Magento/blank',
+            'theme_path' => 'Magento/luma',
+            'theme_title' => 'Magento Luma',
             'is_featured' => '0',
             'area' => 'frontend',
             'type' => '0',
-            'code' => 'Hyva/default'
+            'code' => 'Magento/luma'
         ],
         'frontend/ControlAltDelete/MageDispatch' => [
-            'parent_id' => 'Hyva/default',
+            'parent_id' => 'Magento/luma',
             'theme_path' => 'ControlAltDelete/MageDispatch',
             'theme_title' => 'ControlAltDelete MageDispatch',
             'is_featured' => '0',
@@ -385,11 +374,6 @@ return [
     ],
     'system' => [
         'default' => [
-            'hyva_themes_checkout' => [
-                'general' => [
-                    'checkout' => 'onepage'
-                ]
-            ],
             'design' => [
                 'footer' => [
                     'report_bugs' => '0',
