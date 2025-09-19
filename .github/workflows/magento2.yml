@@ -188,7 +188,7 @@ jobs:
   deploy:
     if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/develop'
     needs:
-#      - test-end-to-end
+      - test-end-to-end
       - test-phpstan
 
     concurrency: deploy-${{ github.head_ref || github.ref_name }}
