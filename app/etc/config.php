@@ -248,8 +248,7 @@ return [
         'ControlAltDelete_FathomAnalytics' => 1,
         'ControlAltDelete_NoticeBar' => 1,
         'ControlAltDelete_Widget' => 1,
-        'Mageplaza_Core' => 1,
-        'Mollie_Payment' => 1,
+        'Mollie_Payment' => 1
     ],
     'scopes' => [
         'websites' => [
