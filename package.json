@@ -20,7 +20,7 @@
     "grunt-contrib-jasmine": "~4.0.0",
     "grunt-contrib-less": "~3.0.0",
     "grunt-contrib-watch": "~1.1.0",
-    "grunt-eslint": "~25.0.0",
+    "grunt-eslint": "~26.0.0",
     "grunt-exec": "~3.0.0",
     "grunt-replace": "~2.0.2",
     "grunt-styledocco": "~0.3.0",
@@ -32,7 +32,7 @@
     "morgan": "~1.10.0",
     "node-minify": "~3.6.0",
     "path": "~0.12.7",
-    "serve-static": "~1.16.0",
+    "serve-static": "~2.2.0",
     "squirejs": "~0.2.1",
     "strip-comments": "~2.0.1",
     "time-grunt": "~2.0.0",
@@ -41,7 +41,7 @@
  "overrides": {
    "styledocco": {
      "uglify-js": "~3.19.0",
-     "marked": "~15.0.0",
+     "marked": "~16.3.0",
      "clean-css": "~5.3.2"
    },
    "mkdirp" : {
@@ -57,7 +57,7 @@
      "terser": "~5.44.0"
    },
    "grunt-contrib-imagemin": {
-     "css-select":"~5.2.0",
+     "css-select":"~6.0.0",
      "nth-check": "~2.1.1"
    },
    "bin-version-check": {
