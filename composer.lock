@@ -17128,16 +17128,16 @@
         },
         {
             "name": "mollie/magento2",
-            "version": "2.46.0",
+            "version": "2.47.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mollie/magento2.git",
-                "reference": "25c957a20fcf62c8990abf05deb3269fc6cce501"
+                "reference": "90349f00d816b78c4bd1bfe9d61861acaa7e1d54"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mollie/magento2/zipball/25c957a20fcf62c8990abf05deb3269fc6cce501",
-                "reference": "25c957a20fcf62c8990abf05deb3269fc6cce501",
+                "url": "https://api.github.com/repos/mollie/magento2/zipball/90349f00d816b78c4bd1bfe9d61861acaa7e1d54",
+                "reference": "90349f00d816b78c4bd1bfe9d61861acaa7e1d54",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -17205,6 +17205,7 @@
                 "belfius",
                 "belfius direct net",
                 "billie",
+                "bizum",
                 "blik",
                 "charges",
                 "creditcard",
@@ -17253,9 +17254,9 @@
             ],
             "support": {
                 "issues": "https://github.com/mollie/magento2/issues",
-                "source": "https://github.com/mollie/magento2/tree/v2.46.0"
+                "source": "https://github.com/mollie/magento2/tree/v2.47.0"
             },
-            "time": "2025-06-17T09:39:42+00:00"
+            "time": "2025-09-22T14:17:45+00:00"
         },
         {
             "name": "mollie/mollie-api-php",
@@ -27718,10 +27719,10 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {},
     "prefer-stable": true,
     "prefer-lowest": false,
-    "platform": [],
-    "platform-dev": [],
-    "plugin-api-version": "2.2.0"
+    "platform": {},
+    "platform-dev": {},
+    "plugin-api-version": "2.6.0"
 }
