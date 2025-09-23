@@ -1,0 +1,11 @@
+hosts:
+  localhost:
+    local: true
+
+  shop.magedispatch.com:
+    hostname: 0.0.0.0
+    stage: production
+    branch: main
+    deploy_path: /path/to/shop.magedispatch.com
+    remote_user: app
+    php_version: 8.3

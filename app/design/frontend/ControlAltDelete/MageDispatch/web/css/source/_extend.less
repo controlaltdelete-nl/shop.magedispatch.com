@@ -1,0 +1,48 @@
+@button-primary__background: #51829B;
+@button-primary__border: 1px solid darken(#51829B, 10%);
+@button-primary__color: @color-white;
+@button-primary__hover__background: darken(#51829B, 5%);
+@button-primary__hover__border: 1px solid #51829B;
+@button-primary__hover__color: @color-white;
+
+@active__color: #51829B;
+//@navigation__background: #EADFB4;
+
+
+.page-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content-wrapper {
+    background: url('../images/background.svg');
+    flex: 1;
+}
+
+.page-main, .breadcrumbs {
+    background: #fff;
+}
+
+.breadcrumbs {
+    margin-bottom: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.sections.nav-sections {
+    margin-bottom: 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+
+    .company-info {
+        text-align: right;
+    }
+}
+
+.page-title-wrapper {
+    padding-top: 25px;
+}

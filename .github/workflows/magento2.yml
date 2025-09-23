@@ -4,13 +4,14 @@ on: push
 
 jobs:
   build:
-    runs-on: self-hosted
+    runs-on: self-hosted-fast
 
     env:
       COMPOSER_AUTH: ${{ secrets.COMPOSER_AUTH }}
+      DEPLOYER_HOSTS: ${{ secrets.DEPLOYER_HOSTS }}
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Cache vendor
         uses: actions/cache@v4
@@ -29,8 +30,14 @@ jobs:
           rm -rfv vendor/magento/magento2-base || echo "No Magento 2 Base to remove"
           composer install --no-dev --prefer-dist --optimize-autoloader
 
+      - name: Create hosts.yml from secret
+        run: echo "$DEPLOYER_HOSTS" > hosts.yml
+
       - name: Build artifact
         run: vendor/bin/dep artifact:build localhost
+
+      - name: Delete hosts.yml
+        run: rm hosts.yml
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
@@ -52,14 +59,14 @@ jobs:
     needs:
       - build
 
-    runs-on: self-hosted
+    runs-on: self-hosted-fast
 
     env:
       COMPOSER_AUTH: ${{ secrets.COMPOSER_AUTH }}
 
     steps:
       - name: Download artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v5
         with:
           name: build-artifact
           path: artifacts
@@ -86,17 +93,17 @@ jobs:
     needs:
       - build
 
-    runs-on: self-hosted
+    runs-on: self-hosted-full
 
     steps:
       - name: Download artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v5
         with:
           name: build-artifact
           path: artifacts
 
       - name: Set up AWS credentials
-        uses: aws-actions/configure-aws-credentials@v4
+        uses: aws-actions/configure-aws-credentials@v5
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
@@ -161,7 +168,7 @@ jobs:
             echo "changed=error" >> $GITHUB_OUTPUT
           fi
 
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         if: steps.check_changes.outputs.changed == 'true'
         with:
           path: 'checkout'
@@ -185,10 +192,13 @@ jobs:
       - test-phpstan
 
     concurrency: deploy-${{ github.head_ref || github.ref_name }}
-    runs-on: self-hosted
+    runs-on: self-hosted-fast
+
+    env:
+      DEPLOYER_HOSTS: ${{ secrets.DEPLOYER_HOSTS }}
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Cache vendor
         uses: actions/cache@v4
@@ -203,10 +213,13 @@ jobs:
         run: switch-php php8.3
 
       - name: Download artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v5
         with:
           name: build-artifact
           path: artifacts
+
+      - name: Create hosts.yml from secret
+        run: echo "$DEPLOYER_HOSTS" > hosts.yml
 
       - name: Deploy artifact
         uses: deployphp/action@v1

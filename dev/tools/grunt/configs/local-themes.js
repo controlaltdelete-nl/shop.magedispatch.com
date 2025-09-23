@@ -19,9 +19,9 @@
  *
  */
 module.exports = {
-    magestore: {
+    magedispatch: {
         area: 'frontend',
-        name: 'ControlAltDelete/MageStore',
+        name: 'ControlAltDelete/MageDispatch',
         locale: 'en_US',
         files: [
             'css/styles-m',

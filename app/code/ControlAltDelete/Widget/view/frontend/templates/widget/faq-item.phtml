@@ -1,0 +1,51 @@
+<?php
+/*
+ *     ______            __             __
+ *    / ____/___  ____  / /__________  / /
+ *   / /   / __ \/ __ \/ __/ ___/ __ \/ /
+ *  / /___/ /_/ / / / / /_/ /  / /_/ / /
+ *  \______________/_/\__/_/   \____/_/
+ *     /   |  / / /_
+ *    / /| | / / __/
+ *   / ___ |/ / /_
+ *  /_/ _|||_/\__/ __     __
+ *     / __ \___  / /__  / /____
+ *    / / / / _ \/ / _ \/ __/ _ \
+ *   / /_/ /  __/ /  __/ /_/  __/
+ *  /_____/\___/_/\___/\__/\___/
+ *
+ * Copyright www.controlaltdelete.dev
+ */
+
+use Magento\Framework\Escaper;
+use ControlAltDelete\Widget\Block\Widget\FaqItem;
+
+/** @var FaqItem $block */
+/** @var Escaper $escaper */
+?>
+
+<div x-data="{open:<?= $block->getOpenByDefault() == '1' ? 'true' : 'false' ?>}" class="mb-4">
+    <div @click="open = !open"
+         class="
+            cursor-pointer
+            bg-brand-orange
+            text-white
+            p-2
+          "
+    >
+        <svg class="w-5 h-5 inline transition-transform rotate-90"
+             :class="{ 'rotate-90': open }"
+             data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5"></path>
+        </svg>
+
+        <?= $escaper->escapeHtml($block->getQuestion()) ?>
+    </div>
+
+    <div class="px-2 py-4 border-x border-b border-black leading-relaxed [&_a]:underline bg-white"
+         x-show.important="open"
+         x-transition style="display: none"
+    >
+        <p><?= /** @noEscape */ html_entity_decode($block->getAnswer()) ?></p>
+    </div>
+</div>

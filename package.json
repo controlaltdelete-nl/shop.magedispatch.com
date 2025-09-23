@@ -27,7 +27,7 @@
     "grunt-template-jasmine-requirejs": "~0.2.3",
     "grunt-text-replace": "~0.4.0",
     "imagemin-svgo": "~11.0.0",
-    "less": "4.2.1",
+    "less": "4.4.1",
     "load-grunt-config": "~4.0.1",
     "morgan": "~1.10.0",
     "node-minify": "~3.6.0",
@@ -54,17 +54,17 @@
      "trim-newlines":"~5.0.0"
    },
    "node-minify": {
-     "terser": "~5.37.0"
+     "terser": "~5.44.0"
    },
    "grunt-contrib-imagemin": {
-     "css-select":"~5.1.0",
+     "css-select":"~5.2.0",
      "nth-check": "~2.1.1"
    },
    "bin-version-check": {
      "semver-regex": "~4.0.0"
    },
    "cacheable-request": {
-     "http-cache-semantics": "~4.1.1"
+     "http-cache-semantics": "~4.2.0"
    },
    "babel-core": {
      "json5": "~2.2.3"

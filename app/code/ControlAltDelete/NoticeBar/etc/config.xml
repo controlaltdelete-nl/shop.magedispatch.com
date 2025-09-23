@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!--
+  ~     ______            __             __
+  ~    / ____/___  ____  / /__________  / /
+  ~   / /   / __ \/ __ \/ __/ ___/ __ \/ /
+  ~  / /___/ /_/ / / / / /_/ /  / /_/ / /
+  ~  \______________/_/\__/_/   \____/_/
+  ~     /   |  / / /_
+  ~    / /| | / / __/
+  ~   / ___ |/ / /_
+  ~  /_/ _|||_/\__/ __     __
+  ~     / __ \___  / /__  / /____
+  ~    / / / / _ \/ / _ \/ __/ _ \
+  ~   / /_/ /  __/ /  __/ /_/  __/
+  ~  /_____/\___/_/\___/\__/\___/
+  ~
+  ~ Copyright www.controlaltdelete.dev
+  -->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <noticebar>
+            <general>
+                <enabled>0</enabled>
+                <notice_text>Did you know...</notice_text>
+                <text_align>left</text_align>
+            </general>
+        </noticebar>
+    </default>
+</config>

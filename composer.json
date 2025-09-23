@@ -13,23 +13,22 @@
             "magento/*": true,
             "php-http/discovery": true,
             "phpstan/extension-installer": true,
-            "yireo/magento2-replace-tools": true
+            "yireo/magento2-replace-tools": true,
+            "cweagans/composer-patches": true
         },
         "preferred-install": "dist",
         "sort-packages": true
     },
     "version": "2.4.7-p3",
     "require": {
+        "avstudnitz/scopehint2": "^1.3",
+        "controlaltdelete/magento2-fathom-analytics": "^1.0",
+        "cweagans/composer-patches": "^1.7",
         "deployer/deployer": "^7.4",
-        "hyva-themes/magento2-compat-module-fallback": "^1.1",
-        "hyva-themes/magento2-default-theme": "^1.3",
-        "hyva-themes/magento2-hyva-checkout": "^1.1",
         "magento/composer-dependency-version-audit-plugin": "~0.1",
         "magento/composer-root-update-plugin": "^2.0.4",
-        "magento/product-community-edition": "2.4.7-p3",
-        "mageplaza/magento-2-dutch-language-pack": "dev-master",
-        "mollie/magento2": "^2.41",
-        "tig/postnl-magento2": "^1.16"
+        "magento/product-community-edition": "2.4.8-p2",
+        "mollie/magento2": "^2.41"
     },
     "autoload": {
         "exclude-from-classmap": [
@@ -53,22 +52,20 @@
     },
     "require-dev": {
         "allure-framework/allure-phpunit": "^2",
-        "avstudnitz/scopehint2": "^1.2",
         "dealerdirect/phpcodesniffer-composer-installer": "^0.7 || ^1.0",
         "dg/bypass-finals": "^1.4",
         "friendsofphp/php-cs-fixer": "^3.22",
         "lusitanian/oauth": "^0.8",
         "mage2tv/magento-cache-clean": "^1.0",
         "magento/magento-coding-standard": "*",
-        "magento/magento2-functional-testing-framework": "^4.7",
         "pdepend/pdepend": "^2.10",
         "phpmd/phpmd": "^2.12",
-        "phpstan/phpstan": "^1.9",
+        "phpstan/phpstan": "^2.0",
         "phpunit/phpunit": "^9.5",
         "reach-digital/magento2-test-framework": "^1.7",
         "sebastian/phpcpd": "^6.0",
         "symfony/finder": "^6.4",
-        "bitexpert/phpstan-magento": "^0.32.0",
+        "bitexpert/phpstan-magento": "^0.42.0",
         "php-parallel-lint/php-parallel-lint": "^1.4",
         "yireo/magento2-replace-tools": "^1.0"
     },
@@ -103,6 +100,11 @@
                 "yireo/magento2-replace-graphql",
                 "yireo/magento2-replace-sample-data"
             ]
+        },
+        "patches": {
+            "magento/framework": {
+                "CVE-2025-54236": "patches/VULN-32437_2.4.X.patch"
+            }
         }
     },
     "replace": {
@@ -135,7 +137,6 @@
         "mage-os/module-bundle-graph-ql": "*",
         "mage-os/module-bundle-sample-data": "*",
         "mage-os/module-catalog-cms-graph-ql": "*",
-        "mage-os/module-catalog-customer-graph-ql": "*",
         "mage-os/module-catalog-customer-ql": "*",
         "mage-os/module-catalog-inventory-graph-ql": "*",
         "mage-os/module-catalog-permissions-graph-ql": "*",
@@ -161,7 +162,6 @@
         "mage-os/module-elasticsearch-catalog-permissions-graph-ql": "*",
         "mage-os/module-gift-card-account-graph-ql": "*",
         "mage-os/module-gift-card-graph-ql": "*",
-        "mage-os/module-gift-message-graph-ql": "*",
         "mage-os/module-gift-registry-graph-ql": "*",
         "mage-os/module-gift-wrapping-graph-ql": "*",
         "mage-os/module-graph-ql": "*",
@@ -281,14 +281,15 @@
         "magento/inventory-composer-metapackage": "*",
         "magento/module-async-order-graph-ql": "*",
         "magento/module-authorizenet-graph-ql": "*",
+        "magento/module-aws-s3-page-builder": "*",
         "magento/module-braintree": "*",
         "magento/module-braintree-graph-ql": "*",
         "magento/module-bundle-graph-ql": "*",
         "magento/module-bundle-sample-data": "*",
         "magento/module-catalog-cms-graph-ql": "*",
-        "magento/module-catalog-customer-graph-ql": "*",
         "magento/module-catalog-customer-ql": "*",
         "magento/module-catalog-inventory-graph-ql": "*",
+        "magento/module-catalog-page-builder-analytics": "*",
         "magento/module-catalog-permissions-graph-ql": "*",
         "magento/module-catalog-rule-graph-ql": "*",
         "magento/module-catalog-rule-sample-data": "*",
@@ -297,6 +298,7 @@
         "magento/module-catalog-url-rewrite-graph-ql": "*",
         "magento/module-checkout-agreements-graph-ql": "*",
         "magento/module-cms-graph-ql": "*",
+        "magento/module-cms-page-builder-analytics": "*",
         "magento/module-cms-sample-data": "*",
         "magento/module-cms-url-rewrite-graph-ql": "*",
         "magento/module-compare-list-graph-ql": "*",
@@ -312,7 +314,6 @@
         "magento/module-elasticsearch-catalog-permissions-graph-ql": "*",
         "magento/module-gift-card-account-graph-ql": "*",
         "magento/module-gift-card-graph-ql": "*",
-        "magento/module-gift-message-graph-ql": "*",
         "magento/module-gift-registry-graph-ql": "*",
         "magento/module-gift-wrapping-graph-ql": "*",
         "magento/module-grouped-product-graph-ql": "*",
@@ -331,6 +332,7 @@
         "magento/module-inventory-catalog-admin-ui": "*",
         "magento/module-inventory-catalog-api": "*",
         "magento/module-inventory-catalog-frontend-ui": "*",
+        "magento/module-inventory-catalog-rule": "*",
         "magento/module-inventory-catalog-search": "*",
         "magento/module-inventory-catalog-search-bundle-product": "*",
         "magento/module-inventory-catalog-search-configurable-product": "*",
@@ -397,10 +399,13 @@
         "magento/module-newsletter-graph-ql": "*",
         "magento/module-offline-shipping-sample-data": "*",
         "magento/module-order-cancellation-graph-ql": "*",
+        "magento/module-page-builder-admin-analytics": "*",
+        "magento/module-page-builder-analytics": "*",
         "magento/module-payment-graph-ql": "*",
         "magento/module-paypal-graph-ql": "*",
         "magento/module-product-links-sample-data": "*",
-        "magento/module-re-captcha-webapi-graph-ql": "*",
+        "magento/module-re-captcha-version-2-checkbox": "*",
+        "magento/module-re-captcha-version-2-invisible": "*",
         "magento/module-related-product-graph-ql": "*",
         "magento/module-review-graph-ql": "*",
         "magento/module-review-sample-data": "*",

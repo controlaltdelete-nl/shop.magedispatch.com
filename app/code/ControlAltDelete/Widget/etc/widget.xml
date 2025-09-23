@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<!--
+  ~     ______            __             __
+  ~    / ____/___  ____  / /__________  / /
+  ~   / /   / __ \/ __ \/ __/ ___/ __ \/ /
+  ~  / /___/ /_/ / / / / /_/ /  / /_/ / /
+  ~  \______________/_/\__/_/   \____/_/
+  ~     /   |  / / /_
+  ~    / /| | / / __/
+  ~   / ___ |/ / /_
+  ~  /_/ _|||_/\__/ __     __
+  ~     / __ \___  / /__  / /____
+  ~    / / / / _ \/ / _ \/ __/ _ \
+  ~   / /_/ /  __/ /  __/ /_/  __/
+  ~  /_____/\___/_/\___/\__/\___/
+  ~
+  ~ Copyright www.controlaltdelete.dev
+  -->
+
+<widgets
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd"
+>
+    <widget id="ControlAltDelete_FaqItem" class="ControlAltDelete\Widget\Block\Widget\FaqItem">
+        <label>FAQ Item</label>
+        <description></description>
+        <parameters>
+            <parameter name="question" sort_order="10" visible="true" xsi:type="text">
+                <label translate="true">Question</label>
+            </parameter>
+            <parameter name="open_by_default" sort_order="20" visible="true" xsi:type="select">
+                <label translate="true">Open by default</label>
+                <options>
+                    <option name="yes" value="1">
+                        <label translate="true">Yes</label>
+                    </option>
+                    <option name="no" value="0" selected="true">
+                        <label translate="true">No</label>
+                    </option>
+                </options>
+            </parameter>
+            <parameter name="answer" sort_order="30" visible="true" xsi:type="block">
+                <label translate="true">Answer</label>
+                <block class="ControlAltDelete\Widget\Block\Adminhtml\Widget\Wysiwyg"/>
+            </parameter>
+        </parameters>
+    </widget>
+</widgets>
