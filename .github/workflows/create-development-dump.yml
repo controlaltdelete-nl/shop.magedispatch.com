@@ -7,7 +7,7 @@ on:
 
 jobs:
   create-development-dump:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
 
     env:
       COMPOSER_AUTH: ${{ secrets.COMPOSER_AUTH }}
@@ -25,7 +25,9 @@ jobs:
           key: vendor-${{ hashFiles('**/composer.lock') }}
 
       - name: Setup PHP
-        run: switch-php php8.3
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
 
       - name: Install dependencies
         run: |

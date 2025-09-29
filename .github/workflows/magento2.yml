@@ -4,7 +4,7 @@ on: push
 
 jobs:
   build:
-    runs-on: self-hosted-fast
+    runs-on: ubuntu-latest
 
     env:
       COMPOSER_AUTH: ${{ secrets.COMPOSER_AUTH }}
@@ -23,7 +23,9 @@ jobs:
           key: vendor-${{ hashFiles('**/composer.lock') }}
 
       - name: Setup PHP
-        run: switch-php php8.3
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
 
       - name: Install Composer dependencies
         run: |
@@ -59,7 +61,7 @@ jobs:
     needs:
       - build
 
-    runs-on: self-hosted-fast
+    runs-on: ubuntu-latest
 
     env:
       COMPOSER_AUTH: ${{ secrets.COMPOSER_AUTH }}
@@ -76,7 +78,9 @@ jobs:
           tar -xzf artifacts/artifact.tar.gz
 
       - name: Setup PHP
-        run: switch-php php8.3
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
 
       - name: Install Composer dependencies
         run: |
@@ -93,7 +97,7 @@ jobs:
     needs:
       - build
 
-    runs-on: self-hosted-full
+    runs-on: ubuntu-latest
 
     steps:
       - name: Download artifact
@@ -192,7 +196,7 @@ jobs:
       - test-phpstan
 
     concurrency: deploy-${{ github.head_ref || github.ref_name }}
-    runs-on: self-hosted-fast
+    runs-on: ubuntu-latest
 
     env:
       DEPLOYER_HOSTS: ${{ secrets.DEPLOYER_HOSTS }}
@@ -210,7 +214,9 @@ jobs:
           key: vendor-${{ hashFiles('**/composer.lock') }}
 
       - name: Setup PHP
-        run: switch-php php8.3
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
 
       - name: Download artifact
         uses: actions/download-artifact@v5
