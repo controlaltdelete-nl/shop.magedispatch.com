@@ -14,7 +14,7 @@ on:
 
 jobs:
   create-patch-helper-files:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
 
     env:
       COMPOSER_AUTH: ${{ secrets.COMPOSER_AUTH }}
