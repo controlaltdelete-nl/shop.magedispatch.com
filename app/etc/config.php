@@ -48,7 +48,7 @@ return [
         'Magento_SalesSequence' => 1,
         'Magento_MediaGalleryUi' => 1,
         'Magento_CmsUrlRewrite' => 1,
-        'Magento_TwoFactorAuth' => 0,
+        'Magento_TwoFactorAuth' => 1,
         'Magento_Msrp' => 1,
         'Magento_Sales' => 1,
         'Magento_CatalogInventory' => 1,
