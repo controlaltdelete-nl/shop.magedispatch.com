@@ -17128,16 +17128,16 @@
         },
         {
             "name": "mollie/magento2",
-            "version": "2.47.0",
+            "version": "2.48.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mollie/magento2.git",
-                "reference": "90349f00d816b78c4bd1bfe9d61861acaa7e1d54"
+                "reference": "cefed6aadaaf769d5d0fdec11abb33f69144a4aa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mollie/magento2/zipball/90349f00d816b78c4bd1bfe9d61861acaa7e1d54",
-                "reference": "90349f00d816b78c4bd1bfe9d61861acaa7e1d54",
+                "url": "https://api.github.com/repos/mollie/magento2/zipball/cefed6aadaaf769d5d0fdec11abb33f69144a4aa",
+                "reference": "cefed6aadaaf769d5d0fdec11abb33f69144a4aa",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -17250,13 +17250,14 @@
                 "swish",
                 "trustly",
                 "twint",
+                "vipps",
                 "voucher"
             ],
             "support": {
                 "issues": "https://github.com/mollie/magento2/issues",
-                "source": "https://github.com/mollie/magento2/tree/v2.47.0"
+                "source": "https://github.com/mollie/magento2/tree/v2.48.0"
             },
-            "time": "2025-09-22T14:17:45+00:00"
+            "time": "2025-10-07T07:31:44+00:00"
         },
         {
             "name": "mollie/mollie-api-php",
