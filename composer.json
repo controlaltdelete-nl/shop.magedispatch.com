@@ -100,11 +100,6 @@
                 "yireo/magento2-replace-graphql",
                 "yireo/magento2-replace-sample-data"
             ]
-        },
-        "patches": {
-            "magento/framework": {
-                "CVE-2025-54236": "patches/VULN-32437_2.4.X.patch"
-            }
         }
     },
     "replace": {
