@@ -25,10 +25,6 @@ use Magento\Framework\Escaper;
 /** @var Escaper $escaper */
 /** @var NoticeBar $block */
 ?>
-<div class="bg-brand-secondary">
-    <div class="columns pt-[1rem]">
-        <div class="column main [&>a]:underline text-<?= $escaper->escapeHtmlAttr($block->getTextAlign()) ?>">
-            <?= $block->getText() ?>
-        </div>
-    </div>
+<div class="controlaltdelete-notice-bar controlaltdelete-notice-bar-<?= $escaper->escapeHtmlAttr($block->getTextAlign()) ?>">
+    <?= $block->getText() ?>
 </div>
