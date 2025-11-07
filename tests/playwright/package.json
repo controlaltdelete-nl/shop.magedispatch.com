@@ -17,7 +17,7 @@
   "devDependencies": {
     "@estruyf/github-actions-reporter": "^1.9.0",
     "@playwright/test": "^1.46.1",
-    "@types/node": "^22.5.0",
+    "@types/node": "^24.0.0",
     "typescript": "^5.3.0"
   }
 }
