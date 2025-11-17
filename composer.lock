@@ -5361,16 +5361,16 @@
         },
         {
             "name": "loki/magento2-base",
-            "version": "1.1.7",
+            "version": "1.1.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/LokiExtensions/Loki_Base.git",
-                "reference": "6e374b1fc47d82c084f52a6cf19451a01d65cd9b"
+                "reference": "b7941b016b034d0cb7811b511f0bbec305f56275"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/LokiExtensions/Loki_Base/zipball/6e374b1fc47d82c084f52a6cf19451a01d65cd9b",
-                "reference": "6e374b1fc47d82c084f52a6cf19451a01d65cd9b",
+                "url": "https://api.github.com/repos/LokiExtensions/Loki_Base/zipball/b7941b016b034d0cb7811b511f0bbec305f56275",
+                "reference": "b7941b016b034d0cb7811b511f0bbec305f56275",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -5398,8 +5398,11 @@
                 "OSL-3.0"
             ],
             "description": "Base utilities for any Loki behaviour",
+            "keywords": [
+                "loki"
+            ],
             "support": {
-                "source": "https://github.com/LokiExtensions/Loki_Base/tree/1.1.7"
+                "source": "https://github.com/LokiExtensions/Loki_Base/tree/1.1.10"
             },
             "funding": [
                 {
@@ -5411,20 +5414,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-10-22T11:47:46+00:00"
+            "time": "2025-11-12T11:45:44+00:00"
         },
         {
             "name": "loki/magento2-components",
-            "version": "2.2.17",
+            "version": "2.2.23",
             "source": {
                 "type": "git",
                 "url": "https://github.com/LokiExtensions/Loki_Components.git",
-                "reference": "9163b383b274201e3dde2a54779e710f90b3e057"
+                "reference": "1471d498459cdc1003154321685d0721a9976ffd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/LokiExtensions/Loki_Components/zipball/9163b383b274201e3dde2a54779e710f90b3e057",
-                "reference": "9163b383b274201e3dde2a54779e710f90b3e057",
+                "url": "https://api.github.com/repos/LokiExtensions/Loki_Components/zipball/1471d498459cdc1003154321685d0721a9976ffd",
+                "reference": "1471d498459cdc1003154321685d0721a9976ffd",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -5472,7 +5475,7 @@
             ],
             "support": {
                 "issues": "https://github.com/LokiExtensions/Loki_Components/issues",
-                "source": "https://github.com/LokiExtensions/Loki_Components/tree/2.2.17"
+                "source": "https://github.com/LokiExtensions/Loki_Components/tree/2.2.23"
             },
             "funding": [
                 {
@@ -5484,7 +5487,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-10-22T11:47:37+00:00"
+            "time": "2025-11-14T12:42:12+00:00"
         },
         {
             "name": "loki/magento2-css-utils",
@@ -5541,10 +5544,10 @@
         },
         {
             "name": "loki/magento2-field-components",
-            "version": "2.2.10",
+            "version": "2.2.11",
             "dist": {
                 "type": "zip",
-                "url": "https://composer.yireo.com/download/Loki_FieldComponents/2.2.10",
+                "url": "https://composer.yireo.com/download/Loki_FieldComponents/2.2.11",
                 "mirrors": [
                     {
                         "url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/dists/%package%/%version%/r%reference%.%type%",
@@ -5571,7 +5574,7 @@
                 }
             },
             "notification-url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/downloads/",
-            "time": "2025-10-22T11:47:10+00:00"
+            "time": "2025-11-12T08:03:27+00:00"
         },
         {
             "name": "loki/magento2-map-components",
