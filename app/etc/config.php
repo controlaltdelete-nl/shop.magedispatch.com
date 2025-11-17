@@ -249,7 +249,17 @@ return [
         'ControlAltDelete_FathomAnalytics' => 1,
         'ControlAltDelete_NoticeBar' => 1,
         'ControlAltDelete_Widget' => 1,
-        'Mollie_Payment' => 1
+        'Loki_CssUtils' => 1,
+        'Loki_Base' => 1,
+        'Yireo_CspUtilities' => 0,
+        'Loki_Components' => 1,
+        'Loki_MapComponents' => 1,
+        'Loki_FieldComponents' => 1,
+        'Mollie_Payment' => 1,
+        'LokiCheckout_Core' => 1,
+        'LokiCheckout_Luma' => 1,
+        'LokiCheckout_Mollie' => 1,
+        'LokiCheckout_CoreCli' => 1
     ],
     'scopes' => [
         'websites' => [

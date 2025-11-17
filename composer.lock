@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "18063a481aece641f60a74c6a7c4e7cd",
+    "content-hash": "c811c80f16aad7161ebbfd114b1ad5d0",
     "packages": [
         {
             "name": "2tvenom/cborencode",
@@ -5166,6 +5166,445 @@
                 }
             ],
             "time": "2024-09-21T08:32:55+00:00"
+        },
+        {
+            "name": "loki-checkout/magento2-core",
+            "version": "2.1.24",
+            "dist": {
+                "type": "zip",
+                "url": "https://composer.yireo.com/download/LokiCheckout_Core/2.1.24",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-intl": "*",
+                "ext-json": "*",
+                "ext-pcre": "*",
+                "guzzlehttp/guzzle": "^7.0",
+                "loki/magento2-components": "^2.0",
+                "loki/magento2-css-utils": "^1.0",
+                "loki/magento2-field-components": "^2.0",
+                "loki/magento2-map-components": "~0.1",
+                "magento/framework": "^103.0",
+                "magento/module-backend": "^102.0",
+                "magento/module-catalog": "^103.0 | ^104.0",
+                "magento/module-checkout": "^100.0",
+                "magento/module-checkout-agreements": "^100.0",
+                "magento/module-config": "^101.0",
+                "magento/module-customer": "^103.0",
+                "magento/module-directory": "^100.0",
+                "magento/module-eav": "^102.0",
+                "magento/module-newsletter": "^100.0",
+                "magento/module-payment": "^100.0",
+                "magento/module-quote": "^101.0",
+                "magento/module-sales": "^103.0",
+                "magento/module-shipping": "^100.0",
+                "magento/module-store": "^101.0",
+                "magento/module-vault": "^101.0",
+                "php": "^8.1",
+                "psr/log": "^1.0 | ^2.0 | ^3.0",
+                "yireo/magento2-csp-utilities": "^1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.0 | ^10.0",
+                "yireo/magento2-integration-test-helper": "~0.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "LokiCheckout\\Core\\": ""
+                }
+            },
+            "notification-url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/downloads/",
+            "time": "2025-11-14T19:06:07+00:00"
+        },
+        {
+            "name": "loki-checkout/magento2-core-cli",
+            "version": "1.0.6",
+            "dist": {
+                "type": "zip",
+                "url": "https://composer.yireo.com/download/LokiCheckout_CoreCli/1.0.6",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "ext-json": "*",
+                "loki-checkout/magento2-core": "^2.0",
+                "magento/framework": "^103.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "LokiCheckout\\CoreCli\\": ""
+                }
+            },
+            "notification-url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/downloads/",
+            "time": "2025-10-22T11:53:45+00:00"
+        },
+        {
+            "name": "loki-checkout/magento2-luma",
+            "version": "1.0.24",
+            "dist": {
+                "type": "zip",
+                "url": "https://composer.yireo.com/download/LokiCheckout_Luma/1.0.24",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "loki-checkout/magento2-core": "^2.0",
+                "loki/magento2-components": "^2.0",
+                "loki/magento2-css-utils": "^1.0",
+                "magento/framework": "^103.0",
+                "magento/module-store": "^101.0",
+                "yireo/magento2-theme-by-route": "^1.1"
+            },
+            "type": "magento2-module",
+            "notification-url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/downloads/",
+            "time": "2025-11-03T15:11:50+00:00"
+        },
+        {
+            "name": "loki-checkout/magento2-mollie",
+            "version": "2.0.14",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/LokiCheckout/LokiCheckout_Mollie.git",
+                "reference": "5e8f03cacddb08264583e54fae79f923def414c4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/LokiCheckout/LokiCheckout_Mollie/zipball/5e8f03cacddb08264583e54fae79f923def414c4",
+                "reference": "5e8f03cacddb08264583e54fae79f923def414c4",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "ext-pcre": "*",
+                "loki-checkout/magento2-core": "^2.0",
+                "loki/magento2-components": "^2.0",
+                "loki/magento2-css-utils": "^1.0",
+                "loki/magento2-field-components": "^2.0",
+                "magento/framework": "^103.0",
+                "magento/module-customer": "^103.0",
+                "magento/module-payment": "^100.0",
+                "magento/module-quote": "^101.0",
+                "magento/module-store": "^101.0",
+                "magento/module-vault": "^101.0",
+                "mollie/magento2": "^2.0",
+                "mollie/mollie-api-php": "^2.0"
+            },
+            "require-dev": {
+                "yireo/magento2-integration-test-helper": "~0.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "LokiCheckout\\Mollie\\": ""
+                }
+            },
+            "notification-url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/downloads/",
+            "license": [
+                "OSL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Jisse Reitsma (Yireo)",
+                    "email": "jisse@yireo.com"
+                }
+            ],
+            "description": "Mollie compatibility for Loki Checkout",
+            "homepage": "https://loki-checkout.com/",
+            "keywords": [
+                "loki-payment"
+            ],
+            "support": {
+                "issues": "https://github.com/LokiCheckout/LokiCheckout_Mollie/issues",
+                "source": "https://github.com/LokiCheckout/LokiCheckout_Mollie/tree/2.0.14"
+            },
+            "funding": [
+                {
+                    "url": "https://www.paypal.me/yireo",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/yireo",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-10-22T11:51:31+00:00"
+        },
+        {
+            "name": "loki/magento2-base",
+            "version": "1.1.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/LokiExtensions/Loki_Base.git",
+                "reference": "6e374b1fc47d82c084f52a6cf19451a01d65cd9b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/LokiExtensions/Loki_Base/zipball/6e374b1fc47d82c084f52a6cf19451a01d65cd9b",
+                "reference": "6e374b1fc47d82c084f52a6cf19451a01d65cd9b",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "loki/magento2-css-utils": "^1.0",
+                "magento/framework": "^103.0",
+                "magento/module-store": "^101.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Loki\\Base\\": ""
+                }
+            },
+            "notification-url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/downloads/",
+            "license": [
+                "OSL-3.0"
+            ],
+            "description": "Base utilities for any Loki behaviour",
+            "support": {
+                "source": "https://github.com/LokiExtensions/Loki_Base/tree/1.1.7"
+            },
+            "funding": [
+                {
+                    "url": "https://www.paypal.me/yireo",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/yireo",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-10-22T11:47:46+00:00"
+        },
+        {
+            "name": "loki/magento2-components",
+            "version": "2.2.17",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/LokiExtensions/Loki_Components.git",
+                "reference": "9163b383b274201e3dde2a54779e710f90b3e057"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/LokiExtensions/Loki_Components/zipball/9163b383b274201e3dde2a54779e710f90b3e057",
+                "reference": "9163b383b274201e3dde2a54779e710f90b3e057",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-json": "*",
+                "ext-pcre": "*",
+                "ext-simplexml": "*",
+                "laminas/laminas-http": "^2.0",
+                "loki/magento2-base": "^1.0",
+                "loki/magento2-css-utils": "^1.0",
+                "magento/framework": "^103.0",
+                "magento/module-backend": "^102.0",
+                "magento/module-config": "^101.0",
+                "magento/module-customer": "^103.0",
+                "magento/module-store": "^101.0",
+                "php": "^8.1",
+                "psr/log": "^1.0 | ^2.0 | ^3.0",
+                "yireo/magento2-csp-utilities": "^1.0"
+            },
+            "require-dev": {
+                "yireo/magento2-integration-test-helper": "~0.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Loki\\Components\\": ""
+                }
+            },
+            "notification-url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/downloads/",
+            "license": [
+                "OSL-3.0"
+            ],
+            "description": "N/A",
+            "keywords": [
+                "loki-components"
+            ],
+            "support": {
+                "issues": "https://github.com/LokiExtensions/Loki_Components/issues",
+                "source": "https://github.com/LokiExtensions/Loki_Components/tree/2.2.17"
+            },
+            "funding": [
+                {
+                    "url": "https://www.paypal.me/yireo",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/yireo",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-10-22T11:47:37+00:00"
+        },
+        {
+            "name": "loki/magento2-css-utils",
+            "version": "1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/LokiExtensions/Loki_CssUtils.git",
+                "reference": "9379eb85fee4f6936d5117b97db12711881dc926"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/LokiExtensions/Loki_CssUtils/zipball/9379eb85fee4f6936d5117b97db12711881dc926",
+                "reference": "9379eb85fee4f6936d5117b97db12711881dc926",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "ext-pcre": "*",
+                "magento/framework": "^103.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Loki\\CssUtils\\": ""
+                }
+            },
+            "notification-url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/downloads/",
+            "license": [
+                "OSL-3.0"
+            ],
+            "description": "CSS class and style utilities for Magento 2 PHTML templates",
+            "support": {
+                "source": "https://github.com/LokiExtensions/Loki_CssUtils/tree/1.0.4"
+            },
+            "funding": [
+                {
+                    "url": "https://www.paypal.me/yireo",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/yireo",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-09-16T11:20:49+00:00"
+        },
+        {
+            "name": "loki/magento2-field-components",
+            "version": "2.2.10",
+            "dist": {
+                "type": "zip",
+                "url": "https://composer.yireo.com/download/Loki_FieldComponents/2.2.10",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "ext-pcre": "*",
+                "loki/magento2-components": "^2.0",
+                "loki/magento2-css-utils": "^1.0",
+                "magento/framework": "^103.0",
+                "magento/module-backend": "^102.0",
+                "magento/module-config": "^101.0",
+                "magento/module-media-storage": "^100.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Loki\\Field\\": ""
+                }
+            },
+            "notification-url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/downloads/",
+            "time": "2025-10-22T11:47:10+00:00"
+        },
+        {
+            "name": "loki/magento2-map-components",
+            "version": "0.2.1",
+            "dist": {
+                "type": "zip",
+                "url": "https://composer.yireo.com/download/Loki_MapComponents/0.2.1",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "ext-pcre": "*",
+                "loki/magento2-components": "^2.0",
+                "loki/magento2-css-utils": "^1.0",
+                "magento/framework": "^103.0",
+                "magento/module-backend": "^102.0",
+                "magento/module-customer": "^103.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Loki\\Map\\": ""
+                }
+            },
+            "notification-url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/downloads/",
+            "time": "2025-10-22T11:46:58+00:00"
         },
         {
             "name": "magento/adobe-stock-integration",
@@ -23779,6 +24218,104 @@
                 "source": "https://github.com/wikimedia/less.php/tree/v5.4.0"
             },
             "time": "2025-07-03T20:27:02+00:00"
+        },
+        {
+            "name": "yireo/magento2-csp-utilities",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yireo/Yireo_CspUtilities.git",
+                "reference": "bc92745fcd49ebcdcb0da062dbf51db9dfd0177e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yireo/Yireo_CspUtilities/zipball/bc92745fcd49ebcdcb0da062dbf51db9dfd0177e",
+                "reference": "bc92745fcd49ebcdcb0da062dbf51db9dfd0177e",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "magento/framework": "^102.0 || ^103.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Yireo\\CspUtilities\\": ""
+                }
+            },
+            "notification-url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/downloads/",
+            "license": [
+                "OSL-3.0"
+            ],
+            "description": "CSP utilities for various Magento modules",
+            "support": {
+                "source": "https://github.com/yireo/Yireo_CspUtilities/tree/1.0.1"
+            },
+            "time": "2025-03-10T08:00:58+00:00"
+        },
+        {
+            "name": "yireo/magento2-theme-by-route",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yireo/Yireo_ThemeByRoute.git",
+                "reference": "c9c1d4b395245bd843ccb8bca9c4ff97cafe3a97"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yireo/Yireo_ThemeByRoute/zipball/c9c1d4b395245bd843ccb8bca9c4ff97cafe3a97",
+                "reference": "c9c1d4b395245bd843ccb8bca9c4ff97cafe3a97",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "ext-pcre": "*",
+                "magento/framework": "^103.0",
+                "magento/module-store": "^101.1",
+                "magento/module-theme": "^101.1",
+                "psr/log": "^1.0 || ^2.0 || ^3.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Yireo\\ThemeByRoute\\": ""
+                }
+            },
+            "notification-url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/downloads/",
+            "license": [
+                "OSL-3.0"
+            ],
+            "description": "Assign a specific theme to specific routes",
+            "support": {
+                "source": "https://github.com/yireo/Yireo_ThemeByRoute/tree/1.1.1"
+            },
+            "funding": [
+                {
+                    "url": "https://www.paypal.me/yireo",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/yireo",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-10-22T11:15:57+00:00"
         }
     ],
     "packages-dev": [
@@ -27881,10 +28418,10 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {},
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
-    "platform": {},
-    "platform-dev": {},
-    "plugin-api-version": "2.6.0"
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.2.0"
 }
