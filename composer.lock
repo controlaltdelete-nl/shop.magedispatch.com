@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "67ee21948a29d3e3fd612d126e4282df",
+    "content-hash": "fe89b69e7278a73385537f4d829174a9",
     "packages": [
         {
             "name": "2tvenom/cborencode",
@@ -9237,6 +9237,43 @@
             "description": "N/A"
         },
         {
+            "name": "mage-os/module-graph-ql",
+            "version": "2.0.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.mage-os.org/packages/mage-os/module-graph-ql-2.0.0.zip",
+                "shasum": "5bf30ff2e6b8379371f15064c33755f7051440f8"
+            },
+            "require": {
+                "mage-os/framework": "2.0.0",
+                "mage-os/module-authorization": "2.0.0",
+                "mage-os/module-eav": "2.0.0",
+                "mage-os/module-webapi": "2.0.0",
+                "php": "~8.2.0||~8.3.0||~8.4.0",
+                "webonyx/graphql-php": "^15.0"
+            },
+            "replace": {
+                "magento/module-graph-ql": "100.4.8-p2"
+            },
+            "suggest": {
+                "mage-os/module-graph-ql-cache": "2.0.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\GraphQl\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
+        },
+        {
             "name": "mage-os/module-graph-ql-cache",
             "version": "2.0.0",
             "dist": {
@@ -9612,6 +9649,417 @@
                 ],
                 "psr-4": {
                     "Magento\\IntegrationGraphQl\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
+        },
+        {
+            "name": "mage-os/module-inventory",
+            "version": "2.0.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.mage-os.org/packages/mage-os/module-inventory-2.0.0.zip",
+                "shasum": "193456a919362a08faee793f9320632575c8f958"
+            },
+            "require": {
+                "mage-os/framework": "2.0.0",
+                "mage-os/module-inventory-api": "2.0.0",
+                "php": "~8.2.0||~8.3.0||~8.4.0"
+            },
+            "replace": {
+                "magento/module-inventory": "1.2.6"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\Inventory\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
+        },
+        {
+            "name": "mage-os/module-inventory-api",
+            "version": "2.0.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.mage-os.org/packages/mage-os/module-inventory-api-2.0.0.zip",
+                "shasum": "32c9172c1c8756540150a23e7a6b297eeee14530"
+            },
+            "require": {
+                "mage-os/framework": "2.0.0",
+                "php": "~8.2.0||~8.3.0||~8.4.0"
+            },
+            "replace": {
+                "magento/module-inventory-api": "1.2.6"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\InventoryApi\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
+        },
+        {
+            "name": "mage-os/module-inventory-catalog-api",
+            "version": "2.0.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.mage-os.org/packages/mage-os/module-inventory-catalog-api-2.0.0.zip",
+                "shasum": "fdf6b7f98c037e0fa327c2bcbb49564238e9235d"
+            },
+            "require": {
+                "mage-os/framework": "2.0.0",
+                "php": "~8.2.0||~8.3.0||~8.4.0"
+            },
+            "replace": {
+                "magento/module-inventory-catalog-api": "1.3.6"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\InventoryCatalogApi\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
+        },
+        {
+            "name": "mage-os/module-inventory-catalog-rule",
+            "version": "2.0.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.mage-os.org/packages/mage-os/module-inventory-catalog-rule-2.0.0.zip",
+                "shasum": "1ba1a4c930f72f4eb07566e3481f7b3880627d6e"
+            },
+            "require": {
+                "mage-os/framework": "2.0.0",
+                "mage-os/module-catalog": "2.0.0",
+                "mage-os/module-catalog-rule": "2.0.0",
+                "mage-os/module-inventory": "2.0.0",
+                "mage-os/module-inventory-catalog-api": "2.0.0",
+                "mage-os/module-inventory-indexer": "2.0.0",
+                "mage-os/module-inventory-sales-api": "2.0.0",
+                "mage-os/module-store": "2.0.0",
+                "php": "~8.2.0||~8.3.0||~8.4.0"
+            },
+            "replace": {
+                "magento/module-inventory-catalog-rule": "100.2.0"
+            },
+            "suggest": {
+                "mage-os/module-rule": "2.0.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\InventoryCatalogRule\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
+        },
+        {
+            "name": "mage-os/module-inventory-configuration-api",
+            "version": "2.0.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.mage-os.org/packages/mage-os/module-inventory-configuration-api-2.0.0.zip",
+                "shasum": "09f430a3f072e0983562a1d6cbd42043b38593fd"
+            },
+            "require": {
+                "mage-os/framework": "2.0.0",
+                "php": "~8.2.0||~8.3.0||~8.4.0"
+            },
+            "replace": {
+                "magento/module-inventory-configuration-api": "1.2.4"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\InventoryConfigurationApi\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
+        },
+        {
+            "name": "mage-os/module-inventory-indexer",
+            "version": "2.0.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.mage-os.org/packages/mage-os/module-inventory-indexer-2.0.0.zip",
+                "shasum": "2f432abd828f1292915093da401d84504642edad"
+            },
+            "require": {
+                "mage-os/framework": "2.0.0",
+                "mage-os/framework-message-queue": "2.0.0",
+                "mage-os/module-inventory": "2.0.0",
+                "mage-os/module-inventory-api": "2.0.0",
+                "mage-os/module-inventory-catalog-api": "2.0.0",
+                "mage-os/module-inventory-configuration-api": "2.0.0",
+                "mage-os/module-inventory-multi-dimensional-indexer-api": "2.0.0",
+                "mage-os/module-inventory-sales": "2.0.0",
+                "mage-os/module-inventory-sales-api": "2.0.0",
+                "php": "~8.2.0||~8.3.0||~8.4.0"
+            },
+            "replace": {
+                "magento/module-inventory-indexer": "2.2.3-p3"
+            },
+            "suggest": {
+                "mage-os/module-catalog": "2.0.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\InventoryIndexer\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
+        },
+        {
+            "name": "mage-os/module-inventory-multi-dimensional-indexer-api",
+            "version": "2.0.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.mage-os.org/packages/mage-os/module-inventory-multi-dimensional-indexer-api-2.0.0.zip",
+                "shasum": "c0ea682a884f4a256e104f36cc05563093580d4b"
+            },
+            "require": {
+                "mage-os/framework": "2.0.0",
+                "php": "~8.2.0||~8.3.0||~8.4.0"
+            },
+            "replace": {
+                "magento/module-inventory-multi-dimensional-indexer-api": "1.2.4"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\InventoryMultiDimensionalIndexerApi\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
+        },
+        {
+            "name": "mage-os/module-inventory-reservations-api",
+            "version": "2.0.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.mage-os.org/packages/mage-os/module-inventory-reservations-api-2.0.0.zip",
+                "shasum": "417f4488eb7d41d6c4f42e3659af0c7cd082a040"
+            },
+            "require": {
+                "mage-os/framework": "2.0.0",
+                "php": "~8.2.0||~8.3.0||~8.4.0"
+            },
+            "replace": {
+                "magento/module-inventory-reservations-api": "1.2.4"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\InventoryReservationsApi\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
+        },
+        {
+            "name": "mage-os/module-inventory-sales",
+            "version": "2.0.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.mage-os.org/packages/mage-os/module-inventory-sales-2.0.0.zip",
+                "shasum": "2c780f7a5bc0b71168e98f07ff8669384ffc0dde"
+            },
+            "require": {
+                "mage-os/framework": "2.0.0",
+                "mage-os/module-catalog": "2.0.0",
+                "mage-os/module-catalog-inventory": "2.0.0",
+                "mage-os/module-inventory": "2.0.0",
+                "mage-os/module-inventory-api": "2.0.0",
+                "mage-os/module-inventory-catalog-api": "2.0.0",
+                "mage-os/module-inventory-configuration-api": "2.0.0",
+                "mage-os/module-inventory-reservations-api": "2.0.0",
+                "mage-os/module-inventory-sales-api": "2.0.0",
+                "mage-os/module-inventory-source-deduction-api": "2.0.0",
+                "mage-os/module-inventory-source-selection-api": "2.0.0",
+                "mage-os/module-sales": "2.0.0",
+                "mage-os/module-sales-inventory": "2.0.0",
+                "mage-os/module-store": "2.0.0",
+                "php": "~8.2.0||~8.3.0||~8.4.0"
+            },
+            "replace": {
+                "magento/module-inventory-sales": "1.3.3-p3"
+            },
+            "require-dev": {
+                "mage-os/module-inventory-indexer": "2.0.0"
+            },
+            "suggest": {
+                "mage-os/module-inventory-catalog": "2.0.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\InventorySales\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
+        },
+        {
+            "name": "mage-os/module-inventory-sales-api",
+            "version": "2.0.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.mage-os.org/packages/mage-os/module-inventory-sales-api-2.0.0.zip",
+                "shasum": "0926a203e7852cc78cd60a37655757bd6663c16e"
+            },
+            "require": {
+                "mage-os/framework": "2.0.0",
+                "mage-os/module-inventory-api": "2.0.0",
+                "mage-os/module-sales": "2.0.0",
+                "php": "~8.2.0||~8.3.0||~8.4.0"
+            },
+            "replace": {
+                "magento/module-inventory-sales-api": "1.2.5"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\InventorySalesApi\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
+        },
+        {
+            "name": "mage-os/module-inventory-source-deduction-api",
+            "version": "2.0.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.mage-os.org/packages/mage-os/module-inventory-source-deduction-api-2.0.0.zip",
+                "shasum": "9c0622f1322ab076e4a34428b9c07014c06f8c6f"
+            },
+            "require": {
+                "mage-os/framework": "2.0.0",
+                "mage-os/module-inventory": "2.0.0",
+                "mage-os/module-inventory-api": "2.0.0",
+                "mage-os/module-inventory-configuration-api": "2.0.0",
+                "mage-os/module-inventory-sales-api": "2.0.0",
+                "php": "~8.2.0||~8.3.0||~8.4.0"
+            },
+            "replace": {
+                "magento/module-inventory-source-deduction-api": "1.2.5"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\InventorySourceDeductionApi\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
+        },
+        {
+            "name": "mage-os/module-inventory-source-selection-api",
+            "version": "2.0.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.mage-os.org/packages/mage-os/module-inventory-source-selection-api-2.0.0.zip",
+                "shasum": "778b660a7309f7cd9ef3ed0b366601bc5d5ed88a"
+            },
+            "require": {
+                "mage-os/framework": "2.0.0",
+                "mage-os/module-inventory-api": "2.0.0",
+                "mage-os/module-inventory-sales-api": "2.0.0",
+                "mage-os/module-sales": "2.0.0",
+                "mage-os/module-store": "2.0.0",
+                "php": "~8.2.0||~8.3.0||~8.4.0"
+            },
+            "replace": {
+                "magento/module-inventory-source-selection-api": "1.4.5"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\InventorySourceSelectionApi\\": ""
                 }
             },
             "license": [
