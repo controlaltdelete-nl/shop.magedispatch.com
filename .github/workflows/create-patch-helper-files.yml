@@ -70,7 +70,7 @@ jobs:
           php -r "\$classmap=require_once('vendor/composer/autoload_classmap.php'); echo json_encode(\$classmap);" > classmap.json
 
       - name: Archive files
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with:
           name: patch-helper-files
           path: |
