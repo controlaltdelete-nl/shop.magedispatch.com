@@ -54,7 +54,7 @@
      "trim-newlines":"~5.0.0"
    },
    "node-minify": {
-     "terser": "~5.44.0"
+     "terser": "~5.46.0"
    },
    "grunt-contrib-imagemin": {
      "css-select":"~6.0.0",
