@@ -1,0 +1,64 @@
+<?php
+/**
+ * Hyvä Themes - https://hyva.io
+ * Copyright © Hyvä Themes. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+declare(strict_types=1);
+
+use Hyva\Theme\Model\ViewModelRegistry;
+use Hyva\Theme\ViewModel\Logo\LogoSizeResolver;
+use Hyva\Theme\ViewModel\Logo\LogoPathResolver;
+use Hyva\Theme\ViewModel\StoreConfig;
+use Magento\Framework\Escaper;
+use Magento\Theme\Block\Html\Header\Logo;
+
+/** @var Logo $block */
+/** @var Escaper $escaper */
+/** @var ViewModelRegistry $viewModels */
+
+/** @var StoreConfig $storeConfig */
+$storeConfig = $viewModels->require(StoreConfig::class);
+$storeName = $block->getThemeName() ?: $storeConfig->getStoreConfig('general/store_information/name') ?: __('Store logo');
+
+/** @var LogoSizeResolver $logoSizeResolver */
+$logoSizeResolver = $viewModels->require(LogoSizeResolver::class);
+$logoWidth = $logoSizeResolver && $logoSizeResolver->getWidth()
+    ? $logoSizeResolver->getWidth()
+    : $block->getLogoWidth();
+$logoHeight = $logoSizeResolver && $logoSizeResolver->getHeight()
+    ? $logoSizeResolver->getHeight()
+    : $block->getLogoHeight();
+
+/** @var LogoPathResolver $logoPathResolver */
+$logoPathResolver = $block->getData('logoPathResolver');
+$logoSrc = $logoPathResolver && method_exists($logoPathResolver, 'getLogoSrc')
+    ? $logoPathResolver->getLogoSrc($block->getData('logo_file'))
+    : $block->getLogoSrc();
+
+$logoSrc = $block->getBaseUrl() . 'media/logo/stores/1/MageDispatch_logo_RGB.png';
+
+?>
+<a
+    class="flex items-center justify-center text-xl font-medium"
+    href="<?= $escaper->escapeUrl($block->getUrl('')) ?>"
+    aria-label="<?= $escaper->escapeHtmlAttr(__('Go to Home page')) ?>"
+>
+    <img
+        src="<?= $escaper->escapeUrl($logoSrc) ?>"
+        alt="<?= $escaper->escapeHtmlAttr($block->getLogoAlt() ?: $storeName) ?>"
+        <?= $logoWidth
+            ? 'width="' . $escaper->escapeHtmlAttr($logoWidth) . '"'
+            : 'width="200"'
+        ?>
+        <?= $logoHeight
+            ? 'height="' . $escaper->escapeHtmlAttr($logoHeight) . '"'
+            : 'height="150"'
+        ?>
+        loading="eager"
+    >
+    <?php if (!$logoSrc): ?>
+        <?= $escaper->escapeHtml($storeName) ?>
+    <?php endif; ?>
+</a>

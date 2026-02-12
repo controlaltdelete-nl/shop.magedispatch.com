@@ -1,0 +1,38 @@
+{
+  "notice": [
+    "This is a complementary config file for Tailwind v4 and is not a replacement for the Tailwind v3 config file.",
+    "For usage, see the docs: https://docs.hyva.io/hyva-themes/working-with-tailwindcss/using-hyva-modules/"
+  ],
+  "tailwind": {
+    "include": [
+      { "src": "vendor/hyva-themes/magento2-default-theme" },
+      { "src": "app/code/ControlAltDelete" }
+    ],
+    "exclude": []
+  },
+  "tokens": {
+    "values": {
+      "color": {
+        "primary": {
+          "lighter": "oklch(0.4965 0.0545 231.69)",
+          "DEFAULT": "oklch(0.5817 0.0654 231.65)",
+          "darker": "oklch(0.5817 0.0654 231.65)"
+        },
+        "secondary": {
+          "lighter": "oklch(72% 0.2 150)",
+          "DEFAULT": "oklch(53% 0.15 150)",
+          "darker": "oklch(39% 0.1 153)"
+        },
+        "on": {
+          "primary": "#fff",
+          "secondary": "#fff"
+        }
+      },
+      "form": {
+        "radius": "var(--radius-lg)",
+        "stroke": "var(--color-slate-400)",
+        "active-color": "var(--color-primary)"
+      }
+    }
+  }
+}

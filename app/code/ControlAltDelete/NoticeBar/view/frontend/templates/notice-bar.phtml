@@ -24,7 +24,9 @@ use Magento\Framework\Escaper;
 
 /** @var Escaper $escaper */
 /** @var NoticeBar $block */
+
+/** text-left text-center text-right */
 ?>
-<div class="controlaltdelete-notice-bar controlaltdelete-notice-bar-<?= $escaper->escapeHtmlAttr($block->getTextAlign()) ?>">
+<div class="controlaltdelete-notice-bar bg-brand-secondary px-2 py-2 text-<?= $escaper->escapeHtmlAttr($block->getTextAlign()) ?> [&_a]:text-white">
     <?= $block->getText() ?>
 </div>
