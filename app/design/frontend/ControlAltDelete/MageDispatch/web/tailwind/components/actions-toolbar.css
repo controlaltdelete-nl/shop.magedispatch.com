@@ -1,0 +1,21 @@
+@layer components {
+    .actions-toolbar {
+        display: flex;
+        gap: --spacing(4);
+        flex-direction: column;
+        margin-block-start: --spacing(6);
+        padding-block-start: --spacing(4);
+        border-block-start-width: 1px;
+        border-block-start-color: var(--color-gray-300);
+
+        @variant md {
+            flex-direction: row-reverse;
+            align-items: center;
+        }
+
+        /* @deprecated */
+        & a.back {
+            @apply underline;
+        }
+    }
+}

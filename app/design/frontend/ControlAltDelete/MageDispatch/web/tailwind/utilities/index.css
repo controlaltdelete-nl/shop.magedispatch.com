@@ -1,0 +1,9 @@
+@import "./icons.css";
+@import "./fallback.css";
+
+/* Disable the -webkit-details-marker when the summary has the `list-none` class */
+@utility list-none {
+    &::-webkit-details-marker {
+        display: none;
+    }
+}

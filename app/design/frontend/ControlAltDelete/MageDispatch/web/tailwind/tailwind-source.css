@@ -1,0 +1,139 @@
+/**
+ * Welcome to your Hyvä Theme!
+ *
+ * This is the main entry file for your theme's CSS, processed by Tailwind CSS.
+ *
+ * If you're new to TailwindCSS, get started with the official documentation:
+ * https://tailwindcss.com/
+ *
+ * To learn about creating a Hyvä Theme, check out the build guide:
+ * https://docs.hyva.io/hyva-themes/building-your-theme/index.html
+ *
+ * For Hyvä-specific topics, such as merging module CSS or using design tokens,
+ * please refer to the documentation:
+ * https://docs.hyva.io/hyva-themes/working-with-tailwindcss/index.html
+ */
+
+@import "@hyva-themes/hyva-modules/css";
+@import "tailwindcss" source(none);
+@source "../../**/*.phtml";
+@source "../../**/*.xml";
+
+/* Custom styles */
+@import "./base";
+@import "./components";
+@import "./theme";
+@import "./utilities";
+
+/* Import generated styles for Hyvä Compatible Modules and Design Tokens */
+@import "./generated/hyva-source.css";
+@import "./generated/hyva-tokens.css";
+
+@theme {
+    --color-bg: var(--color-slate-50);
+    --color-fg: var(--color-slate-950);
+    --color-fg-secondary: var(--color-slate-600);
+    --color-surface: var(--color-white);
+
+    --color-brand-main: #eadfb4;
+    --color-brand-secondary: #9BB0C1;
+    --color-brand-blue: #51829B;
+    --color-brand-orange: #F6995C;
+}
+
+#maincontent {
+    background-image: url("https://shop.magedispatch.com/static/version1770183275/frontend/ControlAltDelete/MageDispatch/en_US/images/background.svg");
+    background-repeat: repeat;
+    background-size: 50px 90px;
+}
+
+.page-main {
+    margin-block: 0;
+}
+
+.page-footer .bg-gray-100.border-t.pb-16{
+    background-color: #f4f4f4;
+    border-top: 0;
+    padding-bottom: 0;
+}
+
+.page-footer .border-b{
+    border-bottom: 0;
+}
+
+.page-footer .footer.content .bg-gray-100.border-t.border-gray-300.pb-16 .container.py-8 {
+    background-color: #f4f4f4;
+    height: auto;
+    padding: 40px 0;
+}
+
+.page-footer .footer.content .bg-surface.border-t.border-b.border-gray-300 {
+    background-color: #6e716e;
+}
+
+.page-footer .bg-surface.border-t.border-b.border-gray-300,
+.page-footer .container.py-6.flex.items-center.sm\:flex-row.flex-col {
+    background-color: #6e716e
+}
+
+.page-main .container,
+.page-main .columns {
+    background: white;
+    padding-bottom: 50px;
+}
+
+.page-footer .container,
+.page-footer .columns {
+    background: white;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.page-footer .bg-gray-100 .container > .flex > div:last-child {
+    margin-left: auto;
+}
+
+.page-footer a {
+    color: #006bb4;
+    text-decoration: none;
+}
+
+.page-footer a:hover {
+    text-decoration: underline;
+}
+
+.page-footer nav a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.page-footer nav a:hover {
+    text-decoration: none;
+}
+
+
+.toolbar-sorter,
+.sorter,
+[data-role="sorter"] {
+    display: none;
+}
+
+.toolbar-limiter,
+.limiter,
+[data-role="limiter"] {
+    display: none;
+}
+
+.checkout-cart-index details.coupon-form {
+    display: none;
+}
+
+.page-title.text-3xl.font-bold.mb-6 {
+    margin-top: 34px;
+}
+
+.cms-page-view .column.main {
+    @apply prose;
+    margin-top: 34px;
+}
+
