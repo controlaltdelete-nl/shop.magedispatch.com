@@ -1,0 +1,88 @@
+/**
+ * Button styles for Hyva theme
+ * This file contains component class for buttons with different styles and sizes.
+ *
+ * Please avoid using `@apply` for the button styles to ensure compatibly for future versions.
+ * Instead, use the component class directly in your HTML.
+ * The `@utility` directive is used, for backwards compatibility, to define button styles.
+ */
+
+@utility btn {
+    --btn-stroke: #0000;
+    --btn-bg: color-mix(in srgb, var(--color-primary) 10%, #0000);
+    --btn-hover-bg: color-mix(in srgb, var(--color-primary) 20%, #0000);
+    --btn-active-bg: color-mix(in srgb, var(--color-primary) 30%, #0000);
+    --btn-color: var(--color-fg);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: --spacing(1.5);
+    padding-block: --spacing(2);
+    padding-inline: --spacing(4);
+    border-radius: var(--radius-lg);
+    border-width: 2px;
+    border-color: var(--btn-stroke);
+    background-color: var(--btn-bg);
+    color: var(--btn-color);
+    font-weight: 500;
+    user-select: none;
+    vertical-align: middle;
+    transition-property: color, background-color, border-color, outline-color;
+    transition-timing-function: var(--default-transition-timing-function);
+    transition-duration: var(--default-transition-duration);
+
+    &:hover {
+        border-color: var(--btn-hover-stroke, var(--btn-stroke));
+        background-color: var(--btn-hover-bg, var(--btn-bg));
+        color: var(--btn-hover-color, var(--btn-color));
+        text-decoration: none;
+    }
+
+    &:is(:active, .is-active, [aria-current="page"], [aria-current="true"]) {
+        border-color: var(--btn-active-stroke, var(--btn-stroke));
+        background-color: var(--btn-active-bg, var(--btn-bg));
+        color: var(--btn-active-color, var(--btn-color));
+    }
+
+    &:is(:disabled, [aria-disabled="true"]) {
+        border-color: var(--btn-disabled-stroke, var(--color-gray-200));
+        background-color: var(--btn-disabled-bg, var(--color-gray-50));
+        color: var(--btn-disabled-color, var(--color-gray-500));
+    }
+}
+
+@utility btn-primary {
+    --btn-stroke: #0000;
+    --btn-bg: var(--color-primary);
+    --btn-color: var(--color-on-primary);
+
+    --btn-hover-stroke: #0000;
+    --btn-hover-bg: var(--color-primary-lighter);
+    --btn-hover-color: var(--color-on-primary);
+
+    --btn-active-stroke: #0000;
+    --btn-active-bg: var(--color-primary);
+    --btn-active-color: var(--color-on-primary);
+}
+
+@utility btn-secondary {
+    --btn-stroke: var(--color-primary-lighter);
+    --btn-bg: var(--color-on-primary);
+    --btn-color: var(--color-primary-darker);
+
+    --btn-hover-stroke: var(--color-primary-lighter);
+    --btn-hover-bg: var(--color-on-primary);
+    --btn-hover-color: var(--color-primary-lighter);
+
+    --btn-active-stroke: #0000;
+    --btn-active-bg: var(--color-primary);
+    --btn-active-color: var(--color-on-primary);
+}
+
+.btn-size-lg {
+    @apply px-10 py-4 text-lg;
+}
+
+.btn-size-sm {
+    @apply px-2 py-2 text-sm;
+}

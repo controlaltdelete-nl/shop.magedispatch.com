@@ -1,0 +1,96 @@
+@utility form-input-field {
+    --outline-size: 1px;
+    --outline-offset: 0px;
+}
+
+@utility form-input-control {
+    block-size: --spacing(4.5);
+    inline-size: --spacing(4.5);
+}
+
+@layer base {
+    [type="checkbox"][role="switch"] {
+        --switch-width: --spacing(9);
+        --switch-height: --spacing(5);
+        --switch-thumb-offset: calc(var(--switch-width) - var(--switch-height));
+        border-radius: calc(infinity * 1px);
+        border-width: 2px;
+        block-size: var(--switch-height);
+        inline-size: var(--switch-width);
+
+        &:not(:disabled) {
+            cursor: pointer;
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            aspect-ratio: 1;
+            height: 100%;
+            border-radius: calc(infinity * 1px);
+            border-width: 1px;
+            border-color: var(--form-bg);
+            background-color: var(--form-stroke);
+            transition: background-color 150ms, border-color 150ms,
+                translate 150ms;
+        }
+
+        &:checked {
+            background-image: none;
+
+            &::after {
+                background-color: var(--form-bg);
+                translate: var(--switch-thumb-offset) 0%;
+            }
+        }
+
+        &:dir(rtl):checked::after {
+            translate: calc(var(--switch-thumb-offset) / -1) 0%;
+        }
+    }
+}
+
+@layer components {
+    .form-input.qty {
+        max-inline-size: calc(6ch + var(--form-px));
+    }
+
+    .field {
+        @apply mt-1;
+
+        /* Reserve space for single line form validation messages */
+        &.field-reserved {
+            --reserved-space: --spacing(7);
+            margin-block-end: var(--reserved-space);
+
+            ul {
+                @apply text-sm;
+
+                &:last-of-type {
+                    margin-block-end: calc(var(--reserved-space) * -1);
+                }
+            }
+        }
+
+        &.choice {
+            @apply flex items-center;
+
+            label {
+                @apply mb-0;
+            }
+
+            input {
+                @apply mr-3;
+            }
+        }
+
+        &.field-error .messages {
+            @apply text-red-600;
+            max-width: fit-content;
+        }
+
+        &.required > label {
+            @apply after:relative after:-top-1 after:text-red-600 after:icon-asterisk after:text-xs;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+.price-box {
+    & .price {
+        font-size: var(--price-font-size, var(--text-base));
+        font-weight: var(--price-font-weight, bolder);
+    }
+
+    & .old-price,
+    & .special-price {
+        display: block;
+
+        & .price-label {
+            @apply sr-only;
+        }
+    }
+
+    & .old-price {
+        --price-font-size: 0.875em;
+        --price-font-weight: normal;
+
+        .price {
+            text-decoration: line-through;
+        }
+    }
+
+    & .price-excluding-tax {
+        display: block;
+
+        &::after {
+            content: " " attr(data-label);
+            font-size: var(--price-font-size-label, 0.875rem);
+            font-weight: var(--price-font-weight, normal);
+        }
+    }
+
+    & .price-tax-label {
+        font-size: var(--price-font-size-label, 0.875rem);
+    }
+}
+
+.price-including-tax + .price-excluding-tax {
+    --price-font-size: 1rem;
+}

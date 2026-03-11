@@ -1,0 +1,35 @@
+<?php
+/**
+ * Hyvä Themes - https://hyva.io
+ * Copyright © Hyvä Themes. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+declare(strict_types=1);
+
+use Magento\Framework\View\Element\Template;
+use Magento\Framework\Escaper;
+
+/** @var Template $block */
+/** @var Escaper $escaper */
+?>
+<div class="bg-gray-100 border-t border-gray-300 pb-16">
+    <div class="container py-8">
+        <div class="flex flex-wrap gap-y-16">
+
+            <?php foreach ($block->getChildNames() as $childName): ?>
+                <?= !in_array($childName, ['footer-copyright', 'footer-cms-content']) ? $block->getBlockHtml($childName) : '' ?>
+            <?php endforeach; ?>
+
+            <div>
+                <?= $block->getChildHtml('footer-cms-content') ?>
+            </div>
+        </div>
+    </div>
+    <div class="bg-surface border-t border-b border-gray-300">
+        <div class="container py-6 flex items-center sm:flex-row flex-col">
+            <p><?= $block->getChildHtml('copyright') ?></p>
+        </div>
+    </div>
+</div>
+

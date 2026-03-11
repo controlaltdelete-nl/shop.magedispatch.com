@@ -48,7 +48,7 @@ return [
         'Magento_SalesSequence' => 1,
         'Magento_MediaGalleryUi' => 1,
         'Magento_CmsUrlRewrite' => 1,
-        'Magento_TwoFactorAuth' => 1,
+        'Magento_TwoFactorAuth' => 0,
         'Magento_Msrp' => 1,
         'Magento_Sales' => 1,
         'Magento_CatalogInventory' => 1,
@@ -249,7 +249,16 @@ return [
         'ControlAltDelete_FathomAnalytics' => 1,
         'ControlAltDelete_NoticeBar' => 1,
         'ControlAltDelete_Widget' => 1,
-        'Mollie_Payment' => 1
+        'Hyva_Theme' => 1,
+        'Hyva_CompatModuleFallback' => 1,
+        'Hyva_Email' => 1,
+        'Hyva_GraphqlTokens' => 1,
+        'Hyva_GraphqlViewModel' => 1,
+        'Hyva_MollieThemeBundle' => 1,
+        'Hyva_OrderCancellationWebapi' => 1,
+        'Hyva_BaseLayoutReset' => 1,
+        'Mollie_Payment' => 1,
+        'Mollie_HyvaCompatibility' => 1
     ],
     'scopes' => [
         'websites' => [
@@ -363,13 +372,21 @@ return [
             'code' => 'Magento/luma'
         ],
         'frontend/ControlAltDelete/MageDispatch' => [
-            'parent_id' => 'Magento/luma',
+            'parent_id' => 'Hyva/default',
             'theme_path' => 'ControlAltDelete/MageDispatch',
             'theme_title' => 'ControlAltDelete MageDispatch',
             'is_featured' => '0',
             'area' => 'frontend',
             'type' => '0',
             'code' => 'ControlAltDelete/MageDispatch'
+        ],
+        'frontend/Hyva/default' => [
+            'theme_path' => 'Hyva/default',
+            'theme_title' => 'Hyvä Default',
+            'is_featured' => '0',
+            'area' => 'frontend',
+            'type' => '0',
+            'code' => 'Hyva/default'
         ]
     ],
     'system' => [

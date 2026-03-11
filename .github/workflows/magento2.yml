@@ -133,7 +133,7 @@ jobs:
           ddev exec bin/magento indexer:reindex
 
       - name: Check if we can reach Magento
-        run: curl --fail-with-body -v https://shop.magedispatch.test
+        run: curl --fail-with-body -v -k https://shop.magedispatch.test
 
       - name: Install Playwright dependencies
         run: |
