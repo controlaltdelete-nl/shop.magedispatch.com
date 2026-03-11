@@ -30,7 +30,7 @@ test('Can remove product from cart', async ({ page }) => {
 
     await expect(page.locator('#shopping-cart-table').getByText(productTitle)).toBeVisible();
 
-    await page.locator('.action-delete').click();
+    await page.getByRole('button', { name: /remove/i }).click();
 
     await expect(page.getByText(productTitle)).not.toBeVisible();
 

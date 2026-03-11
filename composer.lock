@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0c10d71fa7fcc7c2465efd000b9ffc84",
+    "content-hash": "b347f5191f4e05a57342c56aeaa5fbc0",
     "packages": [
         {
             "name": "2tvenom/cborencode",
@@ -3148,6 +3148,51 @@
             "time": "2023-03-13T17:01:18+00:00"
         },
         {
+            "name": "hyva-themes/magento2-luma-checkout",
+            "version": "1.1.7",
+            "dist": {
+                "type": "zip",
+                "url": "https://hyva-themes.repo.packagist.com/shop-magedispa-6sy0i/dists/hyva-themes/magento2-luma-checkout/1.1.7.0/4a77fd88723415e64fbec10e2d40dc650a2e15d0.zip",
+                "reference": "4a77fd88723415e64fbec10e2d40dc650a2e15d0",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "hyva-themes/magento2-theme-fallback": "*",
+                "magento/framework": "*",
+                "magento/module-checkout": ">=100.3.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "src/registration.php"
+                ],
+                "psr-4": {
+                    "Hyva\\LumaCheckout\\": "src/"
+                }
+            },
+            "notification-url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/downloads/",
+            "license": [
+                "OSL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Hyvä Themes B.V.",
+                    "email": "info@hyva.io"
+                }
+            ],
+            "description": "Luma Fallback Checkout for Hyvä Themes",
+            "support": {
+                "source": "https://gitlab.hyva.io/hyva-themes/magento2-luma-checkout/-/tree/1.1.7",
+                "issues": "https://gitlab.hyva.io/hyva-themes/magento2-luma-checkout/-/issues"
+            },
+            "time": "2025-11-04T16:55:16+01:00"
+        },
+        {
             "name": "hyva-themes/magento2-mollie-theme-bundle",
             "version": "1.0.3",
             "source": {
@@ -3254,6 +3299,49 @@
                 "issues": "https://gitlab.hyva.io/hyva-themes/magento2-order-cancellation-webapi/-/issues"
             },
             "time": "2025-11-04T17:06:08+01:00"
+        },
+        {
+            "name": "hyva-themes/magento2-theme-fallback",
+            "version": "1.0.4",
+            "dist": {
+                "type": "zip",
+                "url": "https://hyva-themes.repo.packagist.com/shop-magedispa-6sy0i/dists/hyva-themes/magento2-theme-fallback/1.0.4.0/6673002d68b23c850b84808ca93b7c9ac7141c49.zip",
+                "reference": "6673002d68b23c850b84808ca93b7c9ac7141c49",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "magento/framework": "*"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "src/registration.php"
+                ],
+                "psr-4": {
+                    "Hyva\\ThemeFallback\\": "src/"
+                }
+            },
+            "notification-url": "https://repo.packagist.com/controlaltdelete-nl/shop-magedispatch/downloads/",
+            "license": [
+                "OSL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Hyvä Themes B.V.",
+                    "email": "info@hyva.io"
+                }
+            ],
+            "description": "Allow for Hyvä Themes to fall back to regular Magento themes on specific routes.",
+            "support": {
+                "source": "https://gitlab.hyva.io/hyva-themes/magento2-theme-fallback/-/tree/1.0.4",
+                "issues": "https://gitlab.hyva.io/hyva-themes/magento2-theme-fallback/-/issues"
+            },
+            "time": "2025-11-04T16:59:50+01:00"
         },
         {
             "name": "hyva-themes/magento2-theme-module",

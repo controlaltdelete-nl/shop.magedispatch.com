@@ -41,5 +41,5 @@ test('Can enter shipping address on Checkout', async ({ page }) => {
 
     await page.locator('.payment-method-title label').first().click();
 
-    await expect(page.getByText('Place Order').first()).toBeVisible();
+    await expect(page.getByRole('button', { name: 'Place Order' })).toBeVisible();
 });

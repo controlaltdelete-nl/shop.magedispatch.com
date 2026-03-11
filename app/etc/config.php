@@ -254,9 +254,11 @@ return [
         'Hyva_Email' => 1,
         'Hyva_GraphqlTokens' => 1,
         'Hyva_GraphqlViewModel' => 1,
+        'Hyva_ThemeFallback' => 1,
         'Hyva_MollieThemeBundle' => 1,
         'Hyva_OrderCancellationWebapi' => 1,
         'Hyva_BaseLayoutReset' => 1,
+        'Hyva_LumaCheckout' => 1,
         'Mollie_Payment' => 1,
         'Mollie_HyvaCompatibility' => 1
     ],

@@ -29,7 +29,7 @@ export default class ProductFind {
     async openProduct(): Promise<void> {
         await this.page.goto('/');
 
-        const link = this.page.locator('.level0 a').first();
+        const link = this.page.locator('.level-0 a').first();
         const url = await link.getAttribute('href');
 
         console.log('Got URL', url);
@@ -55,7 +55,7 @@ export default class ProductFind {
 
         await this.page.locator('#product-addtocart-button').click();
 
-        await this.page.locator('.counter.qty .counter-number').waitFor({ state: 'visible' });
+        await this.page.locator('input[name="qty"]').waitFor({ state: 'visible' });
 
         await this.page.reload();
     }
