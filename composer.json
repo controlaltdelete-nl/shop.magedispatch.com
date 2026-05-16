@@ -24,7 +24,7 @@
         "avstudnitz/scopehint2": "^1.3",
         "controlaltdelete/magento2-fathom-analytics": "^1.0",
         "cweagans/composer-patches": "^2.0",
-        "deployer/deployer": "^7.4",
+        "deployer/deployer": "^8.0",
         "hyva-themes/magento2-default-theme": "^1.4",
         "hyva-themes/magento2-luma-checkout": "^1.1",
         "magento/composer-dependency-version-audit-plugin": "~0.1",
